@@ -5,7 +5,7 @@
 // 
 // Create Date:    21:44:21 08/29/2012 
 // Design Name: 
-// Module Name:    multicomp 
+// Module Name:    multicomp sqd
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
