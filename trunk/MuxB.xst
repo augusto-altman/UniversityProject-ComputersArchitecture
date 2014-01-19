@@ -1,0 +1,5 @@
+set -tmpdir "D:/facu/Arquitecturas de las computadoras/Practico/bipI/xst/projnav.tmp"
+set -xsthdpdir "D:/facu/Arquitecturas de las computadoras/Practico/bipI/xst"
+elaborate
+-ifn MuxB.prj
+-ifmt mixed

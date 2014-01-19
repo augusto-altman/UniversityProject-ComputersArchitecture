@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+Control instance_name (
+    .Clk(Clk), 
+    .Instruction(Instruction), 
+    .Reset(Reset), 
+    .Addr(Addr), 
+    .SelA(SelA), 
+    .SelB(SelB), 
+    .WrAcc(WrAcc), 
+    .Op(Op), 
+    .WrRam(WrRam), 
+    .RdRam(RdRam), 
+    .Operand(Operand)
+    );
+
+

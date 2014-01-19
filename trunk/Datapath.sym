@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Datapath">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2014-1-19T20:35:14</timestamp>
+    <attr value="Datapath" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-416" name="SelB" />
+    <pin polarity="Input" x="0" y="-352" name="WrAcc" />
+    <pin polarity="Input" x="0" y="-288" name="Op" />
+    <pin polarity="Input" x="0" y="-224" name="Clock" />
+    <pin polarity="Input" x="0" y="-160" name="SelA(1:0)" />
+    <pin polarity="Input" x="0" y="-96" name="Addr(10:0)" />
+    <pin polarity="Input" x="0" y="-32" name="Out_Data(15:0)" />
+    <pin polarity="Output" x="448" y="32" name="In_Data(15:0)" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="224" y="-456" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin SelB" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin WrAcc" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin Op" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin Clock" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin SelA(1:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin Addr(10:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin Out_Data(15:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="376" y="32" type="pin In_Data(15:0)" />
+        <rect width="64" x="384" y="20" height="24" />
+        <line x2="448" y1="32" y2="32" x1="384" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <rect width="64" x="0" y="-172" height="24" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <rect width="320" x="64" y="-448" height="512" />
+    </graph>
+</symbol>

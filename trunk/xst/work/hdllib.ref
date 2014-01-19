@@ -1,3 +1,10 @@
-MO Control NULL Control.v vlg41/_control.bin 1389809859
-MO PC NULL PC.v vlg53/_p_c.bin 1389809859
-MO Instruction_Decoder NULL Instruction_Decoder.v vlg1F/_instruction___decoder.bin 1389809859
+MO SignalExtension NULL SignalExtension.v vlg73/_signal_extension.bin 1390170207
+MO Control NULL Control.v vlg41/_control.bin 1390170207
+MO CPU NULL CPU.v vlg70/_c_p_u.bin 1390170207
+MO PC NULL PC.v vlg53/_p_c.bin 1390170207
+MO MuxA NULL MuxA.v vlg1F/_mux_a.bin 1390170207
+MO MuxB NULL MuxB.v vlg20/_mux_b.bin 1390170207
+MO Acc NULL Acc.v vlg2B/_acc.bin 1390170207
+MO Instruction_Decoder NULL Instruction_Decoder.v vlg1F/_instruction___decoder.bin 1390170207
+MO ALU NULL ALU.v vlg2A/_a_l_u.bin 1390170207
+MO Datapath NULL Datapath.v vlg07/_datapath.bin 1390170207
