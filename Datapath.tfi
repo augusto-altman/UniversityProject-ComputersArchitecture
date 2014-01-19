@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+Datapath instance_name (
+    .SelA(SelA), 
+    .SelB(SelB), 
+    .Addr(Addr), 
+    .WrAcc(WrAcc), 
+    .Op(Op), 
+    .Clock(Clock), 
+    .In_Data(In_Data), 
+    .Out_Data(Out_Data)
+    );
+
+

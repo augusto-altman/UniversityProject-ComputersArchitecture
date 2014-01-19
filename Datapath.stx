@@ -1,0 +1,47 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/facu/Arquitecturas de las computadoras/Practico/bipI/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to D:/facu/Arquitecturas de las computadoras/Practico/bipI/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SignalExtension.v" in library work
+Compiling verilog file "MuxB.v" in library work
+Module <SignalExtension> compiled
+Compiling verilog file "MuxA.v" in library work
+Module <MuxB> compiled
+Compiling verilog file "ALU.v" in library work
+Module <MuxA> compiled
+Compiling verilog file "Acc.v" in library work
+Module <ALU> compiled
+Compiling verilog file "Datapath.v" in library work
+Module <Acc> compiled
+Module <Datapath> compiled
+No errors in compilation
+Analysis of file <"Datapath.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> 
+
+Total memory usage is 204836 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

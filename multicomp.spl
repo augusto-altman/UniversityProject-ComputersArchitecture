@@ -1,0 +1,10 @@
+[Inputs]
+A
+B
+=SEL[1:0]=
+[Outputs]
+tito
+[BiDir]
+[ATTRIBUTES]
+VeriModel multicomp
+
