@@ -10,13 +10,13 @@
          <ClosedNode>/Control D:|facu|Arquitecturas de las computadoras|Practico|bipI|Control.v/ID - Instruction_Decoder</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ctrl - Control (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Control.v)</SelectedItem>
+         <SelectedItem>ProgramCounter - PC (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PC.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000169000000020000000000000000000000000200000064ffffffff000000810000000300000002000001690000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ctrl - Control (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Control.v)</CurrentItem>
+      <CurrentItem>ProgramCounter - PC (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PC.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -90,16 +90,29 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/AccTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|AccTest.v</ClosedNode>
+         <ClosedNode>/AluTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|AluTest.v</ClosedNode>
+         <ClosedNode>/CPUTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPUTest.v/uut - CPU/dp - Datapath</ClosedNode>
+         <ClosedNode>/CPU_softwareTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPU_softwareTest.v</ClosedNode>
+         <ClosedNode>/CPU_softwareTest2 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPU_softwareTest2.v</ClosedNode>
+         <ClosedNode>/CPU_softwareTest3 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPU_softwareTest3.v</ClosedNode>
+         <ClosedNode>/CPU_softwareTest4 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPU_softwareTest4.v</ClosedNode>
+         <ClosedNode>/Control_test C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|Control_test.v</ClosedNode>
+         <ClosedNode>/DatapathTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|DatapathTest.v</ClosedNode>
          <ClosedNode>/Instruction_Decoder_Test C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|Instruction_Decoder_Test.v</ClosedNode>
+         <ClosedNode>/MuxBTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|MuxBTest.v</ClosedNode>
+         <ClosedNode>/PC_test C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|PC_test.v</ClosedNode>
+         <ClosedNode>/SignalExtension_Test C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|SignalExtension_Test.v</ClosedNode>
+         <ClosedNode>/TestMuxA C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|TestMuxA.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>CPU_softwareTest (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest.v)</SelectedItem>
+         <SelectedItem>CPU_softwareTest4 (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest4.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>CPU_softwareTest (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest.v)</CurrentItem>
+      <CurrentItem>CPU_softwareTest4 (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest4.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -120,12 +133,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>
