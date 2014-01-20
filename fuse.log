@@ -1,19 +1,19 @@
-Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPUTest_isim_beh.exe -prj D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPUTest_beh.prj work.CPUTest work.glbl 
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest_isim_beh.exe -prj C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest_beh.prj work.CPU_softwareTest work.glbl 
 ISim P.15xf (signature 0xc3576ebc)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/SignalExtension.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/PC.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/MuxB.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/MuxA.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/Instruction_Decoder.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/ALU.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/Acc.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/Datapath.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/Control.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPUTest.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/SignalExtension.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PC.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/MuxB.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/MuxA.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Instruction_Decoder.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/ALU.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Acc.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Datapath.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Control.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
@@ -27,11 +27,11 @@ Compiling module Acc
 Compiling module ALU
 Compiling module Datapath
 Compiling module CPU
-Compiling module CPUTest
+Compiling module CPU_softwareTest
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 5 sub-compilation(s) to finish...
 Compiled 12 Verilog Units
-Built simulation executable D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPUTest_isim_beh.exe
-Fuse Memory Usage: 26540 KB
-Fuse CPU Usage: 655 ms
+Built simulation executable C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest_isim_beh.exe
+Fuse Memory Usage: 26948 KB
+Fuse CPU Usage: 1013 ms
