@@ -79,15 +79,15 @@ module Control_test;
 	always @ (Addr)
 	begin: Memory_Mock
 		case (Addr)
-			0: Instruction = 15'b001000000000001;
-			1: Instruction = 15'b000010000000010;
-			2: Instruction = 15'b000110000000011;
-			3: Instruction = 15'b001000000000100;
-			4: Instruction = 15'b001110000000101;
-			5: Instruction = 15'b001010000000110;
-			6: Instruction = 15'b001000000000111;
-			7: Instruction = 15'b000000000001000;
-			8: Instruction = 15'b111110000001001;
+			0: Instruction = 16'b0010000000000001;
+			1: Instruction = 16'b0000100000000010;
+			2: Instruction = 16'b0001100000000011;
+			3: Instruction = 16'b0010000000000100;
+			4: Instruction = 16'b0011100000000101;
+			5: Instruction = 16'b0010100000000110;
+			6: Instruction = 16'b0010000000000111;
+			7: Instruction = 16'b0000000000001000;
+			8: Instruction = 16'b1111100000001001;
 		endcase
 	end
 

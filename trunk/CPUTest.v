@@ -58,8 +58,11 @@ module CPUTest;
 		Reset = 0;
 
 		// Wait 100 ns for global reset to finish
-		#100;
-
+		#50;
+		Reset = 1;
+		#100
+		Reset = 0;
+		#50
 		Instruction= 16'b 0001100001010101;
 		#2;
 		Instruction = 16'b 0000100000000001;
@@ -74,7 +77,7 @@ module CPUTest;
       
 	always
 	begin
-		#1 
+		#100 
 		Clock = ~Clock;
 	end 
 endmodule
