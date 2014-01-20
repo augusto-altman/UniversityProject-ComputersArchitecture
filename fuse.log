@@ -1,19 +1,22 @@
-Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest4_isim_beh.exe -prj C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest4_beh.prj work.CPU_softwareTest4 work.glbl 
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPTEST1_isim_beh.exe -prj D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPTEST1_beh.prj work.BIPTEST1 work.glbl 
 ISim P.15xf (signature 0xc3576ebc)
-Number of CPUs detected in this system: 4
-Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/SignalExtension.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PC.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/MuxB.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/MuxA.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Instruction_Decoder.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/ALU.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Acc.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Datapath.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Control.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest4.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/SignalExtension.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/PC.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/MuxB.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/MuxA.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/Instruction_Decoder.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/ALU.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/Acc.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/Datapath.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/Control.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/u_program_memory.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/U_Data_memoriy.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/CPU.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPII.v" into library work
+Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPTEST1.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
@@ -27,11 +30,14 @@ Compiling module Acc
 Compiling module ALU
 Compiling module Datapath
 Compiling module CPU
-Compiling module CPU_softwareTest4
+Compiling module u_data_memory
+Compiling module u_program_memory
+Compiling module BIPI
+Compiling module BIPTEST1
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 5 sub-compilation(s) to finish...
-Compiled 12 Verilog Units
-Built simulation executable C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest4_isim_beh.exe
-Fuse Memory Usage: 26952 KB
-Fuse CPU Usage: 452 ms
+Waiting for 12 sub-compilation(s) to finish...
+Compiled 15 Verilog Units
+Built simulation executable D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPTEST1_isim_beh.exe
+Fuse Memory Usage: 26316 KB
+Fuse CPU Usage: 608 ms

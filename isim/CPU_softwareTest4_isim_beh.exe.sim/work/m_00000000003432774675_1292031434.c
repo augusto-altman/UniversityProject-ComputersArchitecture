@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Datapath.v";
+static const char *ng0 = "D:/Estudio/facu/arquitectura de computadoras/final/workspace/Datapath.v";
 
 
 

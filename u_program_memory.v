@@ -20,13 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 module u_program_memory(
     input clock,
-	 input [0:15] address,
-    output [0:15] out
+	 input [10:0] address,
+    output [15:0] out
     );
 
 	
-	reg [0:15] outputreg;
-	reg [0:15] data [0:2048];
+	reg [15:0] outputreg;
+	reg [15:0] data [0:2048];
 	integer i;
 	
 	assign out = outputreg;
@@ -34,11 +34,19 @@ module u_program_memory(
 	// inital program // 
 	initial
 	begin
-		data[0] = 16'b0000_0000_0000_0000;
-		data[1] = 16'b0000_0000_0000_0001;
-		data[2] = 16'b0000_0000_0000_0010;
-		data[3] = 16'b0000_0000_0000_0011;
-		for(i = 4 ; i< 2048 ; i=i+1)
+//		data[0] = 16'b0000_0000_0000_0000;
+//		data[1] = 16'b0000_0000_0000_0001;
+//		data[2] = 16'b0000_0000_0000_0010;
+//		data[3] = 16'b0000_0000_0000_0011;
+		
+		data[0] = 16'b0001100000000001; //LDi 1
+		data[1] = 16'b0000100000000000; //STO 0
+		data[2] = 16'b0001100000000010; //LDi 2
+		data[3] = 16'b0000100000000001; //STO 1
+		data[4] = 16'b0001000000000000; //LD 0
+		data[5] = 16'b0010000000000001; //ADD 1
+		data[6] = 16'b0000100000000010; //STO 2
+		for(i = 7 ; i< 2048 ; i=i+1)
 			data[i] = 16'b00000_00000_00000_0;
 	end
 	
