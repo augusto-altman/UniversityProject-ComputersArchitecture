@@ -61,6 +61,12 @@ module CPUTest;
 		#100;
 
 		Instruction= 16'b 0001100001010101;
+		#2;
+		Instruction = 16'b 0000100000000001;
+		#2;
+		Instruction = 16'b 0010100000000111;
+		#2;
+		Instruction = 0;
         
 		// Add stimulus here
 
