@@ -146,33 +146,11 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ALU.v"/>
-      <outfile xil_pn:name="Acc.v"/>
-      <outfile xil_pn:name="AccTest.v"/>
-      <outfile xil_pn:name="AluTest.v"/>
-      <outfile xil_pn:name="CPU.v"/>
-      <outfile xil_pn:name="CPUTest.v"/>
-      <outfile xil_pn:name="CPU_softwareTest.v"/>
-      <outfile xil_pn:name="CPU_softwareTest2.v"/>
-      <outfile xil_pn:name="CPU_softwareTest3.v"/>
-      <outfile xil_pn:name="CPU_softwareTest4.v"/>
-      <outfile xil_pn:name="Control.v"/>
-      <outfile xil_pn:name="Control_test.v"/>
-      <outfile xil_pn:name="Datapath.v"/>
-      <outfile xil_pn:name="DatapathTest.v"/>
-      <outfile xil_pn:name="Instruction_Decoder.v"/>
-      <outfile xil_pn:name="Instruction_Decoder_Test.v"/>
-      <outfile xil_pn:name="MuxA.v"/>
-      <outfile xil_pn:name="MuxB.v"/>
-      <outfile xil_pn:name="MuxBTest.v"/>
-      <outfile xil_pn:name="PC.v"/>
-      <outfile xil_pn:name="PC_test.v"/>
-      <outfile xil_pn:name="SignalExtension.v"/>
-      <outfile xil_pn:name="SignalExtension_Test.v"/>
-      <outfile xil_pn:name="TestMuxA.v"/>
-      <outfile xil_pn:name="multicomp.v"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1390232500" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-370838407007993603" xil_pn:start_ts="1390232500">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -193,53 +171,31 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ALU.v"/>
-      <outfile xil_pn:name="Acc.v"/>
-      <outfile xil_pn:name="AccTest.v"/>
-      <outfile xil_pn:name="AluTest.v"/>
-      <outfile xil_pn:name="CPU.v"/>
-      <outfile xil_pn:name="CPUTest.v"/>
-      <outfile xil_pn:name="CPU_softwareTest.v"/>
-      <outfile xil_pn:name="CPU_softwareTest2.v"/>
-      <outfile xil_pn:name="CPU_softwareTest3.v"/>
-      <outfile xil_pn:name="CPU_softwareTest4.v"/>
-      <outfile xil_pn:name="Control.v"/>
-      <outfile xil_pn:name="Control_test.v"/>
-      <outfile xil_pn:name="Datapath.v"/>
-      <outfile xil_pn:name="DatapathTest.v"/>
-      <outfile xil_pn:name="Instruction_Decoder.v"/>
-      <outfile xil_pn:name="Instruction_Decoder_Test.v"/>
-      <outfile xil_pn:name="MuxA.v"/>
-      <outfile xil_pn:name="MuxB.v"/>
-      <outfile xil_pn:name="MuxBTest.v"/>
-      <outfile xil_pn:name="PC.v"/>
-      <outfile xil_pn:name="PC_test.v"/>
-      <outfile xil_pn:name="SignalExtension.v"/>
-      <outfile xil_pn:name="SignalExtension_Test.v"/>
-      <outfile xil_pn:name="TestMuxA.v"/>
-      <outfile xil_pn:name="multicomp.v"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1390235828" xil_pn:in_ck="2509318877955545605" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-862292932809150501" xil_pn:start_ts="1390235826">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="CPU_softwareTest4_beh.prj"/>
-      <outfile xil_pn:name="CPU_softwareTest4_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1390235829" xil_pn:in_ck="-5281666603900410118" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8071847083170075010" xil_pn:start_ts="1390235828">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="CPU_softwareTest4_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1389805967" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1389805967">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -272,24 +228,12 @@
     <transform xil_pn:end_ts="1390170215" xil_pn:in_ck="-7926801660396483621" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="2825353547172186430" xil_pn:start_ts="1390170203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name=".lso"/>
-      <outfile xil_pn:name="CPU.lso"/>
-      <outfile xil_pn:name="CPU.ngc"/>
-      <outfile xil_pn:name="CPU.ngr"/>
-      <outfile xil_pn:name="CPU.prj"/>
-      <outfile xil_pn:name="CPU.stx"/>
-      <outfile xil_pn:name="CPU.syr"/>
-      <outfile xil_pn:name="CPU.xst"/>
-      <outfile xil_pn:name="CPU_xst.xrpt"/>
-      <outfile xil_pn:name="Control.ngr"/>
-      <outfile xil_pn:name="Datapath.ngr"/>
-      <outfile xil_pn:name="Instruction_Decoder.ngr"/>
-      <outfile xil_pn:name="PC.ngr"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
