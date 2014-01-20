@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+CPU instance_name (
+    .InsAddr(InsAddr), 
+    .Instruction(Instruction), 
+    .Rd(Rd), 
+    .Wr(Wr), 
+    .DataAddr(DataAddr), 
+    .In_Data(In_Data), 
+    .Out_Data(Out_Data), 
+    .Clock(Clock), 
+    .Reset(Reset)
+    );
+
+

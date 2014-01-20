@@ -7,16 +7,18 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/CPU D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPU.v/ctrl - Control</ClosedNode>
+         <ClosedNode>/CPU D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPU.v/dp - Datapath</ClosedNode>
          <ClosedNode>/Control D:|facu|Arquitecturas de las computadoras|Practico|bipI|Control.v/ID - Instruction_Decoder</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ProgramCounter - PC (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PC.v)</SelectedItem>
+         <SelectedItem>BIPI (D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPII.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000169000000020000000000000000000000000200000064ffffffff000000810000000300000002000001690000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ac000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ac0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ProgramCounter - PC (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PC.v)</CurrentItem>
+      <CurrentItem>BIPI (D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPII.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -24,13 +26,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Design Utilities</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015f0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Design Utilities</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -54,24 +56,25 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000000f80000009b01000000050100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Check Syntax</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015f0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fe000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fe0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Check Syntax</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -92,27 +95,47 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/AccTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|AccTest.v</ClosedNode>
          <ClosedNode>/AluTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|AluTest.v</ClosedNode>
+         <ClosedNode>/AluTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|AluTest.v</ClosedNode>
+         <ClosedNode>/BIPTEST1 D:|Estudio|facu|arquitectura de computadoras|final|workspace|BIPTEST1.v</ClosedNode>
          <ClosedNode>/CPUTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPUTest.v/uut - CPU/dp - Datapath</ClosedNode>
+         <ClosedNode>/CPUTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPUTest.v</ClosedNode>
+         <ClosedNode>/CPUTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPUTest.v/uut - CPU/ctrl - Control</ClosedNode>
+         <ClosedNode>/CPUTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPUTest.v/uut - CPU/dp - Datapath</ClosedNode>
          <ClosedNode>/CPU_softwareTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPU_softwareTest.v</ClosedNode>
+         <ClosedNode>/CPU_softwareTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPU_softwareTest.v</ClosedNode>
          <ClosedNode>/CPU_softwareTest2 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPU_softwareTest2.v</ClosedNode>
+         <ClosedNode>/CPU_softwareTest2 D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPU_softwareTest2.v</ClosedNode>
          <ClosedNode>/CPU_softwareTest3 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPU_softwareTest3.v</ClosedNode>
+         <ClosedNode>/CPU_softwareTest3 D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPU_softwareTest3.v</ClosedNode>
          <ClosedNode>/CPU_softwareTest4 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPU_softwareTest4.v</ClosedNode>
+         <ClosedNode>/CPU_softwareTest4 D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPU_softwareTest4.v</ClosedNode>
+         <ClosedNode>/CPU_softwareTest4 D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPU_softwareTest4.v/uut - CPU/ctrl - Control</ClosedNode>
+         <ClosedNode>/CPU_softwareTest4 D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPU_softwareTest4.v/uut - CPU/dp - Datapath</ClosedNode>
          <ClosedNode>/Control_test C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|Control_test.v</ClosedNode>
+         <ClosedNode>/Control_test D:|Estudio|facu|arquitectura de computadoras|final|workspace|Control_test.v</ClosedNode>
          <ClosedNode>/DatapathTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|DatapathTest.v</ClosedNode>
+         <ClosedNode>/DatapathTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|DatapathTest.v</ClosedNode>
          <ClosedNode>/Instruction_Decoder_Test C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|Instruction_Decoder_Test.v</ClosedNode>
+         <ClosedNode>/Instruction_Decoder_Test D:|Estudio|facu|arquitectura de computadoras|final|workspace|Instruction_Decoder_Test.v</ClosedNode>
          <ClosedNode>/MuxBTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|MuxBTest.v</ClosedNode>
+         <ClosedNode>/MuxBTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|MuxBTest.v</ClosedNode>
          <ClosedNode>/PC_test C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|PC_test.v</ClosedNode>
+         <ClosedNode>/PC_test D:|Estudio|facu|arquitectura de computadoras|final|workspace|PC_test.v</ClosedNode>
          <ClosedNode>/SignalExtension_Test C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|SignalExtension_Test.v</ClosedNode>
+         <ClosedNode>/SignalExtension_Test D:|Estudio|facu|arquitectura de computadoras|final|workspace|SignalExtension_Test.v</ClosedNode>
          <ClosedNode>/TestMuxA C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|TestMuxA.v</ClosedNode>
+         <ClosedNode>/TestMuxA D:|Estudio|facu|arquitectura de computadoras|final|workspace|TestMuxA.v</ClosedNode>
+         <ClosedNode>/dataMemTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|dataMemTest.v</ClosedNode>
+         <ClosedNode>/programMemTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|programMemTest.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>CPU_softwareTest4 (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest4.v)</SelectedItem>
+         <SelectedItem>BIPTEST1 (D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPTEST1.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017d0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>CPU_softwareTest4 (C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/CPU_softwareTest4.v)</CurrentItem>
+      <CurrentItem>BIPTEST1 (D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPTEST1.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -124,7 +147,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015f0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -133,12 +156,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015f0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
 </Project>

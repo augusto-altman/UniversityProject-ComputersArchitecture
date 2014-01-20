@@ -60,7 +60,7 @@ module CPU_softwareTest4;
 		// Wait 100 ns for global reset to finish
 		#50;
 		Reset = 1;
-		#100
+		#170
 		Reset = 0;        
 		// Add stimulus here
 	end
@@ -105,7 +105,7 @@ module CPU_softwareTest4;
 	reg [15:0]DataMemory[2:0];
 	
 	//always @ (DataAddr or Rd or Wr or Reset)
-	always @ (posedge Clock)
+	always @ (negedge Clock)
 	begin: DataMemory_Mock
 		//#10
 		if (Reset)

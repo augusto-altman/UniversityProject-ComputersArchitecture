@@ -21,14 +21,14 @@
 module u_data_memory(
     input read,
     input write,
-    input [0:10] address,
-    input [0:15] in_data,
-    output [0:15] out_data
+    input [10:0] address,
+    input [15:0] in_data,
+    output [15:0] out_data
     );
 
 
-	reg [0:15] outputer;
-	reg [0:15] data [0:2047];
+	reg [15:0] outputer;
+	reg [15:0] data [0:2047];
 	integer i;
 	
 	assign out_data = outputer;

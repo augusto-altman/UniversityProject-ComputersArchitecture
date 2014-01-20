@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj bipI -o "D:/Estudio/facu/arquitectura de computadoras/final/workspace/u_data_memory.tfi" -lib work "D:/Estudio/facu/arquitectura de computadoras/final/workspace//U_Data_memoriy.v" -module u_data_memory -template C:/Xilinx/14.1/ISE_DS/ISE//data/tfi.tft -deleteonerror 
