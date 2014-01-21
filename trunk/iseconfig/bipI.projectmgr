@@ -62,19 +62,18 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Check Syntax</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fe000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fe0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Check Syntax</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -94,9 +93,10 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/AccTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|AccTest.v</ClosedNode>
+         <ClosedNode>/AccTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|AccTest.v</ClosedNode>
          <ClosedNode>/AluTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|AluTest.v</ClosedNode>
          <ClosedNode>/AluTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|AluTest.v</ClosedNode>
-         <ClosedNode>/BIPTEST1 D:|Estudio|facu|arquitectura de computadoras|final|workspace|BIPTEST1.v</ClosedNode>
+         <ClosedNode>/BIPTEST1 D:|Estudio|facu|arquitectura de computadoras|final|workspace|BIPTEST1.v/uut - BIPI/cpu - CPU</ClosedNode>
          <ClosedNode>/CPUTest C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|CPUTest.v/uut - CPU/dp - Datapath</ClosedNode>
          <ClosedNode>/CPUTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPUTest.v</ClosedNode>
          <ClosedNode>/CPUTest D:|Estudio|facu|arquitectura de computadoras|final|workspace|CPUTest.v/uut - CPU/ctrl - Control</ClosedNode>
@@ -133,7 +133,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015e0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c0000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c00000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>BIPTEST1 (D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPTEST1.v)</CurrentItem>
    </ItemView>
