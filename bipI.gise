@@ -63,6 +63,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CPU_softwareTest_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="CPU_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CPU_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="ClockTree.tfi"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ClockTreeTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ClockTreeTest_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Control.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Control.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Control.ngc"/>
@@ -153,11 +156,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1390170660" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1390170660">
+    <transform xil_pn:end_ts="1390263467" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1390263467">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1390257656" xil_pn:in_ck="3720915474145659385" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1390257656">
+    <transform xil_pn:end_ts="1390263467" xil_pn:in_ck="-6548740414880822535" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1390263467">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -172,6 +175,8 @@
       <outfile xil_pn:name="CPU_softwareTest2.v"/>
       <outfile xil_pn:name="CPU_softwareTest3.v"/>
       <outfile xil_pn:name="CPU_softwareTest4.v"/>
+      <outfile xil_pn:name="ClockTree.v"/>
+      <outfile xil_pn:name="ClockTreeTest.v"/>
       <outfile xil_pn:name="Control.v"/>
       <outfile xil_pn:name="Control_test.v"/>
       <outfile xil_pn:name="Datapath.v"/>
@@ -192,19 +197,19 @@
       <outfile xil_pn:name="programMemTest.v"/>
       <outfile xil_pn:name="u_program_memory.v"/>
     </transform>
-    <transform xil_pn:end_ts="1390257661" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7787961360936898371" xil_pn:start_ts="1390257661">
+    <transform xil_pn:end_ts="1390263467" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7787961360936898371" xil_pn:start_ts="1390263467">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1390257661" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6205955227817933381" xil_pn:start_ts="1390257661">
+    <transform xil_pn:end_ts="1390263467" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6205955227817933381" xil_pn:start_ts="1390263467">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1390257661" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4837814022088175431" xil_pn:start_ts="1390257661">
+    <transform xil_pn:end_ts="1390263467" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4837814022088175431" xil_pn:start_ts="1390263467">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1390257661" xil_pn:in_ck="3720915474145659385" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1390257661">
+    <transform xil_pn:end_ts="1390263467" xil_pn:in_ck="-6548740414880822535" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1390263467">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -219,6 +224,8 @@
       <outfile xil_pn:name="CPU_softwareTest2.v"/>
       <outfile xil_pn:name="CPU_softwareTest3.v"/>
       <outfile xil_pn:name="CPU_softwareTest4.v"/>
+      <outfile xil_pn:name="ClockTree.v"/>
+      <outfile xil_pn:name="ClockTreeTest.v"/>
       <outfile xil_pn:name="Control.v"/>
       <outfile xil_pn:name="Control_test.v"/>
       <outfile xil_pn:name="Datapath.v"/>
@@ -239,7 +246,7 @@
       <outfile xil_pn:name="programMemTest.v"/>
       <outfile xil_pn:name="u_program_memory.v"/>
     </transform>
-    <transform xil_pn:end_ts="1390257665" xil_pn:in_ck="3720915474145659385" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4985503304547844889" xil_pn:start_ts="1390257661">
+    <transform xil_pn:end_ts="1390263471" xil_pn:in_ck="-6548740414880822535" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4985503304547844889" xil_pn:start_ts="1390263467">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -251,7 +258,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1390257665" xil_pn:in_ck="-2135505616849720555" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4260418543917651562" xil_pn:start_ts="1390257665">
+    <transform xil_pn:end_ts="1390263471" xil_pn:in_ck="8156945867123341888" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4260418543917651562" xil_pn:start_ts="1390263471">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -292,6 +299,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="BIPI.lso"/>
       <outfile xil_pn:name="BIPI.ngc"/>

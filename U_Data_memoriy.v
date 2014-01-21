@@ -19,6 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module u_data_memory(
+	 input clock,
     input read,
     input write,
     input [10:0] address,
@@ -40,7 +41,7 @@ module u_data_memory(
 			data[i] = 16'b00000_00000_00000_0;
 	end
 	
-	always@(posedge read, posedge write )
+	always@(negedge clock)
 	begin
 		if(read == 1)
 			outputer = data[address];

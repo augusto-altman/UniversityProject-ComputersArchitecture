@@ -26,6 +26,8 @@ module BIPI(
 	wire [10:0] InsAddr, DataAddr;
 	wire Rd, Wr;
 	wire [15:0] Instruction, In_Data, Out_Data;
+	wire ClockPc, ClockWrRd;
+	
 	
 CPU cpu (
     .InsAddr(InsAddr), 
@@ -35,11 +37,12 @@ CPU cpu (
     .DataAddr(DataAddr), 
     .In_Data(In_Data), 
     .Out_Data(Out_Data), 
-    .Clock(Clock), 
+    .Clock(ClockPc), 
     .Reset(Reset)
     );
 	 
  u_data_memory dataMemory (
+	 .clock(ClockWrRd),
     .read(Rd), 
     .write(Wr), 
     .address(DataAddr), 
@@ -47,9 +50,14 @@ CPU cpu (
     .out_data(Out_Data)
     );
 u_program_memory programMemory (
-    .clock(Clock), 
+    .clock(ClockPc), 
     .address(InsAddr), 
     .out(Instruction)
+    );
+ClockTree clockTree (
+    .Clock(Clock), 
+    .ClockPc(ClockPc), 
+    .ClockWrRd(ClockWrRd)
     );
 
 

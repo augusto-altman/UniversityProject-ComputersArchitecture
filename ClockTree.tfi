@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+ClockTree instance_name (
+    .Clock(Clock), 
+    .ClockPc(ClockPc), 
+    .ClockWrRd(ClockWrRd)
+    );
+
+

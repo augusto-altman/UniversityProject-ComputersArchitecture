@@ -2,28 +2,28 @@ Command line:
    BIPTEST1_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49436
+     -socket  49598
 
-Mon Jan 20 19:41:07 2014
+Mon Jan 20 21:18:06 2014
 
 
- Elaboration Time: 0.0468 sec
+ Elaboration Time: 0.0312 sec
 
- Current Memory Usage: 504.709 Meg
+ Current Memory Usage: 504.713 Meg
 
- Total Signals          : 96
- Total Nets             : 183
- Total Signal Drivers   : 24
- Total Blocks           : 15
- Total Primitive Blocks : 10
- Total Processes        : 38
- Total Traceable Variables  : 38
- Total Scalar Nets and Variables : 66011
-Total Line Count : 151
+ Total Signals          : 102
+ Total Nets             : 185
+ Total Signal Drivers   : 26
+ Total Blocks           : 16
+ Total Primitive Blocks : 11
+ Total Processes        : 41
+ Total Traceable Variables  : 39
+ Total Scalar Nets and Variables : 66015
+Total Line Count : 156
 
- Total Simulation Time: 0.343203 sec
+ Total Simulation Time: 0.078 sec
 
- Current Memory Usage: 504.709 Meg
+ Current Memory Usage: 504.713 Meg
 
-Mon Jan 20 19:43:12 2014
+Mon Jan 20 21:18:55 2014
 

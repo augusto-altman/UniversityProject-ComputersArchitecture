@@ -3,6 +3,7 @@
 
 // Instantiate the module
 u_data_memory instance_name (
+    .clock(clock), 
     .read(read), 
     .write(write), 
     .address(address), 
