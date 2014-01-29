@@ -1,8 +1,0 @@
-xst -intstyle ise -ifn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.xst" -ofn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.syr" 
-xst -intstyle ise -ifn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.xst" -ofn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.syr" 
-xst -intstyle ise -ifn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.xst" -ofn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.syr" 
-xst -intstyle ise -ifn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.xst" -ofn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.syr" 
-xst -intstyle ise -ifn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.xst" -ofn "D:/facu/Arquitecturas de las computadoras/Practico/bipI/CPU.syr" 
-xst -intstyle ise -ifn "D:/Estudio/facu/arquitectura de computadoras/final/workspace/CPU.xst" -ofn "D:/Estudio/facu/arquitectura de computadoras/final/workspace/CPU.syr" 
-xst -intstyle ise -ifn "D:/Estudio/facu/arquitectura de computadoras/final/workspace/CPU.xst" -ofn "D:/Estudio/facu/arquitectura de computadoras/final/workspace/CPU.syr" 
-vhdtdtfi -lang verilog -prj bipI -o "D:/Estudio/facu/arquitectura de computadoras/final/workspace/CPU.tfi" -lib work "D:/Estudio/facu/arquitectura de computadoras/final/workspace//CPU.v" -module CPU -template C:/Xilinx/14.1/ISE_DS/ISE//data/tfi.tft -deleteonerror 

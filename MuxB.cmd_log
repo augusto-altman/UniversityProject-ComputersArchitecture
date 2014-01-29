@@ -1,2 +1,0 @@
-vhdtdtfi -lib work {D:/facu/Arquitecturas de las computadoras/Practico/bipI/MuxB.v} -lang verilog -prj bipI -o MuxB.spl -module MuxB -template C:/Xilinx/14.1/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e MuxB.spl {D:/facu/Arquitecturas de las computadoras/Practico/bipI/MuxB.sym} 
