@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "F:/Practicos Arquitectura/Practico5_UART/uart.xst" -ofn "F:/Practicos Arquitectura/Practico5_UART/uart.syr" 
+xst -intstyle ise -ifn "F:/Practicos Arquitectura/Practico5_UART/uart.xst" -ofn "F:/Practicos Arquitectura/Practico5_UART/uart.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 "uart.ngc" uart.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_map.ncd uart.ngd uart.pcf 
+par -w -intstyle ise -ol high -mt off uart_map.ncd uart.ncd uart.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart.twx uart.ncd -o uart.twr uart.pcf 
+xst -intstyle ise -ifn "F:/Practicos Arquitectura/Practico5_UART/uart.xst" -ofn "F:/Practicos Arquitectura/Practico5_UART/uart.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-2 "uart.ngc" uart.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_map.ncd uart.ngd uart.pcf 
+par -w -intstyle ise -ol high -mt off uart_map.ncd uart.ncd uart.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart.twx uart.ncd -o uart.twr uart.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f uart.ut uart.ncd 

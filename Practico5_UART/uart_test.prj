@@ -1,0 +1,5 @@
+verilog work "uart_tx.v"
+verilog work "uart_rx.v"
+verilog work "mod_m_counter.v"
+verilog work "uart.v"
+verilog work "uart_test.v"
