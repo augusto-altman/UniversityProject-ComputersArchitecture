@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\Practicos Arquitectura\Practico5_UART\uart.ncd
+OUTFILE=F:\Practicos Arquitectura\Practico5_UART\uart.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=F:\Practicos Arquitectura\Practico5_UART
+LICENSE=WebPack
+USER_INFO=180079996_0_0_912

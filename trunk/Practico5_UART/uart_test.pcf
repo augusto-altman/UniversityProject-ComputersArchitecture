@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Thu Jan 23 20:11:08 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rx" LOCATE = SITE "N17" LEVEL 1;
+COMP "tx" LOCATE = SITE "N18" LEVEL 1;
+SCHEMATIC END;
+

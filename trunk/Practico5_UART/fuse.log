@@ -1,0 +1,21 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Tito/Facultad/Arquitecturas de las computadoras/Arquitectura de las computadoras/Practico5_UART/rx_test_isim_beh.exe" -prj "C:/Tito/Facultad/Arquitecturas de las computadoras/Arquitectura de las computadoras/Practico5_UART/rx_test_beh.prj" "work.rx_test" "work.glbl" 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Arquitectura de las computadoras/Practico5_UART/uart_rx.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Arquitectura de las computadoras/Practico5_UART/mod_m_counter.v" into library work
+Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Arquitectura de las computadoras/Practico5_UART/rx_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module uart_rx
+Compiling module mod_m_counter(N=2,M=3)
+Compiling module rx_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable C:/Tito/Facultad/Arquitecturas de las computadoras/Arquitectura de las computadoras/Practico5_UART/rx_test_isim_beh.exe
+Fuse Memory Usage: 26936 KB
+Fuse CPU Usage: 390 ms
