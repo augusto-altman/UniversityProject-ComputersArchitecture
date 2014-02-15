@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+program_memory instance_name (
+    .dir(dir), 
+    .instr(instr)
+    );
+
+

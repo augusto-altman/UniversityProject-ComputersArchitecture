@@ -68,7 +68,7 @@ module stage_exe_test1;
 		control_is_branch = 0;
 		npc = 0;
 
-		// Wait 110 ns for global reset to finish
+		// Wait 60 ns for global reset to finish
 		#60;
         
 		// Add stimulus here

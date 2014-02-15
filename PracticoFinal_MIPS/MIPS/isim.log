@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe_test1_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/stage_exe_test1_isim_beh.wdb 
+Running: C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\pc_test1_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/pc_test1_isim_beh.wdb 
 ISim P.15xf (signature 0xc3576ebc)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.

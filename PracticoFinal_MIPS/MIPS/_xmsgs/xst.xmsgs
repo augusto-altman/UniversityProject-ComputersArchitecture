@@ -5,10 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+<msg type="error" file="HDLCompilers" num="34" delta="new" ><arg fmt="%s" index="1">&quot;program_memory.v&quot; line 35 </arg>Illegal digit(s) in binary constant &apos;<arg fmt="%s" index="2">2</arg>&apos;
 </msg>
 
-<msg type="warning" file="Xst" num="1336" delta="old" > (*) More than 100% of Device resources are used
+<msg type="error" file="HDLCompilers" num="34" delta="new" ><arg fmt="%s" index="1">&quot;program_memory.v&quot; line 36 </arg>Illegal digit(s) in binary constant &apos;<arg fmt="%s" index="2">3</arg>&apos;
+</msg>
+
+<msg type="error" file="HDLCompilers" num="34" delta="new" ><arg fmt="%s" index="1">&quot;program_memory.v&quot; line 37 </arg>Illegal digit(s) in binary constant &apos;<arg fmt="%s" index="2">4</arg>&apos;
 </msg>
 
 </messages>

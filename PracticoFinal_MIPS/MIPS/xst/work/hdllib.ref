@@ -1,2 +1,5 @@
+MO pc NULL pc.v vlg13/pc.bin 1392505938
+MO stage_if NULL stage_if.v vlg62/stage__if.bin 1392505938
+MO program_memory NULL program_memory.v vlg68/program__memory.bin 1392505938
 MO stage_exe NULL stage_exe.v vlg45/stage__exe.bin 1392500646
 MO alu NULL alu.v vlg0A/alu.bin 1392500646

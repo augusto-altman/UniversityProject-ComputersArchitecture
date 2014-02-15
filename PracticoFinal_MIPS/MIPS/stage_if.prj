@@ -1,0 +1,3 @@
+verilog work "program_memory.v"
+verilog work "pc.v"
+verilog work "stage_if.v"
