@@ -1,0 +1,10 @@
+Command line:
+   stage_exe_test1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58599
+
+Sat Feb 15 19:05:09 2014
+
+
+ Elaboration Time: 0.015601 sec
