@@ -23,11 +23,10 @@ module stage_if(
     input reset,
     input control_use_npc,
     input [31:0] data_jump_address,
-    output reg [31:0] instruction
+    output[31:0] instruction
     );
 
 	wire [31:0] iadd;
-	wire instr;
 
 	pc pc_reg (
 		 .clock(clock), 
@@ -37,12 +36,10 @@ module stage_if(
 		 .instruction_address(iadd)
 		 );
 	 
-	program_memory mem (
-		 .dir(iadd), 
-		 .instr(instr)
-		 );
-		 
-	always @ (posedge clock)
-		instruction = instr;
+	pmem pmemory (
+	  .clka(clock),
+	  .addra(iadd),
+	  .douta(instruction)
+	);
 	 
 endmodule

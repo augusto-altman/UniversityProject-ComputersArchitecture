@@ -26,15 +26,15 @@ module program_memory(
 
 	reg [31:0] mem [0:2048]; //2048? si tengo 32 bits de direccion... mmm
 
-	always @ (*)
+	always @ (dir)
 	begin
 		if (record)
 		begin
-			mem[0] = 32'b0;
-			mem[1] = 32'b1;
-			mem[2] = 32'b2;
-			mem[3] = 32'b3;
-			mem[4] = 32'b4;
+			mem[0] = 32'd0;
+			mem[1] = 32'd1;
+			mem[2] = 32'd2;
+			mem[3] = 32'd3;
+			mem[4] = 32'd4;
 		end
 		else
 			instr = mem[dir];

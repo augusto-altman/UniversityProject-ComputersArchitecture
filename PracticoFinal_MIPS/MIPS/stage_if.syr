@@ -98,27 +98,322 @@ Verilog 2001                       : YES
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
 =========================================================================
 
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "program_memory.v" in library work
-ERROR:HDLCompilers:34 - "program_memory.v" line 35 Illegal digit(s) in binary constant '2'
-ERROR:HDLCompilers:34 - "program_memory.v" line 36 Illegal digit(s) in binary constant '3'
-ERROR:HDLCompilers:34 - "program_memory.v" line 37 Illegal digit(s) in binary constant '4'
 Compiling verilog file "pc.v" in library work
-Module <program_memory> compiled
-Compiling verilog file "stage_if.v" in library work
+Compiling verilog file "ipcore_dir/pmem.v" in library work
 Module <pc> compiled
+Compiling verilog file "stage_if.v" in library work
+Module <pmem> compiled
 Module <stage_if> compiled
-Analysis of file <"stage_if.prj"> failed.
+No errors in compilation
+Analysis of file <"stage_if.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <stage_if> in library <work>.
+
+Analyzing hierarchy for module <pc> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <stage_if>.
+WARNING:Xst:2211 - "ipcore_dir/pmem.v" line 39: Instantiating black box module <pmem>.
+Module <stage_if> is correct for synthesis.
+ 
+Analyzing module <pc> in library <work>.
+Module <pc> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <pc>.
+    Related source file is "pc.v".
+    Found 32-bit register for signal <pc>.
+    Found 32-bit adder for signal <pc$addsub0000> created at line 39.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <pc> synthesized.
+
+
+Synthesizing Unit <stage_if>.
+    Related source file is "stage_if.v".
+WARNING:Xst:646 - Signal <iadd<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <stage_if> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/pmem.ngc>.
+Loading core <pmem> for timing and area information for instance <pmemory>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <stage_if> ...
+
+Optimizing unit <pc> ...
+WARNING:Xst:2677 - Node <pc_reg/pc_31> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_30> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_29> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_28> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_27> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_26> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_25> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_24> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_23> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_22> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_21> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_20> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_19> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_18> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_17> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_16> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_15> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_14> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_13> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_12> of sequential type is unconnected in block <stage_if>.
+WARNING:Xst:2677 - Node <pc_reg/pc_11> of sequential type is unconnected in block <stage_if>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block stage_if, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : stage_if.ngr
+Top Level Output File Name         : stage_if
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 67
+
+Cell Usage :
+# BELS                             : 41
+#      GND                         : 3
+#      INV                         : 1
+#      LUT1                        : 7
+#      LUT3                        : 11
+#      MUXCY                       : 8
+#      VCC                         : 2
+#      XORCY                       : 9
+# FlipFlops/Latches                : 11
+#      FDR_1                       : 11
+# RAMS                             : 4
+#      RAMB16_S9_S9                : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 45
+#      IBUF                        : 13
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       10  out of    960     1%  
+ Number of Slice Flip Flops:             11  out of   1920     0%  
+ Number of 4 input LUTs:                 19  out of   1920     0%  
+ Number of IOs:                          67
+ Number of bonded IOBs:                  46  out of     83    55%  
+ Number of BRAMs:                         4  out of      4   100%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                       | Load  |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+clock                              | BUFGP                                                                                                                       | 15    |
+pmemory/N1                         | NONE(pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram)| 4     |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.495ns (Maximum Frequency: 222.467MHz)
+   Minimum input arrival time before clock: 2.931ns
+   Maximum output required time after clock: 5.962ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 4.495ns (frequency: 222.467MHz)
+  Total number of paths / destination ports: 91 / 55
+-------------------------------------------------------------------------
+Delay:               4.495ns (Levels of Logic = 10)
+  Source:            pc_reg/pc_3 (FF)
+  Destination:       pc_reg/pc_10 (FF)
+  Source Clock:      clock falling
+  Destination Clock: clock falling
+
+  Data Path: pc_reg/pc_3 to pc_reg/pc_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q            5   0.514   0.690  pc_reg/pc_3 (pc_reg/pc_3)
+     LUT1:I0->O            1   0.612   0.000  pc_reg/Madd_pc_addsub0000_cy<3>_rt (pc_reg/Madd_pc_addsub0000_cy<3>_rt)
+     MUXCY:S->O            1   0.404   0.000  pc_reg/Madd_pc_addsub0000_cy<3> (pc_reg/Madd_pc_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  pc_reg/Madd_pc_addsub0000_cy<4> (pc_reg/Madd_pc_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  pc_reg/Madd_pc_addsub0000_cy<5> (pc_reg/Madd_pc_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  pc_reg/Madd_pc_addsub0000_cy<6> (pc_reg/Madd_pc_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  pc_reg/Madd_pc_addsub0000_cy<7> (pc_reg/Madd_pc_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  pc_reg/Madd_pc_addsub0000_cy<8> (pc_reg/Madd_pc_addsub0000_cy<8>)
+     MUXCY:CI->O           0   0.052   0.000  pc_reg/Madd_pc_addsub0000_cy<9> (pc_reg/Madd_pc_addsub0000_cy<9>)
+     XORCY:CI->O           1   0.699   0.387  pc_reg/Madd_pc_addsub0000_xor<10> (pc_reg/pc_addsub0000<10>)
+     LUT3:I2->O            1   0.612   0.000  pc_reg/pc_mux0000<10>1 (pc_reg/pc_mux0000<10>)
+     FDR_1:D                   0.268          pc_reg/pc_10
+    ----------------------------------------
+    Total                      4.495ns (3.418ns logic, 1.077ns route)
+                                       (76.0% logic, 24.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 33 / 22
+-------------------------------------------------------------------------
+Offset:              2.931ns (Levels of Logic = 2)
+  Source:            control_use_npc (PAD)
+  Destination:       pc_reg/pc_2 (FF)
+  Destination Clock: clock falling
+
+  Data Path: control_use_npc to pc_reg/pc_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.106   0.945  control_use_npc_IBUF (control_use_npc_IBUF)
+     LUT3:I0->O            1   0.612   0.000  pc_reg/pc_mux0000<1>1 (pc_reg/pc_mux0000<1>)
+     FDR_1:D                   0.268          pc_reg/pc_1
+    ----------------------------------------
+    Total                      2.931ns (1.986ns logic, 0.945ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              5.962ns (Levels of Logic = 2)
+  Source:            pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp9x9.ram (RAM)
+  Destination:       instruction<31> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp9x9.ram to instruction<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S9_S9:CLKA->DOA4    1   2.436   0.357  ramloop[3].ram.r/s3_init.ram/dpram.dp9x9.ram (DOUTA<31>)
+     end scope: 'U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr'
+     end scope: 'pmemory'
+     OBUF:I->O                 3.169          instruction_31_OBUF (instruction<31>)
+    ----------------------------------------
+    Total                      5.962ns (5.605ns logic, 0.357ns route)
+                                       (94.0% logic, 6.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.37 secs
+ 
 --> 
 
-Total memory usage is 240972 kilobytes
+Total memory usage is 271024 kilobytes
 
-Number of errors   :    3 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 
