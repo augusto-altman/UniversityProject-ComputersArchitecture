@@ -28,9 +28,23 @@ module stage_exe(
     input control_use_b,
     input control_is_branch,
 	 input [31:0] npc,
+	 //Signals for stage_mem
+	 input [1:0] wbi,
+    input M,
+	 input [3:0] regaddr,
+	 //data_b
+	 //out
+	 //end -- Signals for stage_mem
     output reg [31:0] out,
     output reg use_npc,
-    output reg [31:0] jump_address
+    output reg [31:0] jump_address,
+	 //Signals for stage_mem
+	 output reg [1:0] wbi_o,
+    output reg M_o,
+	 output reg [3:0] regaddr_o,
+	 output reg [31:0] data_b_o
+	 //out
+	 //end -- Signals for stage_mem
     );
 
 	wire [31:0] t_out, b_entry;
@@ -60,6 +74,10 @@ module stage_exe(
 			use_npc = ~(control_is_branch && t_zero);
 			jump_address = npc + data_imm;
 		end
+		wbi_o = wbi;
+		M_o = M;
+		regaddr_o = regaddr;
+		data_b_o = data_b;
 	end
 
 endmodule

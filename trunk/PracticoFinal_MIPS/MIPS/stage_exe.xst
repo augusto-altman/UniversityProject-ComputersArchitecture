@@ -15,6 +15,7 @@ run
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
+-sd {"ipcore_dir"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /
@@ -42,7 +43,7 @@ run
 -async_to_sync NO
 -mult_style Auto
 -iobuf YES
--max_fanout 500
+-max_fanout 100000
 -bufg 24
 -register_duplication YES
 -register_balancing No

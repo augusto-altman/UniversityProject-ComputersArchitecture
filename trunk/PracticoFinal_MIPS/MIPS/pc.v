@@ -29,7 +29,7 @@ module pc(
 	reg [31:0] pc;
 	assign instruction_address = pc;
 	
-	always @ (posedge clock)
+	always @ (negedge clock)
 	begin
 		if (reset)
 			pc = 32'b0;

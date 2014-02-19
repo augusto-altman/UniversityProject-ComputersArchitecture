@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: stage_exe.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -97,6 +97,9 @@ BRAM Utilization Ratio             : 100
 Verilog 2001                       : YES
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
 
 =========================================================================
 
@@ -146,12 +149,16 @@ Unit <alu> synthesized.
 
 Synthesizing Unit <stage_exe>.
     Related source file is "stage_exe.v".
+    Found 1-bit register for signal <M_o>.
+    Found 32-bit register for signal <data_b_o>.
     Found 32-bit register for signal <jump_address>.
     Found 32-bit register for signal <out>.
+    Found 4-bit register for signal <regaddr_o>.
     Found 1-bit register for signal <use_npc>.
-    Found 32-bit adder for signal <jump_address$add0000> created at line 61.
+    Found 2-bit register for signal <wbi_o>.
+    Found 32-bit adder for signal <jump_address$add0000> created at line 75.
     Summary:
-	inferred  65 D-type flip-flop(s).
+	inferred 104 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 Unit <stage_exe> synthesized.
 
@@ -164,9 +171,11 @@ Macro Statistics
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
  32-bit addsub                                         : 1
-# Registers                                            : 3
- 1-bit register                                        : 1
- 32-bit register                                       : 2
+# Registers                                            : 7
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+ 32-bit register                                       : 3
+ 4-bit register                                        : 1
 
 =========================================================================
 
@@ -182,8 +191,8 @@ Macro Statistics
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
  32-bit addsub                                         : 1
-# Registers                                            : 65
- Flip-Flops                                            : 65
+# Registers                                            : 104
+ Flip-Flops                                            : 104
 
 =========================================================================
 
@@ -205,8 +214,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 65
- Flip-Flops                                            : 65
+# Registers                                            : 104
+ Flip-Flops                                            : 104
 
 =========================================================================
 
@@ -232,7 +241,7 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 200
+# IOs                              : 246
 
 Cell Usage :
 # BELS                             : 383
@@ -244,14 +253,15 @@ Cell Usage :
 #      MUXF5                       : 28
 #      VCC                         : 1
 #      XORCY                       : 64
-# FlipFlops/Latches                : 65
+# FlipFlops/Latches                : 104
+#      FD                          : 39
 #      FDR                         : 64
 #      FDS                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 199
-#      IBUF                        : 134
-#      OBUF                        : 65
+# IO Buffers                       : 245
+#      IBUF                        : 141
+#      OBUF                        : 104
 =========================================================================
 
 Device utilization summary:
@@ -261,9 +271,9 @@ Selected Device : 3s100ecp132-5
 
  Number of Slices:                      116  out of    960    12%  
  Number of 4 input LUTs:                218  out of   1920    11%  
- Number of IOs:                         200
- Number of bonded IOBs:                 200  out of     83   240% (*) 
-    IOB Flip Flops:                      65
+ Number of IOs:                         246
+ Number of bonded IOBs:                 246  out of     83   296% (*) 
+    IOB Flip Flops:                     104
  Number of GCLKs:                         1  out of     24     4%  
 
 WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
@@ -289,7 +299,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clock                              | BUFGP                  | 65    |
+clock                              | BUFGP                  | 104   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -311,7 +321,7 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
-  Total number of paths / destination ports: 16674 / 130
+  Total number of paths / destination ports: 16713 / 169
 -------------------------------------------------------------------------
 Offset:              11.416ns (Levels of Logic = 37)
   Source:            control_alu_op<0> (PAD)
@@ -366,19 +376,19 @@ Offset:              11.416ns (Levels of Logic = 37)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
-  Total number of paths / destination ports: 65 / 65
+  Total number of paths / destination ports: 104 / 104
 -------------------------------------------------------------------------
 Offset:              4.040ns (Levels of Logic = 1)
-  Source:            use_npc (FF)
-  Destination:       use_npc (PAD)
+  Source:            M_o (FF)
+  Destination:       M_o (PAD)
   Source Clock:      clock rising
 
-  Data Path: use_npc to use_npc
+  Data Path: M_o to M_o
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q              1   0.514   0.357  use_npc (use_npc_OBUF)
-     OBUF:I->O                 3.169          use_npc_OBUF (use_npc)
+     FD:C->Q               1   0.514   0.357  M_o (M_o_OBUF)
+     OBUF:I->O                 3.169          M_o_OBUF (M_o)
     ----------------------------------------
     Total                      4.040ns (3.683ns logic, 0.357ns route)
                                        (91.2% logic, 8.8% route)
@@ -386,12 +396,12 @@ Offset:              4.040ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.42 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.84 secs
  
 --> 
 
-Total memory usage is 258736 kilobytes
+Total memory usage is 259184 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
