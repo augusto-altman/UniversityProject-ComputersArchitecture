@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-02-15T20:07:29</DateModified>
-  <ModuleName>program_memory</ModuleName>
+  <DateModified>2014-02-22T13:16:37</DateModified>
+  <ModuleName>stage_exe</ModuleName>
   <SummaryTimeStamp>2014-02-15T20:07:28</SummaryTimeStamp>
-  <SavedFilePath>C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/iseconfig/stage_exe.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/iseconfig/stage_exe.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-15T20:02:43</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
