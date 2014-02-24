@@ -1,0 +1,3 @@
+verilog work "branch_control.v"
+verilog work "branch_control_test1.v"
+verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"
