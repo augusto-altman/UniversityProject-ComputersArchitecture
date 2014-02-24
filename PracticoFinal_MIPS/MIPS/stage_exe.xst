@@ -1,6 +1,9 @@
-set -tmpdir "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/xst/projnav.tmp"
-set -xsthdpdir "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn stage_exe.prj
+-ofn stage_exe
+-ofmt NGC
 -p xc6slx16-3-csg324
 -top stage_exe
 -opt_mode Speed
@@ -48,4 +51,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn stage_exe.prj

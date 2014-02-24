@@ -3,32 +3,37 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: stage_exe.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
-  2) HDL Compilation
-  3) Design Hierarchy Analysis
-  4) HDL Analysis
-  5) HDL Synthesis
-     5.1) HDL Synthesis Report
-  6) Advanced HDL Synthesis
-     6.1) Advanced HDL Synthesis Report
-  7) Low Level Synthesis
-  8) Partition Report
-  9) Final Report
-	9.1) Device utilization summary
-	9.2) Partition Resource Summary
-	9.3) TIMING REPORT
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
 
 
 =========================================================================
@@ -36,13 +41,12 @@ TABLE OF CONTENTS
 =========================================================================
 ---- Source Parameters
 Input File Name                    : "stage_exe.prj"
-Input Format                       : mixed
 Ignore Synthesis Constraint File   : NO
 
 ---- Target Parameters
 Output File Name                   : "stage_exe"
 Output Format                      : NGC
-Target Device                      : xc3s100e-5-cp132
+Target Device                      : xc6slx16-3-csg324
 
 ---- Source Options
 Top Module Name                    : stage_exe
@@ -53,35 +57,32 @@ FSM Style                          : LUT
 RAM Extraction                     : Yes
 RAM Style                          : Auto
 ROM Extraction                     : Yes
-Mux Style                          : Auto
-Decoder Extraction                 : YES
-Priority Encoder Extraction        : Yes
 Shift Register Extraction          : YES
-Logical Shifter Extraction         : YES
-XOR Collapsing                     : YES
 ROM Style                          : Auto
-Mux Extraction                     : Yes
 Resource Sharing                   : YES
 Asynchronous To Synchronous        : NO
-Multiplier Style                   : Auto
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
 Automatic Register Balancing       : No
 
 ---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
 Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
-Add Generic Clock Buffer(BUFG)     : 24
+Add Generic Clock Buffer(BUFG)     : 16
 Register Duplication               : YES
-Slice Packing                      : YES
 Optimize Instantiated Primitives   : NO
-Use Clock Enable                   : Yes
-Use Synchronous Set                : Yes
-Use Synchronous Reset              : Yes
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
 Pack IO Registers into IOBs        : Auto
 Equivalent register Removal        : YES
 
 ---- General Options
 Optimization Goal                  : Speed
 Optimization Effort                : 1
+Power Reduction                    : NO
 Keep Hierarchy                     : No
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
@@ -94,7 +95,7 @@ Bus Delimiter                      : <>
 Case Specifier                     : Maintain
 Slice Utilization Ratio            : 100
 BRAM Utilization Ratio             : 100
-Verilog 2001                       : YES
+DSP48 Utilization Ratio            : 100
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
@@ -105,69 +106,66 @@ Cores Search Directories           : {"ipcore_dir"  }
 
 
 =========================================================================
-*                          HDL Compilation                              *
+*                          HDL Parsing                                  *
 =========================================================================
-Compiling verilog file "alu.v" in library work
-Compiling verilog file "stage_exe.v" in library work
-Module <alu> compiled
-Module <stage_exe> compiled
-No errors in compilation
-Analysis of file <"stage_exe.prj"> succeeded.
- 
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu_control.v" into library work
+Parsing module <alu_control>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe.v" into library work
+Parsing module <stage_exe>.
 
 =========================================================================
-*                     Design Hierarchy Analysis                         *
+*                            HDL Elaboration                            *
 =========================================================================
-Analyzing hierarchy for module <stage_exe> in library <work>.
 
-Analyzing hierarchy for module <alu> in library <work>.
+Elaborating module <stage_exe>.
 
+Elaborating module <alu>.
 
-=========================================================================
-*                            HDL Analysis                               *
-=========================================================================
-Analyzing top module <stage_exe>.
-Module <stage_exe> is correct for synthesis.
- 
-Analyzing module <alu> in library <work>.
-Module <alu> is correct for synthesis.
- 
+Elaborating module <alu_control>.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
-Performing bidirectional port resolution...
-
-Synthesizing Unit <alu>.
-    Related source file is "alu.v".
-    Found 32-bit 8-to-1 multiplexer for signal <out>.
-    Found 32-bit addsub for signal <out$addsub0000>.
-    Found 32-bit shifter logical left for signal <out$shift0001> created at line 41.
-    Found 32-bit xor2 for signal <out$xor0000> created at line 40.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  32 Multiplexer(s).
-	inferred   1 Combinational logic shifter(s).
-Unit <alu> synthesized.
-
-
 Synthesizing Unit <stage_exe>.
-    Related source file is "stage_exe.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe.v".
+    Found 32-bit register for signal <jump_address>.
+    Found 1-bit register for signal <zero>.
+    Found 1-bit register for signal <is_jump_o>.
+    Found 1-bit register for signal <branch_eq_o>.
+    Found 1-bit register for signal <branch_inc_o>.
+    Found 2-bit register for signal <wbi_o>.
     Found 1-bit register for signal <M_o>.
     Found 32-bit register for signal <data_b_o>.
-    Found 32-bit register for signal <jump_address>.
+    Found 5-bit register for signal <regaddr_o>.
     Found 32-bit register for signal <out>.
-    Found 4-bit register for signal <regaddr_o>.
-    Found 1-bit register for signal <use_npc>.
-    Found 2-bit register for signal <wbi_o>.
-    Found 32-bit adder for signal <jump_address$add0000> created at line 77.
+    Found 32-bit adder for signal <npc[31]_data_imm[31]_add_2_OUT> created at line 85.
     Summary:
-	inferred 104 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
+	inferred 108 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
 Unit <stage_exe> synthesized.
 
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+Synthesizing Unit <alu>.
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu.v".
+    Found 32-bit subtractor for signal <a[31]_b[31]_sub_3_OUT> created at line 35.
+    Found 32-bit adder for signal <a[31]_b[31]_add_1_OUT> created at line 34.
+    Found 32-bit shifter logical left for signal <b[31]_a[31]_shift_left_10_OUT> created at line 41
+    Found 32-bit shifter logical right for signal <b[31]_a[31]_shift_right_12_OUT> created at line 43
+    Found 32-bit 11-to-1 multiplexer for signal <out> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <alu_control>.
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu_control.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <alu_control> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -176,19 +174,23 @@ Macro Statistics
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
  32-bit addsub                                         : 1
-# Registers                                            : 7
- 1-bit register                                        : 2
+# Registers                                            : 10
+ 1-bit register                                        : 5
  2-bit register                                        : 1
  32-bit register                                       : 3
- 4-bit register                                        : 1
-# Multiplexers                                         : 1
- 32-bit 8-to-1 multiplexer                             : 1
-# Logic shifters                                       : 1
+ 5-bit register                                        : 1
+# Multiplexers                                         : 14
+ 32-bit 2-to-1 multiplexer                             : 12
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
  32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
 # Xors                                                 : 1
  32-bit xor2                                           : 1
 
 =========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -202,12 +204,15 @@ Macro Statistics
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
  32-bit addsub                                         : 1
-# Registers                                            : 104
- Flip-Flops                                            : 104
-# Multiplexers                                         : 1
- 32-bit 8-to-1 multiplexer                             : 1
-# Logic shifters                                       : 1
+# Registers                                            : 108
+ Flip-Flops                                            : 108
+# Multiplexers                                         : 14
+ 32-bit 2-to-1 multiplexer                             : 12
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
  32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
 # Xors                                                 : 1
  32-bit xor2                                           : 1
 
@@ -223,7 +228,7 @@ Optimizing unit <alu> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block stage_exe, actual ratio is 33.
+Found area constraint ratio of 100 (+ 5) on block stage_exe, actual ratio is 6.
 
 Final Macro Processing ...
 
@@ -231,8 +236,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 104
- Flip-Flops                                            : 104
+# Registers                                            : 108
+ Flip-Flops                                            : 108
 
 =========================================================================
 
@@ -248,53 +253,57 @@ Partition Implementation Status
 -------------------------------
 
 =========================================================================
-*                            Final Report                               *
+*                            Design Summary                             *
 =========================================================================
-Final Results
-RTL Top Level Output File Name     : stage_exe.ngr
-Top Level Output File Name         : stage_exe
-Output Format                      : NGC
-Optimization Goal                  : Speed
-Keep Hierarchy                     : No
 
-Design Statistics
-# IOs                              : 251
+Top Level Output File Name         : stage_exe.ngc
 
-Cell Usage :
-# BELS                             : 750
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 559
 #      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 32
-#      LUT2                        : 104
-#      LUT3                        : 173
-#      LUT4                        : 157
-#      MUXCY                       : 78
-#      MUXF5                       : 106
-#      MUXF6                       : 32
-#      VCC                         : 1
+#      INV                         : 1
+#      LUT2                        : 44
+#      LUT3                        : 79
+#      LUT4                        : 13
+#      LUT5                        : 97
+#      LUT6                        : 195
+#      MUXCY                       : 62
+#      MUXF7                       : 3
 #      XORCY                       : 64
-# FlipFlops/Latches                : 104
-#      FD                          : 39
+# FlipFlops/Latches                : 108
+#      FDE                         : 44
 #      FDR                         : 64
-#      FDS                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 250
-#      IBUF                        : 146
-#      OBUF                        : 104
-=========================================================================
+# IO Buffers                       : 259
+#      IBUF                        : 151
+#      OBUF                        : 108
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s100ecp132-5 
+Selected Device : 6slx16csg324-3 
 
- Number of Slices:                      248  out of    960    25%  
- Number of 4 input LUTs:                468  out of   1920    24%  
- Number of IOs:                         251
- Number of bonded IOBs:                 251  out of     83   302% (*) 
-    IOB Flip Flops:                     104
- Number of GCLKs:                         1  out of     24     4%  
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  429  out of   9112     4%  
+    Number used as Logic:               429  out of   9112     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    429
+   Number with an unused Flip Flop:     429  out of    429   100%  
+   Number with an unused LUT:             0  out of    429     0%  
+   Number of fully used LUT-FF pairs:     0  out of    429     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                         260
+ Number of bonded IOBs:                 260  out of    232   112% (*) 
+    IOB Flip Flops/Latches:             108
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
@@ -308,7 +317,7 @@ Partition Resource Summary:
 
 
 =========================================================================
-TIMING REPORT
+Timing Report
 
 NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
       FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
@@ -319,7 +328,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clock                              | BUFGP                  | 104   |
+clock                              | BUFGP                  | 108   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -328,84 +337,79 @@ No asynchronous control signals found in this design
 
 Timing Summary:
 ---------------
-Speed Grade: -5
+Speed Grade: -3
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 13.207ns
-   Maximum output required time after clock: 4.040ns
+   Minimum input arrival time before clock: 12.665ns
+   Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
-Timing Detail:
---------------
+Timing Details:
+---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
-  Total number of paths / destination ports: 19091 / 169
+  Total number of paths / destination ports: 41929 / 216
 -------------------------------------------------------------------------
-Offset:              13.207ns (Levels of Logic = 21)
+Offset:              12.665ns (Levels of Logic = 11)
   Source:            control_use_b (PAD)
-  Destination:       use_npc (FF)
+  Destination:       zero (FF)
   Destination Clock: clock rising
 
-  Data Path: control_use_b to use_npc
+  Data Path: control_use_b to zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            97   1.106   1.242  control_use_b_IBUF (control_use_b_IBUF)
-     LUT3:I0->O            5   0.612   0.607  b_entry<13>1 (b_entry<13>)
-     LUT3:I1->O            3   0.612   0.520  arith_log_unit/Sh147 (arith_log_unit/Sh1320)
-     LUT3:I1->O            1   0.612   0.000  arith_log_unit/Sh13311 (arith_log_unit/Sh1331)
-     MUXF5:I1->O           3   0.278   0.481  arith_log_unit/Sh1331_f5 (arith_log_unit/Sh13)
-     LUT3:I2->O            3   0.612   0.481  arith_log_unit/out_shift0000<21>21 (arith_log_unit/out_shift0000<21>21)
-     LUT3:I2->O            1   0.612   0.000  arith_log_unit/out_shift0000<25>321 (arith_log_unit/out_shift0000<25>321)
-     MUXF5:I1->O           1   0.278   0.426  arith_log_unit/out_shift0000<25>32_f5 (arith_log_unit/out_shift0000<25>32)
-     LUT4:I1->O            1   0.612   0.360  arith_log_unit/Mmux_out_434_SW0 (N70)
-     LUT4:I3->O            1   0.612   0.000  arith_log_unit/Mmux_out_434 (arith_log_unit/Mmux_out_417)
-     MUXF5:I1->O           1   0.278   0.000  arith_log_unit/Mmux_out_3_f5_16 (arith_log_unit/Mmux_out_3_f517)
-     MUXF6:I1->O           2   0.451   0.532  arith_log_unit/Mmux_out_2_f6_16 (t_out<25>)
-     LUT4:I0->O            1   0.612   0.000  use_npc_not0001_wg_lut<1> (use_npc_not0001_wg_lut<1>)
-     MUXCY:S->O            1   0.404   0.000  use_npc_not0001_wg_cy<1> (use_npc_not0001_wg_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  use_npc_not0001_wg_cy<2> (use_npc_not0001_wg_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  use_npc_not0001_wg_cy<3> (use_npc_not0001_wg_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  use_npc_not0001_wg_cy<4> (use_npc_not0001_wg_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  use_npc_not0001_wg_cy<5> (use_npc_not0001_wg_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  use_npc_not0001_wg_cy<6> (use_npc_not0001_wg_cy<6>)
-     MUXCY:CI->O           1   0.052   0.000  use_npc_not0001_wg_cy<7> (use_npc_not0001_wg_cy<7>)
-     MUXCY:CI->O           1   0.289   0.000  use_npc_not0001_wg_cy<8> (use_npc_not0001)
-     FDS:D                     0.268          use_npc
+     IBUF:I->O            89   1.222   2.033  control_use_b_IBUF (control_use_b_IBUF)
+     LUT3:I0->O           11   0.205   1.130  Mmux_b_entry111 (b_entry<19>)
+     LUT6:I2->O            2   0.203   0.721  arith_log_unit/Sh201 (arith_log_unit/Sh20)
+     LUT3:I1->O            2   0.203   0.617  arith_log_unit/Sh5211 (arith_log_unit/Sh521)
+     LUT6:I5->O            1   0.205   0.924  arith_log_unit/Mmux_out10397 (arith_log_unit/Mmux_out10397)
+     LUT5:I0->O            1   0.203   0.580  arith_log_unit/Mmux_out10398_SW0 (N36)
+     LUT6:I5->O            1   0.205   0.924  arith_log_unit/Mmux_out10398 (arith_log_unit/Mmux_out10398)
+     LUT6:I1->O            2   0.203   0.721  arith_log_unit/Mmux_out10399 (t_out<20>)
+     LUT6:I4->O            1   0.203   0.827  arith_log_unit/zero2 (arith_log_unit/zero1)
+     LUT6:I2->O            1   0.203   0.827  arith_log_unit/zero4 (arith_log_unit/zero3)
+     LUT6:I2->O            1   0.203   0.000  arith_log_unit/zero7 (t_zero)
+     FDE:D                     0.102          zero
     ----------------------------------------
-    Total                     13.207ns (8.557ns logic, 4.650ns route)
-                                       (64.8% logic, 35.2% route)
+    Total                     12.665ns (3.360ns logic, 9.305ns route)
+                                       (26.5% logic, 73.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
-  Total number of paths / destination ports: 104 / 104
+  Total number of paths / destination ports: 108 / 108
 -------------------------------------------------------------------------
-Offset:              4.040ns (Levels of Logic = 1)
-  Source:            M_o (FF)
-  Destination:       M_o (PAD)
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            jump_address_31 (FF)
+  Destination:       jump_address<31> (PAD)
   Source Clock:      clock rising
 
-  Data Path: M_o to M_o
+  Data Path: jump_address_31 to jump_address<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.514   0.357  M_o (M_o_OBUF)
-     OBUF:I->O                 3.169          M_o_OBUF (M_o)
+     FDR:C->Q              1   0.447   0.579  jump_address_31 (jump_address_31)
+     OBUF:I->O                 2.571          jump_address_31_OBUF (jump_address<31>)
     ----------------------------------------
-    Total                      4.040ns (3.683ns logic, 0.357ns route)
-                                       (91.2% logic, 8.8% route)
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 18.94 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.20 secs
  
 --> 
 
-Total memory usage is 268016 kilobytes
+Total memory usage is 257076 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

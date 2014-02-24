@@ -45,7 +45,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 
 
-set device xc3s100ecp132-5
+set device xc6slx16csg324-3
 set projName pmem
 set design pmem
 set projDir [file dirname [info script]]

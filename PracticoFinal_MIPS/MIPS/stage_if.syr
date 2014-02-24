@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.23 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: stage_if.prj
 
@@ -179,10 +179,6 @@ Macro Statistics
 
 Reading core <ipcore_dir/pmem.ngc>.
 Loading core <pmem> for timing and area information for instance <pmemory>.
-INFO:Xst:1901 - Instance ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr of type RAMB16_S9_S9 has been replaced by RAMB16BWER
-INFO:Xst:1901 - Instance ramloop[1].ram.r/s3_init.ram/dpram.dp9x9.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr of type RAMB16_S9_S9 has been replaced by RAMB16BWER
-INFO:Xst:1901 - Instance ramloop[2].ram.r/s3_init.ram/dpram.dp9x9.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr of type RAMB16_S9_S9 has been replaced by RAMB16BWER
-INFO:Xst:1901 - Instance ramloop[3].ram.r/s3_init.ram/dpram.dp9x9.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr of type RAMB16_S9_S9 has been replaced by RAMB16BWER
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -325,12 +321,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                                                                                                       | Load  |
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
-clock                              | BUFGP                                                                                                                       | 15    |
-pmemory/N1                         | NONE(pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram)| 4     |
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                            | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+clock                              | BUFGP                                                                                                                            | 15    |
+pmemory/N1                         | NONE(pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -357,18 +353,18 @@ Timing constraint: Default period analysis for Clock 'clock'
 -------------------------------------------------------------------------
 Delay:               1.511ns (Levels of Logic = 1)
   Source:            pc_reg/pc_9 (FF)
-  Destination:       pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram (RAM)
+  Destination:       pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Source Clock:      clock falling
   Destination Clock: clock rising
 
-  Data Path: pc_reg/pc_9 to pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram
+  Data Path: pc_reg/pc_9 to pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR_1:C->Q            5   0.447   0.714  pc_reg/pc_9 (pc_reg/pc_9)
      begin scope: 'pmemory:addra<9>'
      begin scope: 'pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr:ADDRA<9>'
-     RAMB16BWER:ADDRA12        0.350          ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram
+     RAMB16BWER:ADDRA12        0.350          ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
     ----------------------------------------
     Total                      1.511ns (0.797ns logic, 0.714ns route)
                                        (52.7% logic, 47.3% route)
@@ -398,15 +394,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
   Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
 Offset:              5.000ns (Levels of Logic = 2)
-  Source:            pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp9x9.ram (RAM)
+  Source:            pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Destination:       instruction<31> (PAD)
   Source Clock:      clock rising
 
-  Data Path: pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp9x9.ram to instruction<31>
+  Data Path: pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram to instruction<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKA->DOA4    1   1.850   0.579  ramloop[3].ram.r/s3_init.ram/dpram.dp9x9.ram (DOUTA<31>)
+     RAMB16BWER:CLKA->DOA4    1   1.850   0.579  ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (DOUTA<31>)
      end scope: 'pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr:DOUTA<31>'
      end scope: 'pmemory:douta<31>'
      OBUF:I->O                 2.571          instruction_31_OBUF (instruction<31>)
@@ -430,14 +426,14 @@ clock          |         |    1.511|    2.739|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 19.14 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.17 secs
  
 --> 
 
-Total memory usage is 256180 kilobytes
+Total memory usage is 255924 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   23 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

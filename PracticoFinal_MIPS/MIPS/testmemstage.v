@@ -27,7 +27,7 @@ module testmemstage;
 	// Inputs
 	reg clk;
 	reg [1:0] wbi;
-	reg [3:0] regaddr;
+	reg [4:0] regaddr;
 	reg M;
 	reg [31:0] data;
 	reg [31:0] dataaddr;
@@ -36,7 +36,7 @@ module testmemstage;
 	wire [1:0] wbo;
 	wire [31:0] datafrommem;
 	wire [31:0] datafromimm;
-	wire [3:0] regaddrout;
+	wire [4:0] regaddrout;
 
 	// Instantiate the Unit Under Test (UUT)
 	mem uut (

@@ -30,7 +30,7 @@ cp ../example_design/pmem_exdes.ucf results/
 cd results
 
 echo 'Running ngdbuild'
-ngdbuild -p xc3s100e-cp132-5 pmem_exdes
+ngdbuild -p xc6slx16-csg324-3 pmem_exdes
 
 echo 'Running map'
 map pmem_exdes -o mapped.ncd -pr i

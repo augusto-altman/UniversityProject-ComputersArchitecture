@@ -24,7 +24,7 @@ module alu_control(
     output reg [3:0] alu_op
     );
 
-	always @ (oper)
+	always @ (*)
 	begin
 		if(oper != 4'b0010)
 		begin
@@ -60,6 +60,7 @@ module alu_control(
 				6'b000111: alu_op = 4'b1001; //SRAV (sra)
 				6'b000010: alu_op = 4'b1000; //SRL (srl)
 				6'b000110: alu_op = 4'b1000; //SRLV (srl)
+				default: alu_op = 0; //Will never happen (add)
 			endcase
 		end
 	end
