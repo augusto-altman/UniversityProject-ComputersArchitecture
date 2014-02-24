@@ -19,11 +19,11 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module alu(
-    input signed [31:0] a,
-    input signed [31:0] b,
-    output reg signed [31:0] out,
+    input [31:0] a,
+    input [31:0] b,
+    output reg [31:0] out,
     output zero,
-    input [2:0] aluop
+    input [3:0] aluop
     );
 	 
 	assign zero = ~(out && 32'b11111111111111111111111111111111);
@@ -31,11 +31,16 @@ module alu(
 	always @ (*)
 	begin
 		case (aluop)
-			3'b000 : out = a + b;
-			3'b001 : out = a - b;
-			3'b010 : out = a | b;
-			3'b011 : out = a & b;
-			3'b100 : out = ~a;
+			4'b0000 : out = a + b;
+			4'b0001 : out = a - b;
+			4'b0010 : out = a | b;
+			4'b0011 : out = ~(a | b);
+			4'b0100 : out = a & b;
+			4'b0101 : out = ~(a & b);
+			4'b0110 : out = a ^ b;
+			4'b0111 : out = b << a;
+			4'b1000 : out = b >> a;
+			4'b1001 : out = b >>> a;
 			default : out = 32'b0;
 		endcase
 	end

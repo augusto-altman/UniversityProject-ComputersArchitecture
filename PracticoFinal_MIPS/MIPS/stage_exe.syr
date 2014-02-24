@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Reading design: stage_exe.prj
 
@@ -141,9 +141,14 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <alu>.
     Related source file is "alu.v".
+    Found 32-bit 8-to-1 multiplexer for signal <out>.
     Found 32-bit addsub for signal <out$addsub0000>.
+    Found 32-bit shifter logical left for signal <out$shift0001> created at line 41.
+    Found 32-bit xor2 for signal <out$xor0000> created at line 40.
     Summary:
 	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
 Unit <alu> synthesized.
 
 
@@ -156,7 +161,7 @@ Synthesizing Unit <stage_exe>.
     Found 4-bit register for signal <regaddr_o>.
     Found 1-bit register for signal <use_npc>.
     Found 2-bit register for signal <wbi_o>.
-    Found 32-bit adder for signal <jump_address$add0000> created at line 75.
+    Found 32-bit adder for signal <jump_address$add0000> created at line 77.
     Summary:
 	inferred 104 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
@@ -176,6 +181,12 @@ Macro Statistics
  2-bit register                                        : 1
  32-bit register                                       : 3
  4-bit register                                        : 1
+# Multiplexers                                         : 1
+ 32-bit 8-to-1 multiplexer                             : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
 
 =========================================================================
 
@@ -193,6 +204,12 @@ Macro Statistics
  32-bit addsub                                         : 1
 # Registers                                            : 104
  Flip-Flops                                            : 104
+# Multiplexers                                         : 1
+ 32-bit 8-to-1 multiplexer                             : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
 
 =========================================================================
 
@@ -206,7 +223,7 @@ Optimizing unit <alu> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block stage_exe, actual ratio is 12.
+Found area constraint ratio of 100 (+ 5) on block stage_exe, actual ratio is 33.
 
 Final Macro Processing ...
 
@@ -241,16 +258,19 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 246
+# IOs                              : 251
 
 Cell Usage :
-# BELS                             : 383
+# BELS                             : 750
 #      GND                         : 1
-#      LUT2                        : 33
-#      LUT3                        : 113
-#      LUT4                        : 72
-#      MUXCY                       : 71
-#      MUXF5                       : 28
+#      INV                         : 2
+#      LUT1                        : 32
+#      LUT2                        : 104
+#      LUT3                        : 173
+#      LUT4                        : 157
+#      MUXCY                       : 78
+#      MUXF5                       : 106
+#      MUXF6                       : 32
 #      VCC                         : 1
 #      XORCY                       : 64
 # FlipFlops/Latches                : 104
@@ -259,8 +279,8 @@ Cell Usage :
 #      FDS                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 245
-#      IBUF                        : 141
+# IO Buffers                       : 250
+#      IBUF                        : 146
 #      OBUF                        : 104
 =========================================================================
 
@@ -269,10 +289,10 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-5 
 
- Number of Slices:                      116  out of    960    12%  
- Number of 4 input LUTs:                218  out of   1920    11%  
- Number of IOs:                         246
- Number of bonded IOBs:                 246  out of     83   296% (*) 
+ Number of Slices:                      248  out of    960    25%  
+ Number of 4 input LUTs:                468  out of   1920    24%  
+ Number of IOs:                         251
+ Number of bonded IOBs:                 251  out of     83   302% (*) 
     IOB Flip Flops:                     104
  Number of GCLKs:                         1  out of     24     4%  
 
@@ -311,7 +331,7 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 11.416ns
+   Minimum input arrival time before clock: 13.207ns
    Maximum output required time after clock: 4.040ns
    Maximum combinational path delay: No path found
 
@@ -321,45 +341,29 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
-  Total number of paths / destination ports: 16713 / 169
+  Total number of paths / destination ports: 19091 / 169
 -------------------------------------------------------------------------
-Offset:              11.416ns (Levels of Logic = 37)
-  Source:            control_alu_op<0> (PAD)
+Offset:              13.207ns (Levels of Logic = 21)
+  Source:            control_use_b (PAD)
   Destination:       use_npc (FF)
   Destination Clock: clock rising
 
-  Data Path: control_alu_op<0> to use_npc
+  Data Path: control_use_b to use_npc
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            34   1.106   1.225  control_alu_op_0_IBUF (control_alu_op_0_IBUF)
-     LUT3:I0->O           33   0.612   1.103  arith_log_unit/out_mux00002 (arith_log_unit/out_mux0000)
-     LUT3:I2->O            1   0.612   0.000  arith_log_unit/Maddsub_out_addsub0000_lut<0> (arith_log_unit/Maddsub_out_addsub0000_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<0> (arith_log_unit/Maddsub_out_addsub0000_cy<0>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<1> (arith_log_unit/Maddsub_out_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<2> (arith_log_unit/Maddsub_out_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<3> (arith_log_unit/Maddsub_out_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<4> (arith_log_unit/Maddsub_out_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<5> (arith_log_unit/Maddsub_out_addsub0000_cy<5>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<6> (arith_log_unit/Maddsub_out_addsub0000_cy<6>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<7> (arith_log_unit/Maddsub_out_addsub0000_cy<7>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<8> (arith_log_unit/Maddsub_out_addsub0000_cy<8>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<9> (arith_log_unit/Maddsub_out_addsub0000_cy<9>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<10> (arith_log_unit/Maddsub_out_addsub0000_cy<10>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<11> (arith_log_unit/Maddsub_out_addsub0000_cy<11>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<12> (arith_log_unit/Maddsub_out_addsub0000_cy<12>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<13> (arith_log_unit/Maddsub_out_addsub0000_cy<13>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<14> (arith_log_unit/Maddsub_out_addsub0000_cy<14>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<15> (arith_log_unit/Maddsub_out_addsub0000_cy<15>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<16> (arith_log_unit/Maddsub_out_addsub0000_cy<16>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<17> (arith_log_unit/Maddsub_out_addsub0000_cy<17>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<18> (arith_log_unit/Maddsub_out_addsub0000_cy<18>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<19> (arith_log_unit/Maddsub_out_addsub0000_cy<19>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<20> (arith_log_unit/Maddsub_out_addsub0000_cy<20>)
-     MUXCY:CI->O           1   0.051   0.000  arith_log_unit/Maddsub_out_addsub0000_cy<21> (arith_log_unit/Maddsub_out_addsub0000_cy<21>)
-     XORCY:CI->O           1   0.699   0.426  arith_log_unit/Maddsub_out_addsub0000_xor<22> (arith_log_unit/out_addsub0000<22>)
-     LUT4:I1->O            1   0.612   0.509  arith_log_unit/out<22>39 (arith_log_unit/out<22>39)
-     LUT3:I0->O            2   0.612   0.532  arith_log_unit/out<22>53 (t_out<22>)
+     IBUF:I->O            97   1.106   1.242  control_use_b_IBUF (control_use_b_IBUF)
+     LUT3:I0->O            5   0.612   0.607  b_entry<13>1 (b_entry<13>)
+     LUT3:I1->O            3   0.612   0.520  arith_log_unit/Sh147 (arith_log_unit/Sh1320)
+     LUT3:I1->O            1   0.612   0.000  arith_log_unit/Sh13311 (arith_log_unit/Sh1331)
+     MUXF5:I1->O           3   0.278   0.481  arith_log_unit/Sh1331_f5 (arith_log_unit/Sh13)
+     LUT3:I2->O            3   0.612   0.481  arith_log_unit/out_shift0000<21>21 (arith_log_unit/out_shift0000<21>21)
+     LUT3:I2->O            1   0.612   0.000  arith_log_unit/out_shift0000<25>321 (arith_log_unit/out_shift0000<25>321)
+     MUXF5:I1->O           1   0.278   0.426  arith_log_unit/out_shift0000<25>32_f5 (arith_log_unit/out_shift0000<25>32)
+     LUT4:I1->O            1   0.612   0.360  arith_log_unit/Mmux_out_434_SW0 (N70)
+     LUT4:I3->O            1   0.612   0.000  arith_log_unit/Mmux_out_434 (arith_log_unit/Mmux_out_417)
+     MUXF5:I1->O           1   0.278   0.000  arith_log_unit/Mmux_out_3_f5_16 (arith_log_unit/Mmux_out_3_f517)
+     MUXF6:I1->O           2   0.451   0.532  arith_log_unit/Mmux_out_2_f6_16 (t_out<25>)
      LUT4:I0->O            1   0.612   0.000  use_npc_not0001_wg_lut<1> (use_npc_not0001_wg_lut<1>)
      MUXCY:S->O            1   0.404   0.000  use_npc_not0001_wg_cy<1> (use_npc_not0001_wg_cy<1>)
      MUXCY:CI->O           1   0.052   0.000  use_npc_not0001_wg_cy<2> (use_npc_not0001_wg_cy<2>)
@@ -371,8 +375,8 @@ Offset:              11.416ns (Levels of Logic = 37)
      MUXCY:CI->O           1   0.289   0.000  use_npc_not0001_wg_cy<8> (use_npc_not0001)
      FDS:D                     0.268          use_npc
     ----------------------------------------
-    Total                     11.416ns (7.620ns logic, 3.796ns route)
-                                       (66.8% logic, 33.2% route)
+    Total                     13.207ns (8.557ns logic, 4.650ns route)
+                                       (64.8% logic, 35.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
@@ -396,12 +400,12 @@ Offset:              4.040ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.84 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.94 secs
  
 --> 
 
-Total memory usage is 259184 kilobytes
+Total memory usage is 268016 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+branch_control instance_name (
+    .control_is_jump(control_is_jump), 
+    .control_zero(control_zero), 
+    .control_branch_eq(control_branch_eq), 
+    .control_branch_inc(control_branch_inc), 
+    .use_npc(use_npc)
+    );
+
+
