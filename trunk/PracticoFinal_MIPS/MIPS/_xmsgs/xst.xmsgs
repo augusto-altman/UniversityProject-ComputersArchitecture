@@ -5,5 +5,77 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">pmem</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v" Line 45: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pc_reg/pc_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stage_if</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
 </messages>
 

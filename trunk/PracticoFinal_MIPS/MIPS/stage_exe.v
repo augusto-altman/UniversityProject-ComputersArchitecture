@@ -41,11 +41,11 @@ module stage_exe(
 	 //Signals for stage_mem
 	 input [1:0] wbi,
 	 input M,
-	 input [3:0] regaddr1,
-	 input [3:0] regaddr2,
+	 input [4:0] regaddr1,
+	 input [4:0] regaddr2,
 	 output reg [1:0] wbi_o,
     output reg M_o,
-	 output reg [3:0] regaddr_o,
+	 output reg [4:0] regaddr_o,
 	 output reg [31:0] data_b_o,
     output reg [31:0] out
 	 //end -- Signals for stage_mem

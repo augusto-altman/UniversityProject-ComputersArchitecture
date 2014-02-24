@@ -21,14 +21,14 @@
 module mem(
 	 input clk,
     input [1:0] wbi,
-	 input [3:0] regaddr,
+	 input [4:0] regaddr,
     output reg [1:0] wbo,
     input M,
     input [31:0] data,
     input [31:0] dataaddr,
 	 output reg [31:0] datafrommem,
     output reg [31:0] datafromimm,
-	 output reg [3:0] regaddrout
+	 output reg [4:0] regaddrout
     );
 	 
 	 wire [31:0] douta;

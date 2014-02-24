@@ -1,7 +1,7 @@
 run
 -ifmt VHDL
 -ent pmem_exdes
--p xc3s100e-cp132-5
+-p xc6slx16-csg324-3
 -ifn xst.prj
 -write_timing_constraints No
 -iobuf YES
