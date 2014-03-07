@@ -112,6 +112,8 @@ Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Fi
 Parsing module <alu_control>.
 Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu.v" into library work
 Parsing module <alu>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\adder_32b.v" into library work
+Parsing module <adder_32b>.
 Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe.v" into library work
 Parsing module <stage_exe>.
 
@@ -120,6 +122,8 @@ Parsing module <stage_exe>.
 =========================================================================
 
 Elaborating module <stage_exe>.
+
+Elaborating module <adder_32b>.
 
 Elaborating module <alu>.
 
@@ -132,21 +136,26 @@ Elaborating module <alu_control>.
 Synthesizing Unit <stage_exe>.
     Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe.v".
     Found 32-bit register for signal <jump_address>.
-    Found 1-bit register for signal <zero>.
     Found 1-bit register for signal <is_jump_o>.
     Found 1-bit register for signal <branch_eq_o>.
     Found 1-bit register for signal <branch_inc_o>.
+    Found 1-bit register for signal <zero>.
     Found 2-bit register for signal <wbi_o>.
     Found 1-bit register for signal <M_o>.
     Found 32-bit register for signal <data_b_o>.
     Found 5-bit register for signal <regaddr_o>.
     Found 32-bit register for signal <out>.
-    Found 32-bit adder for signal <npc[31]_data_imm[31]_add_2_OUT> created at line 85.
     Summary:
-	inferred   1 Adder/Subtractor(s).
 	inferred 108 D-type flip-flop(s).
 	inferred   2 Multiplexer(s).
 Unit <stage_exe> synthesized.
+
+Synthesizing Unit <adder_32b>.
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\adder_32b.v".
+    Found 32-bit adder for signal <c> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder_32b> synthesized.
 
 Synthesizing Unit <alu>.
     Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu.v".
@@ -272,8 +281,9 @@ Primitive and Black Box Usage:
 #      MUXF7                       : 3
 #      XORCY                       : 64
 # FlipFlops/Latches                : 108
-#      FDE                         : 44
-#      FDR                         : 64
+#      FD                          : 3
+#      FDE                         : 40
+#      FDR                         : 65
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 259
@@ -295,7 +305,7 @@ Slice Logic Distribution:
    Number with an unused Flip Flop:     429  out of    429   100%  
    Number with an unused LUT:             0  out of    429     0%  
    Number of fully used LUT-FF pairs:     0  out of    429     0%  
-   Number of unique control sets:         2
+   Number of unique control sets:         3
 
 IO Utilization: 
  Number of IOs:                         260
@@ -350,7 +360,7 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
-  Total number of paths / destination ports: 41929 / 216
+  Total number of paths / destination ports: 41926 / 213
 -------------------------------------------------------------------------
 Offset:              12.665ns (Levels of Logic = 11)
   Source:            control_use_b (PAD)
@@ -372,7 +382,7 @@ Offset:              12.665ns (Levels of Logic = 11)
      LUT6:I4->O            1   0.203   0.827  arith_log_unit/zero2 (arith_log_unit/zero1)
      LUT6:I2->O            1   0.203   0.827  arith_log_unit/zero4 (arith_log_unit/zero3)
      LUT6:I2->O            1   0.203   0.000  arith_log_unit/zero7 (t_zero)
-     FDE:D                     0.102          zero
+     FD:D                      0.102          zero
     ----------------------------------------
     Total                     12.665ns (3.360ns logic, 9.305ns route)
                                        (26.5% logic, 73.5% route)
@@ -405,11 +415,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.20 secs
+Total CPU time to Xst completion: 9.18 secs
  
 --> 
 
-Total memory usage is 257076 kilobytes
+Total memory usage is 256564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
