@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-02-24T18:50:02</DateModified>
-  <ModuleName>stage_if</ModuleName>
-  <SummaryTimeStamp>2014-02-15T20:07:28</SummaryTimeStamp>
+  <DateModified>2014-03-05T18:48:16</DateModified>
+  <ModuleName>stage_exe</ModuleName>
+  <SummaryTimeStamp>2014-03-05T18:40:56</SummaryTimeStamp>
   <SavedFilePath>C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/iseconfig/stage_exe.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-24T18:50:02</DateInitialized>
