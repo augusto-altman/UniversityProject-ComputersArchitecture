@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.1 (64-bit)
+# Build 179419 by xbuild on Thu Apr 26 11:43:29 MDT 2012
+# Start of session at: Fri Mar 07 19:39:06 2014
+# Process ID: 6228
+# Log file: D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/planAhead_run_1/planAhead.log
+# Journal file: D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/pa.fromNetlist.tcl}
+exit
