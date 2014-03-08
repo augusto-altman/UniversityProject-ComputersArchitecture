@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+fifo instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .rd(rd), 
+    .wr(wr), 
+    .w_data(w_data), 
+    .full(full), 
+    .empty(empty), 
+    .r_data(r_data)
+    );
+
+
