@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+GetRegAddr instance_name (
+    .instr(instr), 
+    .regAddr1(regAddr1), 
+    .regAddr2(regAddr2)
+    );
+
+

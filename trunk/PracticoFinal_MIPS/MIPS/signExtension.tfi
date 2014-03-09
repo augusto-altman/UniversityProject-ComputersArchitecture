@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+signExtension instance_name (
+    .instr(instr), 
+    .extendedInstr(extendedInstr)
+    );
+
+

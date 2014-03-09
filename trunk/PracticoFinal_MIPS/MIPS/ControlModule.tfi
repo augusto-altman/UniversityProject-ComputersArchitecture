@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+ControlModule instance_name (
+    .instr(instr), 
+    .aluOp(aluOp), 
+    .isJump(isJump), 
+    .isCondinational(isCondinational), 
+    .isEQ(isEQ), 
+    .memWrite(memWrite), 
+    .wbi(wbi), 
+    .memRead(memRead), 
+    .aluSrc(aluSrc), 
+    .regWrite(regWrite), 
+    .regDst(regDst)
+    );
+
+

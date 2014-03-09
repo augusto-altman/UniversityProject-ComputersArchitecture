@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj MIPS -o "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/signExtension.tfi" -lib work "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS//signExtension.v" -module signExtension -template C:/Xilinxs/14.1/ISE_DS/ISE//data/tfi.tft -deleteonerror 
