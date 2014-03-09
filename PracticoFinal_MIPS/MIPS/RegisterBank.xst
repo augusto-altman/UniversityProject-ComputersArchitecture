@@ -1,0 +1,5 @@
+set -tmpdir "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/xst/projnav.tmp"
+set -xsthdpdir "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/xst"
+elaborate
+-ifn RegisterBank.prj
+-ifmt mixed

@@ -1,0 +1,14 @@
+[Inputs]
+clock
+regWrite
+=addr1[4:0]=
+=addr2[4:0]=
+=writeAddr[4:0]=
+=writeData[15:0]=
+[Outputs]
+=reg1[15:0]=
+=reg2[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel RegisterBank
+

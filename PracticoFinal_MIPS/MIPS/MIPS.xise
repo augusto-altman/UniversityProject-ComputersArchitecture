@@ -188,6 +188,62 @@
     <file xil_pn:name="Nexys3_Master.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
+    <file xil_pn:name="ControlModule.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="212"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="212"/>
+    </file>
+    <file xil_pn:name="GetRegAddr.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="213"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="213"/>
+    </file>
+    <file xil_pn:name="mux5bitsTest.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="215"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="215"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="215"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="215"/>
+    </file>
+    <file xil_pn:name="RegisterBank.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="216"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="216"/>
+    </file>
+    <file xil_pn:name="signExtension.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="217"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="217"/>
+    </file>
+    <file xil_pn:name="stage_id.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="218"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="218"/>
+    </file>
+    <file xil_pn:name="test_stage_id.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="219"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="219"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="219"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="219"/>
+    </file>
+    <file xil_pn:name="Test_stage_if.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="220"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="220"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="220"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="220"/>
+    </file>
+    <file xil_pn:name="testBankRegister.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="221"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="221"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="221"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="221"/>
+    </file>
+    <file xil_pn:name="testControl.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="222"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="222"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="222"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="222"/>
+    </file>
+    <file xil_pn:name="testSignExtension.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="223"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="223"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="223"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="223"/>
+    </file>
     <file xil_pn:name="ipcore_dir/pmem.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
