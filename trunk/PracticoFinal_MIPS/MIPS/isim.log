@@ -15,4 +15,3 @@ Simulator is doing circuit initialization process.
  Block Memory Generator data initialization complete.
 Block Memory Generator CORE Generator module stage_if_test3.uut.pmemory.inst.\native_mem_module.blk_mem_gen_v7_1_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
 Finished circuit initialization process.
-# run 1.00us
