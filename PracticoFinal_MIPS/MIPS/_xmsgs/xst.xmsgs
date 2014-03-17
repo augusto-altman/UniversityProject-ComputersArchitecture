@@ -5,19 +5,40 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uarthandler.v</arg>&quot; line <arg fmt="%s" index="2">30</arg>: Output port &lt;<arg fmt="%s" index="3">wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uartt</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">rammemory</arg>&gt; remains a black box.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v</arg>&quot; line <arg fmt="%s" index="2">20</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">buffarini</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" Line 39: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">13</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v</arg>&quot; line <arg fmt="%s" index="2">43</arg>: Output port &lt;<arg fmt="%s" index="3">q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">baud_gen_unit</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" Line 49: Assignment to <arg fmt="%s" index="1">wbo</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">b_reg</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_array_reg</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v</arg>&quot; line <arg fmt="%s" index="2">45</arg>: Output port &lt;<arg fmt="%s" index="3">wbo</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">module_tested</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">uartt/buffarini/full_reg</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">uarthandler</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">datafromimm</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">1</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">datafromimm</arg>&lt;<arg fmt="%d" index="2">1</arg>:<arg fmt="%d" index="3">1</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">regaddrout</arg>&lt;<arg fmt="%d" index="2">4</arg>:<arg fmt="%d" index="3">4</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">regaddrout</arg>&lt;<arg fmt="%d" index="2">4</arg>:<arg fmt="%d" index="3">3</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">regaddrout</arg>&lt;<arg fmt="%d" index="2">3</arg>:<arg fmt="%d" index="3">3</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">regaddrout</arg>&lt;<arg fmt="%d" index="2">3</arg>:<arg fmt="%d" index="3">3</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wbo</arg>&lt;<arg fmt="%d" index="2">1</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">mem</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

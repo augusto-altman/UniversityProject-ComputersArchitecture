@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+mem instance_name (
+    .clk(clk), 
+    .wbi(wbi), 
+    .regaddr(regaddr), 
+    .wbo(wbo), 
+    .M(M), 
+    .data(data), 
+    .dataaddr(dataaddr), 
+    .datafrommem(datafrommem), 
+    .datafromimm(datafromimm), 
+    .regaddrout(regaddrout)
+    );
+
+

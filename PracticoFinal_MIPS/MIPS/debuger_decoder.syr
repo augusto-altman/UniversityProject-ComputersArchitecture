@@ -1,0 +1,402 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: debuger_decoder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "debuger_decoder.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "debuger_decoder"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : debuger_decoder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" into library work
+Parsing module <rammemory>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" into library work
+Parsing module <mem>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" into library work
+Parsing module <debuger_decoder>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <debuger_decoder>.
+
+Elaborating module <mem>.
+
+Elaborating module <rammemory>.
+WARNING:HDLCompiler:1499 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module <rammemory> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" Line 39: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" Line 49: Assignment to wbo ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <debuger_decoder>.
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v".
+INFO:Xst:3210 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 45: Output port <wbo> of the instance <module_tested> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <debuger_decoder> synthesized.
+
+Synthesizing Unit <mem>.
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v".
+    Found 32-bit register for signal <datafrommem>.
+    WARNING:Xst:2404 -  FFs/Latches <datafromimm<31:1>> (without init value) have a constant value of 0 in block <mem>.
+    WARNING:Xst:2404 -  FFs/Latches <datafromimm<1:1>> (without init value) have a constant value of 1 in block <mem>.
+    WARNING:Xst:2404 -  FFs/Latches <regaddrout<4:4>> (without init value) have a constant value of 0 in block <mem>.
+    WARNING:Xst:2404 -  FFs/Latches <regaddrout<4:3>> (without init value) have a constant value of 1 in block <mem>.
+    WARNING:Xst:2404 -  FFs/Latches <regaddrout<3:3>> (without init value) have a constant value of 0 in block <mem>.
+    WARNING:Xst:2404 -  FFs/Latches <regaddrout<3:3>> (without init value) have a constant value of 1 in block <mem>.
+    WARNING:Xst:2404 -  FFs/Latches <wbo<1:0>> (without init value) have a constant value of 1 in block <mem>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <mem> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/rammemory.ngc>.
+Loading core <rammemory> for timing and area information for instance <memory>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mem> ...
+
+Optimizing unit <debuger_decoder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block debuger_decoder, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : debuger_decoder.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 71
+#      GND                         : 3
+#      LUT2                        : 4
+#      LUT4                        : 4
+#      LUT5                        : 1
+#      LUT6                        : 56
+#      VCC                         : 3
+# FlipFlops/Latches                : 34
+#      FD                          : 32
+#      FDE                         : 2
+# RAMS                             : 15
+#      RAMB16BWER                  : 14
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 43
+#      IBUF                        : 8
+#      OBUF                        : 35
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              34  out of  18224     0%  
+ Number of Slice LUTs:                   65  out of   9112     0%  
+    Number used as Logic:                65  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     67
+   Number with an unused Flip Flop:      33  out of     67    49%  
+   Number with an unused LUT:             2  out of     67     2%  
+   Number of fully used LUT-FF pairs:    32  out of     67    47%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          44
+ Number of bonded IOBs:                  44  out of    232    18%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               15  out of     32    46%  
+    Number using Block RAM only:         15
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                           | Load  |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                                           | 49    |
+module_tested/memory/N1            | NONE(module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 15    |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.982ns (Maximum Frequency: 335.362MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.484ns
+   Maximum combinational path delay: 7.201ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.982ns (frequency: 335.362MHz)
+  Total number of paths / destination ports: 167 / 32
+-------------------------------------------------------------------------
+Delay:               2.982ns (Levels of Logic = 2)
+  Source:            module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       module_tested/datafrommem_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram to module_tested/datafrommem_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOPA0    1   1.850   0.827  ramloop[12].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram (ramloop[12].ram.ram_douta<8>)
+     LUT6:I2->O            1   0.203   0.000  has_mux_a.A/Mmux_dout_mux251 (DOUTA<31>)
+     end scope: 'module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr:DOUTA<31>'
+     end scope: 'module_tested/memory:douta<31>'
+     FD:D                      0.102          module_tested/datafrommem_31
+    ----------------------------------------
+    Total                      2.982ns (2.155ns logic, 0.827ns route)
+                                       (72.3% logic, 27.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.484ns (Levels of Logic = 2)
+  Source:            module_tested/datafrommem_3 (FF)
+  Destination:       result<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: module_tested/datafrommem_3 to result<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.684  module_tested/datafrommem_3 (module_tested/datafrommem_3)
+     LUT4:I2->O            1   0.203   0.579  _n0048<3>1 (result_3_OBUF)
+     OBUF:I->O                 2.571          result_3_OBUF (result<3>)
+    ----------------------------------------
+    Total                      4.484ns (3.221ns logic, 1.263ns route)
+                                       (71.8% logic, 28.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 178 / 35
+-------------------------------------------------------------------------
+Delay:               7.201ns (Levels of Logic = 4)
+  Source:            code<3> (PAD)
+  Destination:       result<3> (PAD)
+
+  Data Path: code<3> to result<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.222   1.525  code_3_IBUF (code_3_IBUF)
+     LUT4:I0->O            3   0.203   0.898  code[4]_PWR_1_o_equal_5_o<4>11 (code[4]_PWR_1_o_equal_5_o<4>1)
+     LUT4:I0->O            1   0.203   0.579  _n0048<3>1 (result_3_OBUF)
+     OBUF:I->O                 2.571          result_3_OBUF (result<3>)
+    ----------------------------------------
+    Total                      7.201ns (4.199ns logic, 3.002ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.982|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.34 secs
+ 
+--> 
+
+Total memory usage is 256692 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -11,7 +11,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Module Name:</B></TD>
-<TD>uarthandler</TD>
+<TD>debuger_decoder</TD>
 <TD BGCOLOR='#FFFF99'><B>Implementation State:</B></TD>
 <TD>Synthesized</TD>
 </TR>
@@ -19,12 +19,13 @@
 <TD BGCOLOR='#FFFF99'><B>Target Device:</B></TD>
 <TD>xc6slx16-3csg324</TD>
 <TD BGCOLOR='#FFFF99'><UL><LI><B>Errors:</B></LI></UL></TD>
-<TD>&nbsp;</TD>
+<TD>
+No Errors</TD>
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Product Version:</B></TD><TD>ISE 14.1</TD>
 <TD BGCOLOR='#FFFF99'><UL><LI><B>Warnings:</B></LI></UL></TD>
-<TD>&nbsp;</TD>
+<TD ALIGN=LEFT><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\_xmsgs/*.xmsgs?&DataKey=Warning'>10 Warnings (10 new)</A></TD>
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Design Goal:</B></dif></TD>
@@ -42,7 +43,7 @@
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Environment:</B></dif></TD>
 <TD>
-<A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\uarthandler_envsettings.html'>
+<A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\debuger_decoder_envsettings.html'>
 System Settings</A>
 </TD>
 <TD BGCOLOR='#FFFF99'><UL><LI><B>Final Timing Score:</B></LI></UL></TD>
@@ -57,24 +58,29 @@ System Settings</A>
 <TR ALIGN=CENTER BGCOLOR='#FFFF99'>
 <TD ALIGN=LEFT><B>Logic Utilization</B></TD><TD><B>Used</B></TD><TD><B>Available</B></TD><TD COLSPAN='2'><B>Utilization</B></TD></TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of Slice Registers</TD>
-<TD ALIGN=RIGHT>67</TD>
+<TD ALIGN=RIGHT>34</TD>
 <TD ALIGN=RIGHT>18224</TD>
 <TD ALIGN=RIGHT COLSPAN='2'>0%</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of Slice LUTs</TD>
-<TD ALIGN=RIGHT>167</TD>
+<TD ALIGN=RIGHT>65</TD>
 <TD ALIGN=RIGHT>9112</TD>
-<TD ALIGN=RIGHT COLSPAN='2'>1%</TD>
+<TD ALIGN=RIGHT COLSPAN='2'>0%</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of fully used LUT-FF pairs</TD>
-<TD ALIGN=RIGHT>64</TD>
-<TD ALIGN=RIGHT>170</TD>
-<TD ALIGN=RIGHT COLSPAN='2'>37%</TD>
+<TD ALIGN=RIGHT>32</TD>
+<TD ALIGN=RIGHT>67</TD>
+<TD ALIGN=RIGHT COLSPAN='2'>47%</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of bonded IOBs</TD>
-<TD ALIGN=RIGHT>4</TD>
+<TD ALIGN=RIGHT>44</TD>
 <TD ALIGN=RIGHT>232</TD>
-<TD ALIGN=RIGHT COLSPAN='2'>1%</TD>
+<TD ALIGN=RIGHT COLSPAN='2'>18%</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of Block RAM/FIFO</TD>
+<TD ALIGN=RIGHT>15</TD>
+<TD ALIGN=RIGHT>32</TD>
+<TD ALIGN=RIGHT COLSPAN='2'>46%</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of BUFG/BUFGCTRLs</TD>
 <TD ALIGN=RIGHT>1</TD>
@@ -93,14 +99,13 @@ System Settings</A>
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='6'><B>Detailed Reports</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=DetailedReports"><B>[-]</B></a></TD></TR>
 <TR BGCOLOR='#FFFF99'><TD><B>Report Name</B></TD><TD><B>Status</B></TD><TD><B>Generated</B></TD>
 <TD ALIGN=LEFT><B>Errors</B></TD><TD ALIGN=LEFT><B>Warnings</B></TD><TD ALIGN=LEFT COLSPAN='2'><B>Infos</B></TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\uarthandler.syr'>Synthesis Report</A></TD><TD>Current</TD><TD>lun 17. mar 19:00:23 2014</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\uarthandler.bld'>Translation Report</A></TD><TD>Current</TD><TD>lun 17. mar 19:00:23 2014</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\uarthandler_map.mrp'>Map Report</A></TD><TD>Out of Date</TD><TD>lun 17. mar 19:00:20 2014</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\uarthandler.par'>Place and Route Report</A></TD><TD>Out of Date</TD><TD>lun 17. mar 19:00:18 2014</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
-<TR ALIGN=LEFT><TD>CPLD Fitter Report (Text)</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\debuger_decoder.syr'>Synthesis Report</A></TD><TD>Current</TD><TD>lun 17. mar 19:09:58 2014</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\_xmsgs/xst.xmsgs?&DataKey=Warning'>10 Warnings (10 new)</A></TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\_xmsgs/xst.xmsgs?&DataKey=Info'>2 Infos (2 new)</A></TD></TR>
+<TR ALIGN=LEFT><TD>Translation Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
+<TR ALIGN=LEFT><TD>Map Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
+<TR ALIGN=LEFT><TD>Place and Route Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
 <TR ALIGN=LEFT><TD>Power Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\uarthandler.twr'>Post-PAR Static Timing Report</A></TD><TD>Current</TD><TD>lun 17. mar 19:00:23 2014</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS\uarthandler.bgn'>Bitgen Report</A></TD><TD>Out of Date</TD><TD>lun 17. mar 19:00:20 2014</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
+<TR ALIGN=LEFT><TD>Post-PAR Static Timing Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
+<TR ALIGN=LEFT><TD>Bitgen Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
 </TABLE>
 &nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='3'><B>Secondary Reports</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=SecondaryReports"><B>[-]</B></a></TD></TR>
@@ -111,5 +116,5 @@ System Settings</A>
 </TABLE>
 
 
-<br><center><b>Date Generated:</b> 03/17/2014 - 19:10:00</center>
+<br><center><b>Date Generated:</b> 03/17/2014 - 19:10:01</center>
 </BODY></HTML>
