@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+wb instance_name (
+    .datafrommem(datafrommem), 
+    .datafromimm(datafromimm), 
+    .wb(wb), 
+    .datatoregfile(datatoregfile), 
+    .weregfile(weregfile)
+    );
+
+

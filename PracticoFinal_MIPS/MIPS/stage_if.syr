@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.87 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.89 secs
  
 --> Reading design: stage_if.prj
 
@@ -108,13 +108,13 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\pc.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\pc.v" into library work
 Parsing module <pc>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" into library work
 Parsing module <pmem>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\branch_control.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\branch_control.v" into library work
 Parsing module <branch_control>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_if.v" into library work
 Parsing module <stage_if>.
 
 =========================================================================
@@ -126,8 +126,8 @@ Elaborating module <stage_if>.
 Elaborating module <pc>.
 
 Elaborating module <pmem>.
-WARNING:HDLCompiler:1499 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module <pmem> remains a black box.
-WARNING:HDLCompiler:189 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v" Line 45: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1499 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module <pmem> remains a black box.
+WARNING:HDLCompiler:189 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_if.v" Line 45: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
 
 Elaborating module <branch_control>.
 
@@ -136,13 +136,13 @@ Elaborating module <branch_control>.
 =========================================================================
 
 Synthesizing Unit <stage_if>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_if.v".
     Summary:
 	no macro.
 Unit <stage_if> synthesized.
 
 Synthesizing Unit <pc>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\pc.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\pc.v".
     Found 32-bit register for signal <pc>.
     Found 32-bit adder for signal <pc[31]_GND_2_o_add_2_OUT> created at line 39.
     Summary:
@@ -152,7 +152,7 @@ Synthesizing Unit <pc>.
 Unit <pc> synthesized.
 
 Synthesizing Unit <branch_control>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\branch_control.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\branch_control.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <branch_control> synthesized.
@@ -202,27 +202,6 @@ Macro Statistics
 Optimizing unit <stage_if> ...
 
 Optimizing unit <pc> ...
-WARNING:Xst:2677 - Node <pc_reg/pc_31> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_30> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_29> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_28> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_27> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_26> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_25> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_24> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_23> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_22> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_21> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_20> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_19> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_18> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_17> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_16> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_15> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_14> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_13> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_12> of sequential type is unconnected in block <stage_if>.
-WARNING:Xst:2677 - Node <pc_reg/pc_11> of sequential type is unconnected in block <stage_if>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -234,8 +213,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 11
- Flip-Flops                                            : 11
+# Registers                                            : 32
+ Flip-Flops                                            : 32
 
 =========================================================================
 
@@ -258,23 +237,23 @@ Top Level Output File Name         : stage_if.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 41
+# BELS                             : 126
 #      GND                         : 3
 #      INV                         : 1
-#      LUT1                        : 7
-#      LUT6                        : 11
-#      MUXCY                       : 8
+#      LUT1                        : 29
+#      LUT6                        : 32
+#      MUXCY                       : 29
 #      VCC                         : 2
-#      XORCY                       : 9
-# FlipFlops/Latches                : 11
-#      FDR_1                       : 11
+#      XORCY                       : 30
+# FlipFlops/Latches                : 32
+#      FDR_1                       : 32
 # RAMS                             : 4
 #      RAMB16BWER                  : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 48
-#      IBUF                        : 16
-#      OBUF                        : 32
+# IO Buffers                       : 101
+#      IBUF                        : 37
+#      OBUF                        : 64
 
 Device utilization summary:
 ---------------------------
@@ -283,20 +262,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              11  out of  18224     0%  
- Number of Slice LUTs:                   19  out of   9112     0%  
-    Number used as Logic:                19  out of   9112     0%  
+ Number of Slice Registers:              32  out of  18224     0%  
+ Number of Slice LUTs:                   62  out of   9112     0%  
+    Number used as Logic:                62  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     30
-   Number with an unused Flip Flop:      19  out of     30    63%  
-   Number with an unused LUT:            11  out of     30    36%  
-   Number of fully used LUT-FF pairs:     0  out of     30     0%  
+ Number of LUT Flip Flop pairs used:     62
+   Number with an unused Flip Flop:      30  out of     62    48%  
+   Number with an unused LUT:             0  out of     62     0%  
+   Number of fully used LUT-FF pairs:    32  out of     62    51%  
    Number of unique control sets:         1
 
 IO Utilization: 
- Number of IOs:                          70
- Number of bonded IOBs:                  49  out of    232    21%  
+ Number of IOs:                         102
+ Number of bonded IOBs:                 102  out of    232    43%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                4  out of     32    12%  
@@ -324,7 +303,7 @@ Clock Information:
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                            | Load  |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
-clock                              | BUFGP                                                                                                                            | 15    |
+clock                              | BUFGP                                                                                                                            | 36    |
 pmemory/N1                         | NONE(pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -337,8 +316,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.022ns (Maximum Frequency: 330.907MHz)
-   Minimum input arrival time before clock: 2.774ns
+   Minimum period: 3.168ns (Maximum Frequency: 315.696MHz)
+   Minimum input arrival time before clock: 3.183ns
    Maximum output required time after clock: 5.000ns
    Maximum combinational path delay: No path found
 
@@ -348,50 +327,80 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock'
-  Clock period: 3.022ns (frequency: 330.907MHz)
-  Total number of paths / destination ports: 91 / 55
+  Clock period: 3.168ns (frequency: 315.696MHz)
+  Total number of paths / destination ports: 511 / 76
 -------------------------------------------------------------------------
-Delay:               1.511ns (Levels of Logic = 1)
-  Source:            pc_reg/pc_9 (FF)
-  Destination:       pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
+Delay:               3.168ns (Levels of Logic = 32)
+  Source:            pc_reg/pc_2 (FF)
+  Destination:       pc_reg/pc_31 (FF)
   Source Clock:      clock falling
-  Destination Clock: clock rising
+  Destination Clock: clock falling
 
-  Data Path: pc_reg/pc_9 to pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+  Data Path: pc_reg/pc_2 to pc_reg/pc_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR_1:C->Q            5   0.447   0.714  pc_reg/pc_9 (pc_reg/pc_9)
-     begin scope: 'pmemory:addra<9>'
-     begin scope: 'pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr:ADDRA<9>'
-     RAMB16BWER:ADDRA12        0.350          ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+     FDR_1:C->Q            6   0.447   0.744  pc_reg/pc_2 (pc_reg/pc_2)
+     INV:I->O              1   0.206   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_lut<2>_INV_0 (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<2> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<3> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<4> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<5> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<6> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<7> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<8> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<9> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<10> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<11> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<12> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<13> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<14> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<15> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<16> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<17> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<18> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<19> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<20> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<21> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<22> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<23> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<24> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<25> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<26> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<27> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<28> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<29> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<30> (pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_cy<30>)
+     XORCY:CI->O           1   0.180   0.580  pc_reg/Madd_pc[31]_GND_2_o_add_2_OUT_xor<31> (pc_reg/pc[31]_GND_2_o_add_2_OUT<31>)
+     LUT6:I5->O            1   0.205   0.000  pc_reg/Mmux_data_jump_address[31]_pc[31]_mux_3_OUT251 (pc_reg/data_jump_address[31]_pc[31]_mux_3_OUT<31>)
+     FDR_1:D                   0.102          pc_reg/pc_31
     ----------------------------------------
-    Total                      1.511ns (0.797ns logic, 0.714ns route)
-                                       (52.7% logic, 47.3% route)
+    Total                      3.168ns (1.844ns logic, 1.324ns route)
+                                       (58.2% logic, 41.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
-  Total number of paths / destination ports: 66 / 22
+  Total number of paths / destination ports: 192 / 64
 -------------------------------------------------------------------------
-Offset:              2.774ns (Levels of Logic = 2)
+Offset:              3.183ns (Levels of Logic = 2)
   Source:            control_is_jump (PAD)
-  Destination:       pc_reg/pc_10 (FF)
+  Destination:       pc_reg/pc_31 (FF)
   Destination Clock: clock falling
 
-  Data Path: control_is_jump to pc_reg/pc_10
+  Data Path: control_is_jump to pc_reg/pc_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            11   1.222   1.247  control_is_jump_IBUF (control_is_jump_IBUF)
-     LUT6:I0->O            1   0.203   0.000  pc_reg/Mmux_data_jump_address[31]_pc[31]_mux_3_OUT21 (pc_reg/data_jump_address[31]_pc[31]_mux_3_OUT<10>)
-     FDR_1:D                   0.102          pc_reg/pc_10
+     IBUF:I->O            32   1.222   1.656  control_is_jump_IBUF (control_is_jump_IBUF)
+     LUT6:I0->O            1   0.203   0.000  pc_reg/Mmux_data_jump_address[31]_pc[31]_mux_3_OUT251 (pc_reg/data_jump_address[31]_pc[31]_mux_3_OUT<31>)
+     FDR_1:D                   0.102          pc_reg/pc_31
     ----------------------------------------
-    Total                      2.774ns (1.527ns logic, 1.247ns route)
-                                       (55.0% logic, 45.0% route)
+    Total                      3.183ns (1.527ns logic, 1.656ns route)
+                                       (48.0% logic, 52.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
-  Total number of paths / destination ports: 32 / 32
+  Total number of paths / destination ports: 64 / 64
 -------------------------------------------------------------------------
 Offset:              5.000ns (Levels of Logic = 2)
   Source:            pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
@@ -420,20 +429,20 @@ Clock to Setup on destination clock clock
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clock          |         |    1.511|    2.739|         |
+clock          |         |    1.541|    3.168|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.38 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.13 secs
  
 --> 
 
-Total memory usage is 255732 kilobytes
+Total memory usage is 254332 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   23 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

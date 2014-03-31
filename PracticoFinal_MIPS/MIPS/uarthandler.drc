@@ -1,7 +1,7 @@
 Release 14.1 Drc P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sat Mar 08 20:05:27 2014
+Wed Mar 19 21:14:33 2014
 
 drc -z uarthandler.ncd uarthandler.pcf
 
@@ -11,5 +11,9 @@ WARNING:PhysDesignRules:367 - The signal
 WARNING:PhysDesignRules:367 - The signal
    <uartt/buffarini/Mram_array_reg1_RAMD_D1_O> is incomplete. The signal does
    not drive any load pins in the design.
-DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
