@@ -25,7 +25,9 @@ module stage_id(
 	input [31:0] 	writeData,
 	input [4:0] 	writeAddr,
 	input 			regWrite,
-	// outputs 
+	input [31:0]   pc_id,
+	// outputs
+	output reg [31:0]  pc_ex,
 	output reg [3:0] 	aluOp,
 	output reg			isJump,
 	output reg			isNotConditional,
@@ -118,6 +120,7 @@ begin
 	regDst				= _regDst;
 	regAddr1 			= _regAddr1;
 	regAddr2 			= _regAddr2;
+	pc_ex 				= pc_id;
 
 end	
 	

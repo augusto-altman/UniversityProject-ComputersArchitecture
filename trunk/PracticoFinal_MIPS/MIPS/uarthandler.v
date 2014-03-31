@@ -26,20 +26,39 @@ module uarthandler(
     );
 	
 wire rd_empty;
-wire [7:0] r_data;
+wire [7:0] r_data, w_data;
+wire rd, wr;
+wire [1:0] size;
+wire [31:0] result;	
+
 uart uartt (
     .clk(clk), 
     .reset(reset), 
     .rx(rx), 
-    .rd(~rd_empty), 
-    .wr(~rd_empty), 
+    .rd(rd), 
+    .wr(wr),
     .rd_empty(rd_empty), 
     .wr_full(), 
-    .w_data(r_data), 
+    .w_data(w_data), 
     .tx(tx), 
     .r_data(r_data)
     );
-	 
+debuger_decoder decoder (
+    .code(r_data), 
+    .clk(clk), 
+    .result(result), 
+    .size(size)
+    );
 
-
+debugersm state_machine (
+    .clk(clk), 
+    .reset(reset), 
+    .rd_empty(rd_empty), 
+    .result(result), 
+    .size(size), 
+    .wr(wr), 
+    .rd(rd), 
+    .w_data(w_data)
+    );
+  
 endmodule

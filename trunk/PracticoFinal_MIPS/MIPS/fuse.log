@@ -1,30 +1,19 @@
-Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/stage_if_test3_isim_beh.exe -prj C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/stage_if_test3_beh.prj work.stage_if_test3 work.glbl 
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm_test_isim_beh.exe -prj D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm_test_beh.prj debugersm_test work.glbl 
 ISim P.15xf (signature 0xc3576ebc)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/pc.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/ipcore_dir/pmem.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/branch_control.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/stage_if.v" into library work
-Analyzing Verilog file "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/stage_if_test3.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm_test.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/stage_if.v" Line 45: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
 Completed static elaboration
-Compiling module pc
-Compiling module BLK_MEM_GEN_V7_1_output_stage(C_...
-Compiling module BLK_MEM_GEN_V7_1_softecc_output_...
-Compiling module BLK_MEM_GEN_V7_1_mem_module(C_CO...
-Compiling module BLK_MEM_GEN_V7_1(C_FAMILY="spart...
-Compiling module pmem
-Compiling module branch_control
-Compiling module stage_if
-Compiling module stage_if_test3
+Compiling module debugersm
+Compiling module debugersm_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 3 sub-compilation(s) to finish...
-Compiled 10 Verilog Units
-Built simulation executable C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/stage_if_test3_isim_beh.exe
-Fuse Memory Usage: 31308 KB
-Fuse CPU Usage: 1309 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm_test_isim_beh.exe
+Fuse Memory Usage: 26716 KB
+Fuse CPU Usage: 576 ms

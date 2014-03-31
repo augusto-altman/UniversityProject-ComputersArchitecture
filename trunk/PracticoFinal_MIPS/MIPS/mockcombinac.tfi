@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+mockcombinac instance_name (
+    .code(code), 
+    .data(data), 
+    .datasize(datasize), 
+    .clk(clk)
+    );
+
+

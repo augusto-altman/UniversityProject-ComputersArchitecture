@@ -1,1 +1,2 @@
 xst -intstyle ise -ifn "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/wb.xst" -ofn "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/wb.syr" 
+vhdtdtfi -lang verilog -prj MIPS -o "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/wb.tfi" -lib work "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS//wb.v" -module wb -template C:/Xilinx/14.1/ISE_DS/ISE//data/tfi.tft -deleteonerror 

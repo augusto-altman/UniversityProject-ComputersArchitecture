@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+debugersm instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .rd_empty(rd_empty), 
+    .result(result), 
+    .size(size), 
+    .wr(wr), 
+    .rd(rd), 
+    .w_data(w_data)
+    );
+
+
