@@ -1,19 +1,65 @@
-Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm_test_isim_beh.exe -prj D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm_test_beh.prj debugersm_test work.glbl 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/testdeco_isim_beh.exe" -prj "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/testdeco_beh.prj" "testdeco" "work.glbl" 
 ISim P.15xf (signature 0xc3576ebc)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm.v" into library work
-Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm_test.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/signExtension.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/RegisterBank.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/pc.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/mux.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/ipcore_dir/rammemory.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/ipcore_dir/pmem.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/GetRegAddr.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/ControlModule.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/branch_control.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/alu_control.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/alu.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/adder_32b.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/wb.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/stage_if.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/stage_id.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/stage_exe.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/mem.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debuger_decodificator.v" into library work
+Analyzing Verilog file "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/testdeco.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/stage_if.v" Line 45: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1016 - "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/mem.v" Line 36: Port rsta is not connected to this instance
+WARNING:HDLCompiler:189 - "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/mem.v" Line 39: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
 Completed static elaboration
-Compiling module debugersm
-Compiling module debugersm_test
+Compiling module pc
+Compiling module BLK_MEM_GEN_V7_1_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_1_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_1_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_1(C_FAMILY="spart...
+Compiling module pmem
+Compiling module branch_control
+Compiling module stage_if
+Compiling module ControlModule
+Compiling module RegisterBank
+Compiling module signExtension
+Compiling module GetRegAddr
+Compiling module stage_id
+Compiling module adder_32b
+Compiling module alu
+Compiling module alu_control
+Compiling module stage_exe
+Compiling module BLK_MEM_GEN_V7_1_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_1_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_1_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_1_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_1(C_FAMILY="spart...
+Compiling module rammemory
+Compiling module mem
+Compiling module mux
+Compiling module wb
+Compiling module debuger_decoder
+Compiling module testdeco
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 Verilog Units
-Built simulation executable D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/debugersm_test_isim_beh.exe
-Fuse Memory Usage: 26716 KB
-Fuse CPU Usage: 576 ms
+Waiting for 21 sub-compilation(s) to finish...
+Compiled 29 Verilog Units
+Built simulation executable D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/testdeco_isim_beh.exe
+Fuse Memory Usage: 32220 KB
+Fuse CPU Usage: 982 ms

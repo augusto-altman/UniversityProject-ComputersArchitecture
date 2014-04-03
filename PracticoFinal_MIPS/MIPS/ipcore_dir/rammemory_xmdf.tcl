@@ -231,6 +231,10 @@ utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path rammemory.ng
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type ngc
 incr fcount
 
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path rammemory.sym
+utilities_xmdf::xmdfSetData $instance FileSet $fcount type symbol
+incr fcount
+
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path rammemory.v
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type verilog
 incr fcount

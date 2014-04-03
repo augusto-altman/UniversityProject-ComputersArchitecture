@@ -20,6 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module RegisterBank(
 	 input clock,
+	 input reset,
     input [4:0] addr1,
     input [4:0] addr2,
     input [4:0] writeAddr,
@@ -35,7 +36,7 @@ reg [31:0] registro2;
 
 assign reg1 = registro1;
 assign reg2 = registro2;
-
+integer i;
 //lectura
 always@(posedge clock)
 	begin
@@ -46,6 +47,14 @@ always@(posedge clock)
 // escritura
 always@(negedge clock)
 	begin
+		if(reset)
+		begin
+			for (i = 0; i < 32; i = i +1)
+			begin
+				data[i] = 32'b0;
+			end
+		end
+		else
 		if(regWrite == 1)
 			data[writeAddr] = writeData;
 	end

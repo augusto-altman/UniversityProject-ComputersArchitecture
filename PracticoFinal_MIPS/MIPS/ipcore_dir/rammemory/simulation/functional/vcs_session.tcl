@@ -73,6 +73,7 @@ gui_sg_create rammemory_Group
 gui_list_add_group -id Wave.1 {rammemory_Group}
 
       gui_sg_addsignal -group rammemory_Group  /rammemory_tb/status
+      gui_sg_addsignal -group rammemory_Group  /rammemory_tb/rammemory_synth_inst/bmg_port/RSTA
       gui_sg_addsignal -group rammemory_Group  /rammemory_tb/rammemory_synth_inst/bmg_port/CLKA
       gui_sg_addsignal -group rammemory_Group  /rammemory_tb/rammemory_synth_inst/bmg_port/ADDRA
       gui_sg_addsignal -group rammemory_Group  /rammemory_tb/rammemory_synth_inst/bmg_port/DINA

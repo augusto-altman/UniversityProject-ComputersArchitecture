@@ -53,6 +53,7 @@
 wcfg new
 isim set radix hex
 wave add /rammemory_tb/status
+      wave add  /rammemory_tb/rammemory_synth_inst/BMG_PORT/RSTA
       wave add  /rammemory_tb/rammemory_synth_inst/BMG_PORT/CLKA
       wave add  /rammemory_tb/rammemory_synth_inst/BMG_PORT/ADDRA
       wave add  /rammemory_tb/rammemory_synth_inst/BMG_PORT/DINA

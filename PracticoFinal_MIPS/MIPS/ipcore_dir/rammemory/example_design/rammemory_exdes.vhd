@@ -88,6 +88,7 @@ USE UNISIM.VCOMPONENTS.ALL;
 ENTITY rammemory_exdes IS
   PORT (
       --Inputs - Port A
+    RSTA           : IN STD_LOGIC;  --opt port
   
     WEA            : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     ADDRA          : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
@@ -115,6 +116,7 @@ ARCHITECTURE xilinx OF rammemory_exdes IS
   COMPONENT rammemory IS
   PORT (
       --Port A
+    RSTA       : IN STD_LOGIC;  --opt port
   
     WEA        : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     ADDRA      : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
@@ -147,6 +149,7 @@ BEGIN
   bmg0 : rammemory
     PORT MAP (
       --Port A
+      RSTA       => RSTA,
   
       WEA        => WEA,
       ADDRA      => ADDRA,

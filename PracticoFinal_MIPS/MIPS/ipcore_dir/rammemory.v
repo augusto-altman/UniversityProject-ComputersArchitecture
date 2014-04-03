@@ -38,6 +38,7 @@
 
 module rammemory(
   clka,
+  rsta,
   wea,
   addra,
   dina,
@@ -45,6 +46,7 @@ module rammemory(
 );
 
 input clka;
+input rsta;
 input [0 : 0] wea;
 input [12 : 0] addra;
 input [31 : 0] dina;
@@ -76,7 +78,7 @@ output [31 : 0] douta;
     .C_HAS_MUX_OUTPUT_REGS_B(0),
     .C_HAS_REGCEA(0),
     .C_HAS_REGCEB(0),
-    .C_HAS_RSTA(0),
+    .C_HAS_RSTA(1),
     .C_HAS_RSTB(0),
     .C_HAS_SOFTECC_INPUT_REGS_A(0),
     .C_HAS_SOFTECC_OUTPUT_REGS_B(0),
@@ -100,7 +102,7 @@ output [31 : 0] douta;
     .C_SIM_COLLISION_CHECK("ALL"),
     .C_USE_BYTE_WEA(0),
     .C_USE_BYTE_WEB(0),
-    .C_USE_DEFAULT_DATA(0),
+    .C_USE_DEFAULT_DATA(1),
     .C_USE_ECC(0),
     .C_USE_SOFTECC(0),
     .C_WEA_WIDTH(1),
@@ -115,11 +117,11 @@ output [31 : 0] douta;
   )
   inst (
     .CLKA(clka),
+    .RSTA(rsta),
     .WEA(wea),
     .ADDRA(addra),
     .DINA(dina),
     .DOUTA(douta),
-    .RSTA(),
     .ENA(),
     .REGCEA(),
     .CLKB(),

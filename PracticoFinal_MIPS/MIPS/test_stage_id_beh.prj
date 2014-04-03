@@ -1,7 +1,0 @@
-verilog work "signExtension.v"
-verilog work "RegisterBank.v"
-verilog work "GetRegAddr.v"
-verilog work "ControlModule.v"
-verilog work "stage_id.v"
-verilog work "test_stage_id.v"
-verilog work "C:/Xilinxs/14.1/ISE_DS/ISE//verilog/src/glbl.v"

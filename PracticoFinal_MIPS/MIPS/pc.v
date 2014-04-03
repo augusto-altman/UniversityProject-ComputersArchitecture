@@ -36,7 +36,7 @@ module pc(
 		else
 		begin
 			if(control_use_npc)
-				pc = pc + 4;
+				pc = pc + 1;
 			else
 				pc = data_jump_address;
 		end

@@ -55,7 +55,7 @@ module stage_exe(
 	wire [3:0] alu_op;
 	wire t_zero;
 	
-	assign b_entry = (control_use_b) ? data_b : data_imm;
+	assign b_entry = (!control_use_b) ? data_b : data_imm;
 	//assign t_jump_address = npc + data_imm;
 	
 	adder_32b instance_name (

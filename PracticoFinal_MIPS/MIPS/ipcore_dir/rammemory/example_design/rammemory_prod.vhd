@@ -87,10 +87,10 @@
 --    C_PRIM_TYPE                 :  1 
 --    C_LOAD_INIT_FILE            :  0 
 --    C_INIT_FILE_NAME            :  no_coe_file_loaded 
---    C_USE_DEFAULT_DATA          :  0 
+--    C_USE_DEFAULT_DATA          :  1 
 --    C_DEFAULT_DATA              :  0 
 --    C_RST_TYPE                  :  SYNC 
---    C_HAS_RSTA                  :  0 
+--    C_HAS_RSTA                  :  1 
 --    C_RST_PRIORITY_A            :  CE 
 --    C_RSTRAM_A                  :  0 
 --    C_INITA_VAL                 :  0 
@@ -231,6 +231,7 @@ ARCHITECTURE xilinx OF rammemory_prod IS
   COMPONENT rammemory_exdes IS
   PORT (
       --Port A
+    RSTA           : IN STD_LOGIC;  --opt port
   
     WEA            : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     ADDRA          : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
@@ -252,6 +253,7 @@ BEGIN
   bmg0 : rammemory_exdes
     PORT MAP (
       --Port A
+      RSTA       => RSTA,
   
       WEA        => WEA,
       ADDRA      => ADDRA,
