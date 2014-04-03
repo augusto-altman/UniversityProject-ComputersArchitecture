@@ -25,6 +25,15 @@ module debuger_decoder(
     //output reg [31:0] result,
 	 //output reg [1:0] size
     );
+/*reg [3:0] clkdiv;
+
+always @(posedge clk)
+begin
+	if (reset)
+		clkdiv = 0;
+	else
+		clkdiv = clkdiv + 1;
+end*/
 
 /*IF*/
 wire control_is_jump_if, control_branch_eq_if, control_branch_inc_if, control_is_zero_if;
@@ -67,7 +76,8 @@ stage_if instr_fetch (
     );
 	 
 stage_id ins_decoder (
-    .clock(clk), 
+    .clock(clk),
+	 .reset(reset),
     .instr(instr), 
     .writeData(writeData), 
     .writeAddr(writeAddr), 

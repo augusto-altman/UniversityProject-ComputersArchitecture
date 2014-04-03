@@ -21,6 +21,7 @@
 module stage_id(
 	// inputs
 	input clock,
+	input reset,
 	input [31:0] 	instr,
 	input [31:0] 	writeData,
 	input [4:0] 	writeAddr,
@@ -74,7 +75,8 @@ ControlModule control (
     );
 	 
 RegisterBank registerBank (
-    .clock(clock), 
+    .clock(clock),
+	 .reset(reset),
     .addr1(instr[25:21]), 
     .addr2(instr[20:16]), 
     .writeAddr(writeAddr), // mux de esta etapa con instr[20:16] y instr[16:11] -> no es seguro, consultar tito

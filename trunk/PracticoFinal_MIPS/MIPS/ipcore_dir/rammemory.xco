@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.1
-# Date: Mon Feb 24 23:46:14 2014
+# Date: Tue Apr 01 00:08:22 2014
 #
 ##############################################################
 #
@@ -57,7 +57,7 @@ CSET enable_32bit_address=false
 CSET enable_a=Always_Enabled
 CSET enable_b=Always_Enabled
 CSET error_injection_type=Single_Bit_Error_Injection
-CSET fill_remaining_memory_locations=false
+CSET fill_remaining_memory_locations=true
 CSET interface_type=Native
 CSET load_init_file=false
 CSET memory_type=Single_Port_RAM
@@ -93,7 +93,7 @@ CSET use_byte_write_enable=false
 CSET use_error_injection_pins=false
 CSET use_regcea_pin=false
 CSET use_regceb_pin=false
-CSET use_rsta_pin=false
+CSET use_rsta_pin=true
 CSET use_rstb_pin=false
 CSET write_depth_a=8192
 CSET write_width_a=32
@@ -103,4 +103,4 @@ CSET write_width_b=32
 MISC pkg_timestamp=2012-03-28T15:19:06Z
 # END Extra information
 GENERATE
-# CRC: 8c938aa9
+# CRC: 2a7ca720
