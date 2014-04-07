@@ -130,7 +130,7 @@ stage_exe exe(
     .out(dataaddr)
     );
 
-mem module_tested (
+mem stage_mem (
     .clk(clk),
     .wbi(wb_mem), 
     .regaddr(regaddr_mem), 
@@ -140,7 +140,8 @@ mem module_tested (
     .dataaddr(dataaddr), 
     .datafrommem(datafrommem), 
     .datafromimm(datafromimm), 
-    .regaddrout(writeAddr)
+    .regaddrout(writeAddr),
+	 .reset(reset)
     );
 	 
 wb write_back (

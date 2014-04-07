@@ -55,10 +55,7 @@ vcom -work work ../../example_design/blk_mem_gen_v7_1_exdes.vhd
 echo "Compiling Test Bench Files"
 
 vcom -work work    ../bmg_tb_pkg.vhd
-vcom -work work    ../random.vhd
-vcom -work work    ../data_gen.vhd
 vcom -work work    ../addr_gen.vhd
-vcom -work work    ../checker.vhd
 vcom -work work    ../bmg_stim_gen.vhd
 vcom -work work    ../blk_mem_gen_v7_1_synth.vhd 
 vcom -work work    ../blk_mem_gen_v7_1_tb.vhd

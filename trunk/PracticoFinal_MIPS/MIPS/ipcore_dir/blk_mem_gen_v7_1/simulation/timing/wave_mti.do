@@ -13,8 +13,6 @@ quietly WaveActivateNextPane {} 0
       add wave -noupdate /blk_mem_gen_v7_1_tb/status
       add wave -noupdate /blk_mem_gen_v7_1_tb/blk_mem_gen_v7_1_synth_inst/bmg_port/CLKA
       add wave -noupdate /blk_mem_gen_v7_1_tb/blk_mem_gen_v7_1_synth_inst/bmg_port/ADDRA
-      add wave -noupdate /blk_mem_gen_v7_1_tb/blk_mem_gen_v7_1_synth_inst/bmg_port/DINA
-      add wave -noupdate /blk_mem_gen_v7_1_tb/blk_mem_gen_v7_1_synth_inst/bmg_port/WEA
       add wave -noupdate /blk_mem_gen_v7_1_tb/blk_mem_gen_v7_1_synth_inst/bmg_port/DOUTA
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}

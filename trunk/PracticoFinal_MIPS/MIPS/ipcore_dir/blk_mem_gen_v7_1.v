@@ -38,23 +38,19 @@
 
 module blk_mem_gen_v7_1(
   clka,
-  wea,
   addra,
-  dina,
   douta
 );
 
 input clka;
-input [0 : 0] wea;
-input [12 : 0] addra;
-input [31 : 0] dina;
+input [10 : 0] addra;
 output [31 : 0] douta;
 
 // synthesis translate_off
 
   BLK_MEM_GEN_V7_1 #(
-    .C_ADDRA_WIDTH(13),
-    .C_ADDRB_WIDTH(13),
+    .C_ADDRA_WIDTH(11),
+    .C_ADDRB_WIDTH(11),
     .C_ALGORITHM(1),
     .C_AXI_ID_WIDTH(4),
     .C_AXI_SLAVE_TYPE(0),
@@ -85,11 +81,11 @@ output [31 : 0] douta;
     .C_INITB_VAL("0"),
     .C_INTERFACE_TYPE(0),
     .C_LOAD_INIT_FILE(1),
-    .C_MEM_TYPE(0),
+    .C_MEM_TYPE(3),
     .C_MUX_PIPELINE_STAGES(0),
     .C_PRIM_TYPE(1),
-    .C_READ_DEPTH_A(8192),
-    .C_READ_DEPTH_B(8192),
+    .C_READ_DEPTH_A(2048),
+    .C_READ_DEPTH_B(2048),
     .C_READ_WIDTH_A(32),
     .C_READ_WIDTH_B(32),
     .C_RST_PRIORITY_A("CE"),
@@ -105,8 +101,8 @@ output [31 : 0] douta;
     .C_USE_SOFTECC(0),
     .C_WEA_WIDTH(1),
     .C_WEB_WIDTH(1),
-    .C_WRITE_DEPTH_A(8192),
-    .C_WRITE_DEPTH_B(8192),
+    .C_WRITE_DEPTH_A(2048),
+    .C_WRITE_DEPTH_B(2048),
     .C_WRITE_MODE_A("WRITE_FIRST"),
     .C_WRITE_MODE_B("WRITE_FIRST"),
     .C_WRITE_WIDTH_A(32),
@@ -115,13 +111,13 @@ output [31 : 0] douta;
   )
   inst (
     .CLKA(clka),
-    .WEA(wea),
     .ADDRA(addra),
-    .DINA(dina),
     .DOUTA(douta),
     .RSTA(),
     .ENA(),
     .REGCEA(),
+    .WEA(),
+    .DINA(),
     .CLKB(),
     .RSTB(),
     .ENB(),

@@ -120,6 +120,7 @@ PROCESS BEGIN
 END PROCESS;	 
   
   blk_mem_gen_v7_1_synth_inst:ENTITY work.blk_mem_gen_v7_1_synth
+  GENERIC MAP (C_ROM_SYNTH => 0)
   PORT MAP(
            CLK_IN   => CLK,
      	   RESET_IN => RESET,

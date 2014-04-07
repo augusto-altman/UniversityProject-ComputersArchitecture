@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.43 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.50 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.43 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.51 secs
  
 --> Reading design: uarthandler.prj
 
@@ -108,30 +108,64 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\signExtension.v" into library work
+Parsing module <signExtension>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\RegisterBank.v" into library work
+Parsing module <RegisterBank>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\pc.v" into library work
+Parsing module <pc>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mux.v" into library work
+Parsing module <mux>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" into library work
 Parsing module <rammemory>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart_tx.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" into library work
+Parsing module <pmem>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\GetRegAddr.v" into library work
+Parsing module <GetRegAddr>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ControlModule.v" into library work
+Parsing module <ControlModule>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\branch_control.v" into library work
+Parsing module <branch_control>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu_control.v" into library work
+Parsing module <alu_control>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\adder_32b.v" into library work
+Parsing module <adder_32b>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\wb.v" into library work
+Parsing module <wb>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart_tx.v" into library work
 Parsing module <uart_tx>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart_rx.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart_rx.v" into library work
 Parsing module <uart_rx>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mod_m_counter.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v" into library work
+Parsing module <stage_if>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_id.v" into library work
+Parsing module <stage_id>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe.v" into library work
+Parsing module <stage_exe>.
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mod_m_counter.v" into library work
 Parsing module <mod_m_counter>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" into library work
 Parsing module <mem>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\fifo.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\fifo.v" into library work
 Parsing module <fifo>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart.v" into library work
 Parsing module <uart>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" into library work
 Parsing module <debuger_decoder>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debugersm.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debugersm.v" into library work
 Parsing module <debugersm>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uarthandler.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" into library work
 Parsing module <uarthandler>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
+WARNING:HDLCompiler:25 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 47: Module <debuger_decoder> does not have a port named <code>.
+WARNING:HDLCompiler:25 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 49: Module <debuger_decoder> does not have a port named <result>.
+WARNING:HDLCompiler:25 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 50: Module <debuger_decoder> does not have a port named <size>.
+WARNING:HDLCompiler:1016 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 46: Port reset is not connected to this instance
 
 Elaborating module <uarthandler>.
 
@@ -147,599 +181,55 @@ Elaborating module <uart_tx(DBIT=8,SB_TICK=16)>.
 
 Elaborating module <debuger_decoder>.
 
+Elaborating module <stage_if>.
+
+Elaborating module <pc>.
+
+Elaborating module <pmem>.
+WARNING:HDLCompiler:1499 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module <pmem> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v" Line 45: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
+
+Elaborating module <branch_control>.
+
+Elaborating module <stage_id>.
+
+Elaborating module <ControlModule>.
+
+Elaborating module <RegisterBank>.
+
+Elaborating module <signExtension>.
+
+Elaborating module <GetRegAddr>.
+
+Elaborating module <stage_exe>.
+
+Elaborating module <adder_32b>.
+
+Elaborating module <alu>.
+
+Elaborating module <alu_control>.
+WARNING:HDLCompiler:1016 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" Line 36: Port rsta is not connected to this instance
+
 Elaborating module <mem>.
 
 Elaborating module <rammemory>.
-WARNING:HDLCompiler:1499 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module <rammemory> remains a black box.
-WARNING:HDLCompiler:189 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v" Line 39: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:1127 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" Line 49: Assignment to wbo ignored, since the identifier is never used
-
-Elaborating module <debugersm>.
-
-=========================================================================
-*                           HDL Synthesis                               *
-=========================================================================
-
-Synthesizing Unit <uarthandler>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uarthandler.v".
-INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uarthandler.v" line 34: Output port <wr_full> of the instance <uartt> is unconnected or connected to loadless signal.
-    Summary:
-	no macro.
-Unit <uarthandler> synthesized.
-
-Synthesizing Unit <uart>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v".
-        DBIT = 8
-        SB_TICK = 16
-        DVSR = 326
-        DVSR_BIT = 9
-INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v" line 20: Output port <full> of the instance <buffarini> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v" line 43: Output port <q> of the instance <baud_gen_unit> is unconnected or connected to loadless signal.
-    Summary:
-	no macro.
-Unit <uart> synthesized.
-
-Synthesizing Unit <fifo>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\fifo.v".
-        B = 8
-        W = 4
-    Found 16x8-bit dual-port RAM <Mram_array_reg> for signal <array_reg>.
-    Found 1-bit register for signal <empty_reg>.
-    Found 4-bit register for signal <r_ptr_reg>.
-    Found 4-bit register for signal <w_ptr_reg>.
-    Found 1-bit register for signal <full_reg>.
-    Found 4-bit adder for signal <w_ptr_succ> created at line 47.
-    Found 4-bit adder for signal <r_ptr_succ> created at line 48.
-    Found 4-bit comparator not equal for signal <r_ptr_reg[3]_w_ptr_reg[3]_equal_8_o> created at line 62
-    Found 4-bit comparator not equal for signal <w_ptr_reg[3]_r_ptr_reg[3]_equal_10_o> created at line 72
-    Summary:
-	inferred   1 RAM(s).
-	inferred   2 Adder/Subtractor(s).
-	inferred  10 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-Unit <fifo> synthesized.
-
-Synthesizing Unit <mod_m_counter>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mod_m_counter.v".
-        N = 9
-        M = 326
-    Found 9-bit register for signal <r_reg>.
-    Found 9-bit adder for signal <r_reg[8]_GND_5_o_add_2_OUT> created at line 18.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred   9 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
-Unit <mod_m_counter> synthesized.
-
-Synthesizing Unit <uart_rx>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart_rx.v".
-        DBIT = 8
-        SB_TICK = 16
-    Found 4-bit register for signal <s_reg>.
-    Found 3-bit register for signal <n_reg>.
-    Found 8-bit register for signal <b_reg>.
-    Found 2-bit register for signal <state_reg>.
-    Found finite state machine <FSM_0> for signal <state_reg>.
-    -----------------------------------------------------------------------
-    | States             | 4                                              |
-    | Transitions        | 12                                             |
-    | Inputs             | 5                                              |
-    | Outputs            | 2                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Reset              | reset (positive)                               |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | 00                                             |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 3-bit adder for signal <n_reg[2]_GND_6_o_add_16_OUT> created at line 83.
-    Found 4-bit adder for signal <s_reg[3]_GND_6_o_add_29_OUT> created at line 98.
-    Found 4-bit 4-to-1 multiplexer for signal <s_next> created at line 54.
-    Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  15 D-type flip-flop(s).
-	inferred  11 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
-Unit <uart_rx> synthesized.
-
-Synthesizing Unit <uart_tx>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart_tx.v".
-        DBIT = 8
-        SB_TICK = 16
-    Found 1-bit register for signal <tx_reg>.
-    Found 4-bit register for signal <s_reg>.
-    Found 3-bit register for signal <n_reg>.
-    Found 8-bit register for signal <b_reg>.
-    Found 2-bit register for signal <state_reg>.
-    Found finite state machine <FSM_1> for signal <state_reg>.
-    -----------------------------------------------------------------------
-    | States             | 4                                              |
-    | Transitions        | 12                                             |
-    | Inputs             | 4                                              |
-    | Outputs            | 3                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Reset              | reset (positive)                               |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | 00                                             |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 3-bit adder for signal <n_reg[2]_GND_7_o_add_17_OUT> created at line 99.
-    Found 4-bit adder for signal <s_reg[3]_GND_7_o_add_30_OUT> created at line 117.
-    Found 4-bit 4-to-1 multiplexer for signal <s_next> created at line 58.
-    Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  16 D-type flip-flop(s).
-	inferred   8 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
-Unit <uart_tx> synthesized.
-
-Synthesizing Unit <debuger_decoder>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v".
-WARNING:Xst:647 - Input <code<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 45: Output port <wbo> of the instance <module_tested> is unconnected or connected to loadless signal.
-    Found 32-bit 4-to-1 multiplexer for signal <_n0036> created at line 24.
-    Summary:
-	inferred   2 Multiplexer(s).
-Unit <debuger_decoder> synthesized.
-
-Synthesizing Unit <mem>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v".
-    Found 32-bit register for signal <datafrommem>.
-    WARNING:Xst:2404 -  FFs/Latches <datafromimm<31:7>> (without init value) have a constant value of 0 in block <mem>.
-    WARNING:Xst:2404 -  FFs/Latches <datafromimm<7:6>> (without init value) have a constant value of 1 in block <mem>.
-    WARNING:Xst:2404 -  FFs/Latches <datafromimm<6:4>> (without init value) have a constant value of 0 in block <mem>.
-    WARNING:Xst:2404 -  FFs/Latches <datafromimm<4:3>> (without init value) have a constant value of 1 in block <mem>.
-    WARNING:Xst:2404 -  FFs/Latches <regaddrout<4:4>> (without init value) have a constant value of 0 in block <mem>.
-    WARNING:Xst:2404 -  FFs/Latches <regaddrout<4:4>> (without init value) have a constant value of 1 in block <mem>.
-    WARNING:Xst:2404 -  FFs/Latches <regaddrout<4:4>> (without init value) have a constant value of 0 in block <mem>.
-    WARNING:Xst:2404 -  FFs/Latches <regaddrout<4:4>> (without init value) have a constant value of 1 in block <mem>.
-    WARNING:Xst:2404 -  FFs/Latches <regaddrout<4:4>> (without init value) have a constant value of 0 in block <mem>.
-    WARNING:Xst:2404 -  FFs/Latches <wbo<1:0>> (without init value) have a constant value of 1 in block <mem>.
-    Summary:
-	inferred  32 D-type flip-flop(s).
-Unit <mem> synthesized.
-
-Synthesizing Unit <debugersm>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debugersm.v".
-    Found 8-bit register for signal <w_data_out>.
-    Found 32-bit register for signal <n0034[31:0]>.
-    Found 3-bit register for signal <datasize>.
-    Found 2-bit register for signal <state_reg>.
-    Found 1-bit register for signal <rd_out>.
-    Found 1-bit register for signal <wr_out>.
-    Found finite state machine <FSM_2> for signal <state_reg>.
-    -----------------------------------------------------------------------
-    | States             | 4                                              |
-    | Transitions        | 6                                              |
-    | Inputs             | 2                                              |
-    | Outputs            | 4                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Reset              | reset (positive)                               |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | 00                                             |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 3-bit subtractor for signal <n0038[2:0]> created at line 120.
-    Found 3-bit adder for signal <n0046> created at line 100.
-    Found 8-bit 4-to-1 multiplexer for signal <w_data_next> created at line 120.
-    Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  45 D-type flip-flop(s).
-	inferred   3 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
-Unit <debugersm> synthesized.
-
-=========================================================================
-HDL Synthesis Report
-
-Macro Statistics
-# RAMs                                                 : 2
- 16x8-bit dual-port RAM                                : 2
-# Adders/Subtractors                                   : 11
- 3-bit adder                                           : 3
- 3-bit subtractor                                      : 1
- 4-bit adder                                           : 6
- 9-bit adder                                           : 1
-# Registers                                            : 22
- 1-bit register                                        : 7
- 3-bit register                                        : 3
- 32-bit register                                       : 2
- 4-bit register                                        : 6
- 8-bit register                                        : 3
- 9-bit register                                        : 1
-# Comparators                                          : 4
- 4-bit comparator not equal                            : 4
-# Multiplexers                                         : 25
- 1-bit 2-to-1 multiplexer                              : 2
- 3-bit 2-to-1 multiplexer                              : 4
- 32-bit 2-to-1 multiplexer                             : 1
- 32-bit 4-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 12
- 4-bit 4-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 1
- 8-bit 4-to-1 multiplexer                              : 1
- 9-bit 2-to-1 multiplexer                              : 1
-# FSMs                                                 : 3
-
-=========================================================================
-
-=========================================================================
-*                       Advanced HDL Synthesis                          *
-=========================================================================
-
-Reading core <ipcore_dir/rammemory.ngc>.
-Loading core <rammemory> for timing and area information for instance <memory>.
-
-Synthesizing (advanced) Unit <fifo>.
-The following registers are absorbed into counter <r_ptr_reg>: 1 register on signal <r_ptr_reg>.
-The following registers are absorbed into counter <w_ptr_reg>: 1 register on signal <w_ptr_reg>.
-INFO:Xst:3217 - HDL ADVISOR - Register <b_reg> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_array_reg> for implementation on block RAM resources if you made this reset synchronous instead.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     clkA           | connected to signal <clk>           | rise     |
-    |     weA            | connected to signal <wr_en>         | high     |
-    |     addrA          | connected to signal <w_ptr_reg>     |          |
-    |     diA            | connected to signal <w_data>        |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 16-word x 8-bit                     |          |
-    |     addrB          | connected to signal <r_ptr_reg>     |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <fifo> synthesized (advanced).
-
-Synthesizing (advanced) Unit <mod_m_counter>.
-The following registers are absorbed into counter <r_reg>: 1 register on signal <r_reg>.
-Unit <mod_m_counter> synthesized (advanced).
-
-Synthesizing (advanced) Unit <uart_rx>.
-The following registers are absorbed into counter <n_reg>: 1 register on signal <n_reg>.
-Unit <uart_rx> synthesized (advanced).
-
-Synthesizing (advanced) Unit <uart_tx>.
-The following registers are absorbed into counter <n_reg>: 1 register on signal <n_reg>.
-Unit <uart_tx> synthesized (advanced).
-
-=========================================================================
-Advanced HDL Synthesis Report
-
-Macro Statistics
-# RAMs                                                 : 2
- 16x8-bit dual-port distributed RAM                    : 2
-# Adders/Subtractors                                   : 8
- 3-bit adder                                           : 1
- 3-bit subtractor                                      : 1
- 4-bit adder                                           : 6
-# Counters                                             : 7
- 3-bit up counter                                      : 2
- 4-bit up counter                                      : 4
- 9-bit up counter                                      : 1
-# Registers                                            : 106
- Flip-Flops                                            : 106
-# Comparators                                          : 4
- 4-bit comparator not equal                            : 4
-# Multiplexers                                         : 22
- 1-bit 2-to-1 multiplexer                              : 2
- 3-bit 2-to-1 multiplexer                              : 2
- 32-bit 2-to-1 multiplexer                             : 1
- 32-bit 4-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 12
- 4-bit 4-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 1
- 8-bit 4-to-1 multiplexer                              : 1
-# FSMs                                                 : 3
-
-=========================================================================
-
-=========================================================================
-*                         Low Level Synthesis                           *
-=========================================================================
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <uartt/uart_rx_unit/FSM_0> on signal <state_reg[1:2]> with gray encoding.
--------------------
- State | Encoding
--------------------
- 00    | 00
- 01    | 01
- 10    | 11
- 11    | 10
--------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <uartt/uart_tx_unit/FSM_1> on signal <state_reg[1:2]> with gray encoding.
--------------------
- State | Encoding
--------------------
- 00    | 00
- 01    | 01
- 10    | 11
- 11    | 10
--------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <state_machine/FSM_2> on signal <state_reg[1:2]> with user encoding.
--------------------
- State | Encoding
--------------------
- 00    | 00
- 11    | 11
- 10    | 10
- 01    | 01
--------------------
-
-Optimizing unit <mem> ...
-
-Optimizing unit <uarthandler> ...
-
-Optimizing unit <fifo> ...
-
-Optimizing unit <uart_rx> ...
-
-Optimizing unit <uart_tx> ...
-
-Optimizing unit <debugersm> ...
-WARNING:Xst:2677 - Node <uartt/buffarini/Mram_array_reg22> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <uartt/buffarini/Mram_array_reg21> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:1710 - FF/Latch <state_machine/datasize_2> (without init value) has a constant value of 0 in block <uarthandler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_machine/datasize_1> (without init value) has a constant value of 0 in block <uarthandler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_23> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_22> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_21> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_20> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_19> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_18> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_17> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_16> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_15> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_14> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_13> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_12> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_11> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_10> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_9> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <decoder/module_tested/datafrommem_8> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_23> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_22> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_21> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_20> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_19> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_18> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_17> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_16> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_15> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_14> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_13> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_12> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_11> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_10> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_9> of sequential type is unconnected in block <uarthandler>.
-WARNING:Xst:2677 - Node <state_machine/datatosend_0_8> of sequential type is unconnected in block <uarthandler>.
-INFO:Xst:2261 - The FF/Latch <state_machine/rd_out> in Unit <uarthandler> is equivalent to the following FF/Latch, which will be removed : <state_machine/datasize_0> 
-
-Mapping all equations...
-Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block uarthandler, actual ratio is 2.
-
-Final Macro Processing ...
-
-=========================================================================
-Final Register Report
-
-Macro Statistics
-# Registers                                            : 108
- Flip-Flops                                            : 108
-
-=========================================================================
-
-=========================================================================
-*                           Partition Report                            *
-=========================================================================
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-=========================================================================
-*                            Design Summary                             *
-=========================================================================
-
-Top Level Output File Name         : uarthandler.ngc
-
-Primitive and Black Box Usage:
-------------------------------
-# BELS                             : 200
-#      GND                         : 3
-#      INV                         : 3
-#      LUT1                        : 1
-#      LUT2                        : 12
-#      LUT3                        : 22
-#      LUT4                        : 39
-#      LUT5                        : 23
-#      LUT6                        : 77
-#      MUXCY                       : 8
-#      VCC                         : 3
-#      XORCY                       : 9
-# FlipFlops/Latches                : 110
-#      FD                          : 16
-#      FDC                         : 45
-#      FDCE                        : 44
-#      FDE                         : 2
-#      FDP                         : 3
-# RAMS                             : 19
-#      RAM16X1D                    : 2
-#      RAM32M                      : 2
-#      RAMB16BWER                  : 14
-#      RAMB8BWER                   : 1
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 3
-#      IBUF                        : 2
-#      OBUF                        : 1
-
-Device utilization summary:
----------------------------
-
-Selected Device : 6slx16csg324-3 
-
-
-Slice Logic Utilization: 
- Number of Slice Registers:             110  out of  18224     0%  
- Number of Slice LUTs:                  189  out of   9112     2%  
-    Number used as Logic:               177  out of   9112     1%  
-    Number used as Memory:               12  out of   2176     0%  
-       Number used as RAM:               12
-
-Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    204
-   Number with an unused Flip Flop:      94  out of    204    46%  
-   Number with an unused LUT:            15  out of    204     7%  
-   Number of fully used LUT-FF pairs:    95  out of    204    46%  
-   Number of unique control sets:        13
-
-IO Utilization: 
- Number of IOs:                           4
- Number of bonded IOBs:                   4  out of    232     1%  
-
-Specific Feature Utilization:
- Number of Block RAM/FIFO:               15  out of     32    46%  
-    Number using Block RAM only:         15
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
-
----------------------------
-Partition Resource Summary:
----------------------------
-
-  No Partitions were found in this design.
-
----------------------------
-
-
-=========================================================================
-Timing Report
-
-NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
-      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
-      GENERATED AFTER PLACE-and-ROUTE.
-
-Clock Information:
-------------------
------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                                                                                                                                   | Load  |
------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-clk                                | BUFGP                                                                                                                                                   | 129   |
-decoder/module_tested/memory/N1    | NONE(decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 15    |
------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
-
-Asynchronous Control Signals Information:
-----------------------------------------
-No asynchronous control signals found in this design
-
-Timing Summary:
----------------
-Speed Grade: -3
-
-   Minimum period: 4.045ns (Maximum Frequency: 247.188MHz)
-   Minimum input arrival time before clock: 3.476ns
-   Maximum output required time after clock: 3.597ns
-   Maximum combinational path delay: No path found
-
-Timing Details:
----------------
-All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.045ns (frequency: 247.188MHz)
-  Total number of paths / destination ports: 1823 / 194
--------------------------------------------------------------------------
-Delay:               4.045ns (Levels of Logic = 3)
-  Source:            uartt/baud_gen_unit/r_reg_4 (FF)
-  Destination:       uartt/buffarini/empty_reg (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
-
-  Data Path: uartt/baud_gen_unit/r_reg_4 to uartt/buffarini/empty_reg
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.447   0.864  uartt/baud_gen_unit/r_reg_4 (uartt/baud_gen_unit/r_reg_4)
-     LUT4:I0->O           19   0.203   1.176  uartt/baud_gen_unit/max_tick<8>_SW0 (N2)
-     LUT6:I4->O            2   0.203   0.845  uartt/buffarini/_n0060_inv21 (uartt/buffarini/_n0060_inv2)
-     LUT6:I3->O            1   0.205   0.000  uartt/buffarini/empty_reg_rstpot (uartt/buffarini/empty_reg_rstpot)
-     FDP:D                     0.102          uartt/buffarini/empty_reg
-    ----------------------------------------
-    Total                      4.045ns (1.160ns logic, 2.886ns route)
-                                       (28.7% logic, 71.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 99 / 98
--------------------------------------------------------------------------
-Offset:              3.476ns (Levels of Logic = 1)
-  Source:            reset (PAD)
-  Destination:       uartt/baud_gen_unit/r_reg_0 (FF)
-  Destination Clock: clk rising
-
-  Data Path: reset to uartt/baud_gen_unit/r_reg_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            92   1.222   1.824  reset_IBUF (reset_IBUF)
-     FDC:CLR                   0.430          uartt/baud_gen_unit/r_reg_0
-    ----------------------------------------
-    Total                      3.476ns (1.652ns logic, 1.824ns route)
-                                       (47.5% logic, 52.5% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            uartt/uart_tx_unit/tx_reg (FF)
-  Destination:       tx (PAD)
-  Source Clock:      clk rising
-
-  Data Path: uartt/uart_tx_unit/tx_reg to tx
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDP:C->Q              1   0.447   0.579  uartt/uart_tx_unit/tx_reg (uartt/uart_tx_unit/tx_reg)
-     OBUF:I->O                 2.571          tx_OBUF (tx)
-    ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
-
-=========================================================================
-
-Cross Clock Domains Report:
---------------------------
-
-Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    4.045|         |         |         |
----------------+---------+---------+---------+---------+
-
-=========================================================================
-
-
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 22.57 secs
- 
+WARNING:HDLCompiler:1499 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module <rammemory> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" Line 39: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:552 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" Line 36: Input port rsta is not connected on this instance
+
+Elaborating module <wb>.
+
+Elaborating module <mux>.
+ERROR:HDLCompiler:267 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 47: Cannot find port code on this module
+ERROR:HDLCompiler:267 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 49: Cannot find port result on this module
+ERROR:HDLCompiler:267 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 50: Cannot find port size on this module
+Module uarthandler remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 21: Empty module <uarthandler> remains a black box.
 --> 
 
-Total memory usage is 257724 kilobytes
+Total memory usage is 219384 kilobytes
 
-Number of errors   :    0 (   0 filtered)
-Number of warnings :   50 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of errors   :    3 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 
