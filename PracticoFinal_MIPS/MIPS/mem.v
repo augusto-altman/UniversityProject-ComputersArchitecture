@@ -20,6 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module mem(
 	 input clk,
+	 input reset,
     input [1:0] wbi,
 	 input [4:0] regaddr,
     output reg [1:0] wbo,
@@ -38,7 +39,8 @@ module mem(
   .wea(M), // input [0 : 0] wea
   .addra(dataaddr), // input [12 : 0] addra
   .dina(data), // input [31 : 0] dina
-  .douta(douta) // output [31 : 0] douta
+  .douta(douta), // output [31 : 0] douta
+  .rsta(reset)
 );
 	 
 	 always @ (posedge clk)

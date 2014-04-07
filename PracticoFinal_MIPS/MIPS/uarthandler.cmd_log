@@ -171,3 +171,4 @@ par -w -intstyle ise -ol high -mt off uarthandler_map.ncd uarthandler.ncd uartha
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uarthandler.twx uarthandler.ncd -o uarthandler.twr uarthandler.pcf -ucf Nexys3_Master.ucf 
 bitgen -intstyle ise -f uarthandler.ut uarthandler.ncd 
 xst -intstyle ise -ifn "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/uarthandler.xst" -ofn "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/uarthandler.syr" 
+xst -intstyle ise -ifn "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/uarthandler.xst" -ofn "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/uarthandler.syr" 
