@@ -37,8 +37,8 @@ module stage_id(
 	output reg [1:0] 	wbi,
 	output reg			memRead, 
 	output reg			aluSrc, 
-	output reg [31:0]	reg1,
-	output reg [31:0]	reg2,
+	output [31:0]	reg1, //rs
+	output [31:0]	reg2,
 	output reg [31:0]	extendedInstr,
 	output reg [4:0] 	regAddr1,
 	output reg [4:0] 	regAddr2,
@@ -53,8 +53,8 @@ wire 			_memWrite;
 wire [1:0] 	_wbi;
 wire 			_memRead;
 wire 			_aluSrc;
-wire [31:0] _reg1;
-wire [31:0] _reg2;
+//wire [31:0] _reg1;
+//wire [31:0] _reg2;
 wire [31:0]	_extendedInstr;
 wire [4:0] 	_regAddr1;
 wire [4:0] 	_regAddr2 ;
@@ -82,8 +82,8 @@ RegisterBank registerBank (
     .writeAddr(writeAddr), // mux de esta etapa con instr[20:16] y instr[16:11] -> no es seguro, consultar tito
     .writeData(writeData), // input de etapa ex
     .regWrite(regWrite), // De control
-    .reg1(_reg1), 
-    .reg2(_reg2)
+    .reg1(reg1), 
+    .reg2(reg2)
     );
 	 
 signExtension signExtension (
@@ -116,8 +116,8 @@ begin
 	wbi 					= _wbi;
 	memRead 				= _memRead;
 	aluSrc 				= _aluSrc;
-	reg1 					= _reg1;
-	reg2 					= _reg2;
+	//reg1 					= _reg1;
+	//reg2 					= _reg2;
 	extendedInstr 		= _extendedInstr;
 	regDst				= _regDst;
 	regAddr1 			= _regAddr1;
