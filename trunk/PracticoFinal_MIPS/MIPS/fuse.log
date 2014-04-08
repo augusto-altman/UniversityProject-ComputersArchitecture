@@ -57,8 +57,8 @@ Compiling module debuger_decoder
 Compiling module testdeco
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 20 sub-compilation(s) to finish...
+Waiting for 17 sub-compilation(s) to finish...
 Compiled 29 Verilog Units
 Built simulation executable C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/testdeco_isim_beh.exe
 Fuse Memory Usage: 32388 KB
-Fuse CPU Usage: 748 ms
+Fuse CPU Usage: 1591 ms
