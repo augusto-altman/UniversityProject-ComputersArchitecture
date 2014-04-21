@@ -45,6 +45,13 @@ module mem(
 	 
 	 always @ (posedge clk)
 	 begin
+	   if (reset)
+			begin
+				wbo = 2'b0;
+				datafromimm = 32'b0;
+				datafrommem = 32'b0;
+				regaddrout = 5'b0;
+			end
 		wbo = wbi;
 		datafromimm = dataaddr;
 		datafrommem = douta;

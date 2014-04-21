@@ -24,7 +24,7 @@ module uarthandler(
     input rx,
     output tx
     );
-	
+reg resetuart = 0;	
 wire rd_empty;
 wire [7:0] r_data, w_data;
 wire rd, wr;
@@ -33,7 +33,7 @@ wire [31:0] result;
 
 uart uartt (
     .clk(clk), 
-    .reset(reset), 
+    .reset(resetuart), 
     .rx(rx), 
     .rd(rd), 
     .wr(wr),
@@ -45,14 +45,15 @@ uart uartt (
     );
 debuger_decoder decoder (
     .code(r_data), 
-    .clk(clk), 
+    //.clk(clk),
+	 .reset(reset),
     .result(result), 
     .size(size)
     );
 
 debugersm state_machine (
     .clk(clk), 
-    .reset(reset), 
+    .reset(resetuart), 
     .rd_empty(rd_empty), 
     .result(result), 
     .size(size), 

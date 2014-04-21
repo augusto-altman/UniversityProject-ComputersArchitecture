@@ -1,11 +1,11 @@
 //! **************************************************************************
-// Written by: Map P.15xf on Wed Mar 19 21:13:57 2014
+// Written by: Map P.15xf on Mon Apr 21 19:42:56 2014
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "clk" LOCATE = SITE "V10" LEVEL 1;
 COMP "rx" LOCATE = SITE "N17" LEVEL 1;
 COMP "tx" LOCATE = SITE "N18" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
 COMP "reset" LOCATE = SITE "B8" LEVEL 1;
 SCHEMATIC END;
 

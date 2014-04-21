@@ -11,42 +11,46 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Mar 19 21:13:48 2014
+Mapped Date    : Mon Apr 21 19:41:39 2014
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    3
 Slice Logic Utilization:
-  Number of Slice Registers:                   108 out of  18,224    1%
-    Number used as Flip Flops:                 108
+  Number of Slice Registers:                 1,523 out of  18,224    8%
+    Number used as Flip Flops:               1,523
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        134 out of   9,112    1%
-    Number used as logic:                      122 out of   9,112    1%
-      Number using O6 output only:              96
-      Number using O5 output only:               2
-      Number using O5 and O6:                   24
+  Number of Slice LUTs:                      2,600 out of   9,112   28%
+    Number used as logic:                    2,582 out of   9,112   28%
+      Number using O6 output only:           2,494
+      Number using O5 output only:               8
+      Number using O5 and O6:                   80
       Number used as ROM:                        0
-    Number used as Memory:                      12 out of   2,176    1%
-      Number used as Dual Port RAM:             12
-        Number using O6 output only:             4
+    Number used as Memory:                      16 out of   2,176    1%
+      Number used as Dual Port RAM:             16
+        Number using O6 output only:             8
         Number using O5 output only:             0
         Number using O5 and O6:                  8
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
+    Number used exclusively as route-thrus:      2
+      Number with same-slice register load:      1
+      Number with same-slice carry load:         1
+      Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    48 out of   2,278    2%
-  Nummber of MUXCYs used:                       12 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          151
-    Number with an unused Flip Flop:            58 out of     151   38%
-    Number with an unused LUT:                  17 out of     151   11%
-    Number of fully used LUT-FF pairs:          76 out of     151   50%
-    Number of unique control sets:              14
+  Number of occupied Slices:                   911 out of   2,278   39%
+  Nummber of MUXCYs used:                      108 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:        2,701
+    Number with an unused Flip Flop:         1,211 out of   2,701   44%
+    Number with an unused LUT:                 101 out of   2,701    3%
+    Number of fully used LUT-FF pairs:       1,389 out of   2,701   51%
+    Number of unique control sets:              20
     Number of slice register sites lost
-      to control set restrictions:              48 out of  18,224    1%
+      to control set restrictions:              61 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -59,12 +63,12 @@ IO Utilization:
     Number of LOCed IOBs:                        4 out of       4  100%
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                         4 out of      32   12%
+  Number of RAMB16BWERs:                        18 out of      32   56%
   Number of RAMB8BWERs:                          1 out of      64    1%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
-    Number used as BUFGs:                        1
+  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
+    Number used as BUFGs:                        3
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
@@ -83,11 +87,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.01
+Average Fanout of Non-Clock Nets:                5.69
 
-Peak Memory Usage:  350 MB
-Total REAL time to MAP completion:  9 secs 
-Total CPU time to MAP completion:   8 secs 
+Peak Memory Usage:  428 MB
+Total REAL time to MAP completion:  1 mins 18 secs 
+Total CPU time to MAP completion:   1 mins 14 secs 
 
 Table of Contents
 -----------------
@@ -114,10 +118,10 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
 WARNING:PhysDesignRules:367 - The signal
-   <uartt/bufferout/Mram_array_reg1_RAMD_D1_O> is incomplete. The signal does
+   <uartt/buffarini/Mram_array_reg1_RAMD_D1_O> is incomplete. The signal does
    not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <uartt/buffarini/Mram_array_reg1_RAMD_D1_O> is incomplete. The signal does
+   <uartt/bufferout/Mram_array_reg1_RAMD_D1_O> is incomplete. The signal does
    not drive any load pins in the design.
 WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
    (RAMB8BWER).  9K Block RAM initialization data, both user defined and
@@ -127,14 +131,12 @@ WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
 Section 3 - Informational
 -------------------------
 INFO:Security:54 - 'xc6slx16' is a WebPack part.
-INFO:LIT:243 - Logical network uartt/bufferout/Mram_array_reg22/SPO has no load.
-INFO:LIT:395 - The above info message is repeated 17 more times for the
-   following (max. 5 shown):
-   uartt/bufferout/Mram_array_reg21/SPO,
-   decoder/module_tested/memory/douta<23>,
-   decoder/module_tested/memory/douta<22>,
-   decoder/module_tested/memory/douta<21>,
-   decoder/module_tested/memory/douta<20>
+INFO:LIT:243 - Logical network uartt/buffarini/Mram_array_reg22/SPO has no load.
+INFO:LIT:395 - The above info message is repeated 3 more times for the following
+   (max. 5 shown):
+   uartt/buffarini/Mram_array_reg21/SPO,
+   uartt/bufferout/Mram_array_reg22/SPO,
+   uartt/bufferout/Mram_array_reg21/SPO
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -150,9 +152,8 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  29 block(s) removed
    9 block(s) optimized away
- 117 signal(s) removed
+   1 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -167,498 +168,25 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-The signal "decoder/module_tested/memory/douta<23>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<22>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<21>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<20>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<19>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<18>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<17>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<16>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<15>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<14>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<13>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<12>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<11>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<10>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<9>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/douta<8>" is sourceless and has been
-removed.
-The signal "decoder/module_tested/memory/N0" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.ram_douta<3>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux91" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.ram_douta<3>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.ram_douta<3>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.ram_douta<3>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.ram_douta<2>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux81" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.ram_douta<2>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.ram_douta<2>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.ram_douta<2>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.ram_douta<1>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux71" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.ram_douta<1>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.ram_douta<1>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.ram_douta<1>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.ram_douta<0>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux61" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.ram_douta<0>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.ram_douta<0>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.ram_douta<0>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.ram_douta<8>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux51" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.ram_douta<8>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.ram_douta<8>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[3].ram.ram_douta<8>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.ram_douta<7>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux41" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.ram_douta<7>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.ram_douta<7>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[3].ram.ram_douta<7>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.ram_douta<4>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux321" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.ram_douta<4>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.ram_douta<4>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[3].ram.ram_douta<4>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.ram_douta<3>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux311" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.ram_douta<3>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.ram_douta<3>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[3].ram.ram_douta<3>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.ram_douta<2>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.ram_douta<2>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.ram_douta<2>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.ram_douta<6>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux31" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.ram_douta<6>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.ram_douta<6>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[3].ram.ram_douta<6>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.ram_douta<1>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.ram_douta<1>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.ram_douta<1>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.ram_douta<0>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.ram_douta<0>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.ram_douta<0>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.ram_douta<8>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.ram_douta<8>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.ram_douta<8>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.ram_douta<7>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.ram_douta<7>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.ram_douta<7>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.ram_douta<6>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.ram_douta<6>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.ram_douta<6>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.ram_douta<5>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.ram_douta<5>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.ram_douta<5>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.ram_douta<4>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.ram_douta<4>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.ram_douta<4>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.ram_douta<5>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux21" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.ram_douta<5>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.ram_douta<5>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[3].ram.ram_douta<5>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.ram_douta<3>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.ram_douta<3>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.ram_douta<3>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.ram_douta<2>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.ram_douta<2>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.ram_douta<2>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.ram_douta<1>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.ram_douta<1>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.ram_douta<1>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.ram_douta<0>" is sourceless and has been
-removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux161" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.ram_douta<0>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.ram_douta<0>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[11].ram.ram_douta<0>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.ram_douta<8>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux151" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.ram_douta<8>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.ram_douta<8>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.ram_douta<8>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.ram_douta<7>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux141" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.ram_douta<7>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.ram_douta<7>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.ram_douta<7>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.ram_douta<6>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux131" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.ram_douta<6>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.ram_douta<6>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.ram_douta<6>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.ram_douta<5>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux111" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.ram_douta<5>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.ram_douta<5>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.ram_douta<5>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.ram_douta<4>" is sourceless and has been removed.
- Sourceless block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux101" (ROM) removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.ram_douta<4>" is sourceless and has been
-removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.ram_douta<4>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.ram_douta<4>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ena_array<3>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ena_array<2>" is sourceless and has been removed.
-The signal
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ena_array<1>" is sourceless and has been removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/bindec_a.bindec_inst_a/Mmux_ENOUT<1>11" (ROM) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/bindec_a.bindec_inst_a/Mmux_ENOUT<2>11" (ROM) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/bindec_a.bindec_inst_a/Mmux_ENOUT<3>11" (ROM) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[10].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[13].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[14].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[4].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[5].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[6].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[7].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[8].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
-Unused block
-"decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
-_gen/valid.cstr/ramloop[9].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram"
-(RAMB16BWER) removed.
+The signal "decoder/stage_mem/memory/N0" is sourceless and has been removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
 VCC 		XST_VCC
 GND
-		decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
-m_gen/valid.cstr/XST_GND
+		decoder/instr_fetch/pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem
+_gen/valid.cstr/XST_GND
+GND 		decoder/instr_fetch/pmemory/XST_GND
+VCC 		decoder/instr_fetch/pmemory/XST_VCC
+GND
+		decoder/stage_mem/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_ge
+n/valid.cstr/XST_GND
 VCC
-		decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
-m_gen/valid.cstr/XST_VCC
-LUT2
-		decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
-m_gen/valid.cstr/bindec_a.bindec_inst_a/Mmux_ENOUT<0>11
-   optimized to 1
-FDE
-		decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
-m_gen/valid.cstr/has_mux_a.A/sel_pipe_0
-   optimized to 0
-FDE
-		decoder/module_tested/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
-m_gen/valid.cstr/has_mux_a.A/sel_pipe_1
-   optimized to 0
-GND 		decoder/module_tested/memory/XST_GND
-VCC 		decoder/module_tested/memory/XST_VCC
+		decoder/stage_mem/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_ge
+n/valid.cstr/XST_VCC
+GND 		decoder/stage_mem/memory/XST_GND
+VCC 		decoder/stage_mem/memory/XST_VCC
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

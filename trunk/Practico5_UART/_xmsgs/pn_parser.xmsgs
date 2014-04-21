@@ -8,19 +8,19 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Practico5_UART/mod_m_counter.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/Practico5_UART/mod_m_counter.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Practico5_UART/uart.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/Practico5_UART/uart.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Practico5_UART/uart_rx.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/Practico5_UART/uart_rx.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Practico5_UART/uart_test.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/Practico5_UART/uart_test.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Practico5_UART/uart_tx.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/Practico5_UART/uart_tx.v&quot; into library work</arg>
 </msg>
 
 </messages>
