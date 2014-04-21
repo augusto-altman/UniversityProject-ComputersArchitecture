@@ -108,21 +108,38 @@ GetRegAddr getRegAddr (
 
 always@(posedge clock)
 begin
-	aluOp 				= _aluOp;
-	isJump 				= _isJump;
-	isNotConditional 	= _isNotConditional;
-	isEq 					= _isEq;
-	memWrite 			= _memWrite;
-	wbi 					= _wbi;
-	memRead 				= _memRead;
-	aluSrc 				= _aluSrc;
-	//reg1 					= _reg1;
-	//reg2 					= _reg2;
-	extendedInstr 		= _extendedInstr;
-	regDst				= _regDst;
-	regAddr1 			= _regAddr1;
-	regAddr2 			= _regAddr2;
-	pc_ex 				= pc_id;
+  if(reset)
+	  begin
+			aluOp					= 4'b0010;
+			extendedInstr 		= 32'b100000;
+			wbi 					= 2'b0;
+			memWrite 			= 1'b0;
+			aluSrc 				= 1'b1;
+			regDst				= 1'b0;
+			regAddr1 			= 5'b0;
+			regAddr2 			= 5'b0;
+			pc_ex 				= 32'b0;
+			isJump 				= 1'b0;
+			isNotConditional 	= 1'b0;
+			isEq 					= 1'b0;
+			memRead 				= 1'b0;
+	  end
+	else
+		begin
+			aluOp 				= _aluOp;
+			isJump 				= _isJump;
+			isNotConditional 	= _isNotConditional;
+			isEq 					= _isEq;
+			memWrite 			= _memWrite;
+			wbi 					= _wbi;
+			memRead 				= _memRead;
+			aluSrc 				= _aluSrc;
+			extendedInstr 		= _extendedInstr;
+			regDst				= _regDst;
+			regAddr1 			= _regAddr1;
+			regAddr2 			= _regAddr2;
+			pc_ex 				= pc_id;
+		end
 
 end	
 	

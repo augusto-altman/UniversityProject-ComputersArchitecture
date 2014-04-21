@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-03-05T19:09:13</DateModified>
+  <DateModified>2014-04-21T19:29:12</DateModified>
   <ModuleName>uart_test</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Practico5_UART/iseconfig/uart_test.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/Practico5_UART\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/Practico5_UART/iseconfig/uart_test.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/Practico5_UART\</ImplementationReportsDirectory>
   <DateInitialized>2012-10-24T19:12:54</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

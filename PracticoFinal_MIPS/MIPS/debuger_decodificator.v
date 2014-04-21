@@ -19,22 +19,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module debuger_decoder(
-    //input [7:0] code,
-	 input clk,
-	 input reset
-    //output reg [31:0] result,
-	 //output reg [1:0] size
+    input [7:0] code,
+	 input reset,
+    output reg [31:0] result,
+	 output reg [1:0] size
     );
-/*reg [3:0] clkdiv;
-
-always @(posedge clk)
-begin
-	if (reset)
-		clkdiv = 0;
-	else
-		clkdiv = clkdiv + 1;
-end*/
-
+reg clk;
 /*IF*/
 wire control_is_jump_if, control_branch_eq_if, control_branch_inc_if, control_is_zero_if;
 wire [31:0] data_jump_address;
@@ -152,16 +142,59 @@ wb write_back (
     .weregfile(regWrite)
     );
 
-/*always @ (*)
+
+
+always @ (*)
 begin
 	case (code[5:0])
-	6'b100001: result = datafrommem;
-	6'b100010: result = datafromimm;
-	6'b100011: result = regaddrout;
-	default: result = 0;
+		6'b100000: clk = 1;
+		6'b100001: clk = 0;
+		default: clk = 0;
+	endcase
+
+	case (code[5:0])
+		/*IF*/ 
+		6'b000001: result = instr; //instruction
+		6'b100010: result = pc_id; //iadd
+		/*ID*/
+		6'b000010: result = control_oper; //aluOp
+		6'b000011: result = control_is_jump; //isJump
+		6'b000100: result = control_branch_inc; //isNotConditional
+		6'b000101: result = control_branch_eq; //isEq
+		6'b000110: result = M_exe; //memWrite
+		6'b000111: result = wb_exe; //wbi
+		//6'b001000: result = //memRead
+		6'b001001: result = control_use_b; //aluSrc
+		6'b001010: result = data_a; //reg1
+		6'b001011: result = data_b; //reg2
+		6'b001100: result = data_imm; //extendedInstr
+		6'b001101: result = regaddr1; //regAddr1
+		6'b001110: result = regaddr2; //regAddr2
+		6'b001111: result = control_Reg_DST; //regDst
+		/*EXE*/
+		6'b010000: result = control_is_jump_if; //is_jump_o
+		6'b010001: result = control_branch_eq_if; //branch_eq_o
+		6'b010010: result = control_branch_inc_if; //branch_inc_o
+		6'b010011: result = control_is_zero_if; //zero
+		6'b010100: result = data_jump_address; //jump_address
+		6'b010101: result = wb_mem; //wbi_o
+		6'b010110: result = M; //M_o
+		6'b010111: result = regaddr_mem; //regaddr_o
+		6'b011000: result = data;//data_b_o
+		6'b011001: result = dataaddr;//out
+		/*MEM*/
+		6'b011010: result = datafrommem; //datafrommem
+		6'b011011: result = datafromimm; //datafromimm
+		6'b011100: result = writeAddr; //regaddrout
+		6'b011101: result = wb; //wbo
+		/*WB*/
+		6'b011110: result = writeData; //datatoregfile
+		6'b011111: result = regWrite; //weregfile
+		default: result = 0;
 	endcase
 	
-	size = code[7:5];
-end*/
+	size = code[7:6];
+	
+end
 
 endmodule

@@ -26,26 +26,15 @@ module stage_if(
 	 input control_branch_inc,
 	 input control_is_zero,
     input [31:0] data_jump_address,
-    output reg [31:0] instruction,
+    output [31:0] instruction,
 	 output reg [31:0] iadd
     );
 
 	wire use_npc;
-	wire [31:0] iadd_out, instruction_out;
+	wire [31:0] iadd_out;
 
-	always @ (*)
-	begin
-		if(reset)
-		begin
-			iadd = 32'bX;
-			instruction = 32'bX;
-		end
-		else
-		begin
-			iadd = iadd_out;
-			instruction = instruction_out;
-		end
-	end
+	always @ (posedge clock)
+		iadd = iadd_out;
 
 	pc pc_reg (
 		 .clock(clock), 
@@ -57,8 +46,8 @@ module stage_if(
 	 
 	pmem pmemory (
 	  .clka(clock),
-	  .addra(iadd),
-	  .douta(instruction_out)
+	  .addra(iadd_out),
+	  .douta(instruction)
 	);
 	
 	branch_control bc (

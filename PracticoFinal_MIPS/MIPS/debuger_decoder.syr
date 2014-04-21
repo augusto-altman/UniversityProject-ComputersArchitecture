@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: debuger_decoder.prj
 
@@ -108,41 +108,41 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\signExtension.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\signExtension.v" into library work
 Parsing module <signExtension>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\RegisterBank.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\RegisterBank.v" into library work
 Parsing module <RegisterBank>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\pc.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\pc.v" into library work
 Parsing module <pc>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mux.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mux.v" into library work
 Parsing module <mux>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" into library work
 Parsing module <rammemory>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" into library work
 Parsing module <pmem>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\GetRegAddr.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\GetRegAddr.v" into library work
 Parsing module <GetRegAddr>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ControlModule.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ControlModule.v" into library work
 Parsing module <ControlModule>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\branch_control.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\branch_control.v" into library work
 Parsing module <branch_control>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu_control.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\alu_control.v" into library work
 Parsing module <alu_control>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\alu.v" into library work
 Parsing module <alu>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\adder_32b.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\adder_32b.v" into library work
 Parsing module <adder_32b>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\wb.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\wb.v" into library work
 Parsing module <wb>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_if.v" into library work
 Parsing module <stage_if>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_id.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_id.v" into library work
 Parsing module <stage_id>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_exe.v" into library work
 Parsing module <stage_exe>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v" into library work
 Parsing module <mem>.
-Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" into library work
+Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" into library work
 Parsing module <debuger_decoder>.
 
 =========================================================================
@@ -156,8 +156,8 @@ Elaborating module <stage_if>.
 Elaborating module <pc>.
 
 Elaborating module <pmem>.
-WARNING:HDLCompiler:1499 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module <pmem> remains a black box.
-WARNING:HDLCompiler:189 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v" Line 60: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1499 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module <pmem> remains a black box.
+WARNING:HDLCompiler:189 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_if.v" Line 52: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
 
 Elaborating module <branch_control>.
 
@@ -182,8 +182,8 @@ Elaborating module <alu_control>.
 Elaborating module <mem>.
 
 Elaborating module <rammemory>.
-WARNING:HDLCompiler:1499 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module <rammemory> remains a black box.
-WARNING:HDLCompiler:189 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" Line 40: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1499 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module <rammemory> remains a black box.
+WARNING:HDLCompiler:189 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v" Line 40: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
 
 Elaborating module <wb>.
 
@@ -194,20 +194,20 @@ Elaborating module <mux>.
 =========================================================================
 
 Synthesizing Unit <debuger_decoder>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v".
-INFO:Xst:3210 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 78: Output port <memRead> of the instance <ins_decoder> is unconnected or connected to loadless signal.
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v".
+INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 68: Output port <memRead> of the instance <ins_decoder> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <debuger_decoder> synthesized.
 
 Synthesizing Unit <stage_if>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_if.v".
     Summary:
 	no macro.
 Unit <stage_if> synthesized.
 
 Synthesizing Unit <pc>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\pc.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\pc.v".
     Found 32-bit register for signal <pc>.
     Found 32-bit adder for signal <pc[31]_GND_3_o_add_2_OUT> created at line 39.
     Summary:
@@ -217,40 +217,38 @@ Synthesizing Unit <pc>.
 Unit <pc> synthesized.
 
 Synthesizing Unit <branch_control>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\branch_control.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\branch_control.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <branch_control> synthesized.
 
 Synthesizing Unit <stage_id>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_id.v".
-    Found 1-bit register for signal <isJump>.
-    Found 1-bit register for signal <isNotConditional>.
-    Found 1-bit register for signal <isEq>.
-    Found 1-bit register for signal <memWrite>.
-    Found 2-bit register for signal <wbi>.
-    Found 1-bit register for signal <memRead>.
-    Found 1-bit register for signal <aluSrc>.
-    Found 32-bit register for signal <reg1>.
-    Found 32-bit register for signal <reg2>.
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_id.v".
     Found 32-bit register for signal <extendedInstr>.
+    Found 2-bit register for signal <wbi>.
+    Found 1-bit register for signal <memWrite>.
+    Found 1-bit register for signal <aluSrc>.
     Found 1-bit register for signal <regDst>.
     Found 5-bit register for signal <regAddr1>.
     Found 5-bit register for signal <regAddr2>.
     Found 32-bit register for signal <pc_ex>.
+    Found 1-bit register for signal <isJump>.
+    Found 1-bit register for signal <isNotConditional>.
+    Found 1-bit register for signal <isEq>.
+    Found 1-bit register for signal <memRead>.
     Found 4-bit register for signal <aluOp>.
     Summary:
-	inferred 151 D-type flip-flop(s).
+	inferred  87 D-type flip-flop(s).
 Unit <stage_id> synthesized.
 
 Synthesizing Unit <ControlModule>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ControlModule.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ControlModule.v".
     Summary:
 	inferred   3 Multiplexer(s).
 Unit <ControlModule> synthesized.
 
 Synthesizing Unit <RegisterBank>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\RegisterBank.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\RegisterBank.v".
     Found 32-bit register for signal <registro2>.
     Found 1024-bit register for signal <n0050[1023:0]>.
     Found 32-bit register for signal <registro1>.
@@ -262,13 +260,13 @@ Synthesizing Unit <RegisterBank>.
 Unit <RegisterBank> synthesized.
 
 Synthesizing Unit <signExtension>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\signExtension.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\signExtension.v".
     Summary:
 	no macro.
 Unit <signExtension> synthesized.
 
 Synthesizing Unit <GetRegAddr>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\GetRegAddr.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\GetRegAddr.v".
 WARNING:Xst:647 - Input <instr<10:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <instr<31:21>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
@@ -276,7 +274,7 @@ WARNING:Xst:647 - Input <instr<31:21>> is never used. This port will be preserve
 Unit <GetRegAddr> synthesized.
 
 Synthesizing Unit <stage_exe>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_exe.v".
     Found 32-bit register for signal <jump_address>.
     Found 1-bit register for signal <is_jump_o>.
     Found 1-bit register for signal <branch_eq_o>.
@@ -293,14 +291,14 @@ Synthesizing Unit <stage_exe>.
 Unit <stage_exe> synthesized.
 
 Synthesizing Unit <adder_32b>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\adder_32b.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\adder_32b.v".
     Found 32-bit adder for signal <c> created at line 29.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <adder_32b> synthesized.
 
 Synthesizing Unit <alu>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\alu.v".
     Found 32-bit subtractor for signal <a[31]_b[31]_sub_3_OUT> created at line 35.
     Found 32-bit adder for signal <a[31]_b[31]_add_1_OUT> created at line 34.
     Found 32-bit shifter logical left for signal <b[31]_a[31]_shift_left_10_OUT> created at line 41
@@ -313,13 +311,13 @@ Synthesizing Unit <alu>.
 Unit <alu> synthesized.
 
 Synthesizing Unit <alu_control>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu_control.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\alu_control.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <alu_control> synthesized.
 
 Synthesizing Unit <mem>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v".
     Found 32-bit register for signal <datafromimm>.
     Found 32-bit register for signal <datafrommem>.
     Found 5-bit register for signal <regaddrout>.
@@ -329,13 +327,13 @@ Synthesizing Unit <mem>.
 Unit <mem> synthesized.
 
 Synthesizing Unit <wb>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\wb.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\wb.v".
     Summary:
 	no macro.
 Unit <wb> synthesized.
 
 Synthesizing Unit <mux>.
-    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mux.v".
+    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mux.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux> synthesized.
@@ -347,11 +345,11 @@ Macro Statistics
 # Adders/Subtractors                                   : 3
  32-bit adder                                          : 2
  32-bit addsub                                         : 1
-# Registers                                            : 33
+# Registers                                            : 31
  1-bit register                                        : 12
  1024-bit register                                     : 1
  2-bit register                                        : 3
- 32-bit register                                       : 12
+ 32-bit register                                       : 10
  4-bit register                                        : 1
  5-bit register                                        : 4
 # Multiplexers                                         : 54
@@ -392,8 +390,8 @@ Macro Statistics
  32-bit addsub                                         : 1
 # Counters                                             : 1
  32-bit up counter                                     : 1
-# Registers                                            : 1418
- Flip-Flops                                            : 1418
+# Registers                                            : 1354
+ Flip-Flops                                            : 1354
 # Multiplexers                                         : 52
  32-bit 2-to-1 multiplexer                             : 45
  32-bit 32-to-1 multiplexer                            : 2
@@ -411,11 +409,11 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <extendedInstr_11> in Unit <stage_id> is equivalent to the following FF/Latch, which will be removed : <regAddr1_0> 
-INFO:Xst:2261 - The FF/Latch <extendedInstr_12> in Unit <stage_id> is equivalent to the following FF/Latch, which will be removed : <regAddr1_1> 
-INFO:Xst:2261 - The FF/Latch <extendedInstr_13> in Unit <stage_id> is equivalent to the following FF/Latch, which will be removed : <regAddr1_2> 
-INFO:Xst:2261 - The FF/Latch <extendedInstr_14> in Unit <stage_id> is equivalent to the following FF/Latch, which will be removed : <regAddr1_3> 
-INFO:Xst:2261 - The FF/Latch <extendedInstr_15> in Unit <stage_id> is equivalent to the following 17 FFs/Latches, which will be removed : <extendedInstr_16> <extendedInstr_17> <extendedInstr_18> <extendedInstr_19> <extendedInstr_20> <extendedInstr_21> <extendedInstr_22> <extendedInstr_23> <extendedInstr_24> <extendedInstr_25> <extendedInstr_26> <extendedInstr_27> <extendedInstr_28> <extendedInstr_29> <extendedInstr_30> <extendedInstr_31> <regAddr1_4> 
+INFO:Xst:2261 - The FF/Latch <regAddr1_3> in Unit <stage_id> is equivalent to the following FF/Latch, which will be removed : <extendedInstr_14> 
+INFO:Xst:2261 - The FF/Latch <regAddr1_2> in Unit <stage_id> is equivalent to the following FF/Latch, which will be removed : <extendedInstr_13> 
+INFO:Xst:2261 - The FF/Latch <regAddr1_1> in Unit <stage_id> is equivalent to the following FF/Latch, which will be removed : <extendedInstr_12> 
+INFO:Xst:2261 - The FF/Latch <regAddr1_0> in Unit <stage_id> is equivalent to the following FF/Latch, which will be removed : <extendedInstr_11> 
+INFO:Xst:2261 - The FF/Latch <regAddr1_4> in Unit <stage_id> is equivalent to the following 17 FFs/Latches, which will be removed : <extendedInstr_15> <extendedInstr_16> <extendedInstr_17> <extendedInstr_18> <extendedInstr_19> <extendedInstr_20> <extendedInstr_21> <extendedInstr_22> <extendedInstr_23> <extendedInstr_24> <extendedInstr_25> <extendedInstr_26> <extendedInstr_27> <extendedInstr_28> <extendedInstr_29> <extendedInstr_30> <extendedInstr_31> 
 
 Optimizing unit <mem> ...
 
@@ -428,160 +426,26 @@ Optimizing unit <RegisterBank> ...
 Optimizing unit <stage_exe> ...
 
 Optimizing unit <alu> ...
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_11> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_12> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_13> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_14> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_15> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_16> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_17> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_18> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_19> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_20> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_21> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_22> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_23> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_24> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_25> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_26> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_27> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_28> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_29> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_30> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <instr_fetch/pc_reg/pc_31> of sequential type is unconnected in block <debuger_decoder>.
 WARNING:Xst:2677 - Node <ins_decoder/memRead> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_31> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_30> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_29> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_28> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_27> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_26> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_25> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_24> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_23> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_22> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_21> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_20> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_19> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_18> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_17> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_16> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_15> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_14> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_13> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_12> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <ins_decoder/pc_ex_11> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_31> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_30> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_29> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_28> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_27> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_26> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_25> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_24> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_23> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_22> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_21> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_20> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_19> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_18> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_17> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_16> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_15> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_14> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_13> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_12> of sequential type is unconnected in block <debuger_decoder>.
-WARNING:Xst:2677 - Node <exe/jump_address_11> of sequential type is unconnected in block <debuger_decoder>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block debuger_decoder, actual ratio is 32.
-FlipFlop ins_decoder/aluSrc has been replicated 6 time(s)
+Found area constraint ratio of 100 (+ 5) on block debuger_decoder, actual ratio is 36.
+FlipFlop ins_decoder/aluSrc has been replicated 4 time(s)
 FlipFlop ins_decoder/extendedInstr_0 has been replicated 1 time(s)
 FlipFlop ins_decoder/extendedInstr_1 has been replicated 1 time(s)
-FlipFlop ins_decoder/extendedInstr_15 has been replicated 1 time(s)
-FlipFlop ins_decoder/extendedInstr_2 has been replicated 1 time(s)
-FlipFlop ins_decoder/extendedInstr_5 has been replicated 1 time(s)
-FlipFlop ins_decoder/reg1_0 has been replicated 3 time(s)
-FlipFlop ins_decoder/reg1_1 has been replicated 4 time(s)
-FlipFlop ins_decoder/reg1_3 has been replicated 1 time(s)
+FlipFlop ins_decoder/regAddr1_4 has been replicated 2 time(s)
+FlipFlop ins_decoder/registerBank/registro1_0 has been replicated 2 time(s)
+FlipFlop ins_decoder/registerBank/registro1_1 has been replicated 4 time(s)
 
 Final Macro Processing ...
-
-Processing Unit <debuger_decoder> :
-	Found 2-bit shift register for signal <ins_decoder/reg2_31>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_30>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_29>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_28>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_27>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_26>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_25>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_24>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_23>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_22>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_21>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_20>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_19>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_18>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_17>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_16>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_15>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_14>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_13>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_12>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_11>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_10>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_9>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_8>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_7>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_6>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_5>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_4>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_3>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_2>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_1>.
-	Found 2-bit shift register for signal <ins_decoder/reg2_0>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_31>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_30>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_29>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_28>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_27>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_26>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_25>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_24>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_23>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_22>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_21>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_20>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_19>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_18>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_17>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_16>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_15>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_14>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_13>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_12>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_11>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_10>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_9>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_8>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_7>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_6>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_5>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_4>.
-	Found 2-bit shift register for signal <ins_decoder/reg1_2>.
-	Found 2-bit shift register for signal <exe/branch_inc_o>.
-	Found 2-bit shift register for signal <exe/branch_eq_o>.
-Unit <debuger_decoder> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1258
- Flip-Flops                                            : 1258
-# Shift Registers                                      : 63
- 2-bit shift register                                  : 63
+# Registers                                            : 1378
+ Flip-Flops                                            : 1378
 
 =========================================================================
 
@@ -604,32 +468,32 @@ Top Level Output File Name         : debuger_decoder.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2469
+# BELS                             : 2825
 #      GND                         : 5
-#      INV                         : 5
-#      LUT2                        : 29
-#      LUT3                        : 66
-#      LUT4                        : 13
-#      LUT5                        : 1181
-#      LUT6                        : 968
-#      MUXCY                       : 51
-#      MUXF7                       : 93
-#      VCC                         : 4
-#      XORCY                       : 54
-# FlipFlops/Latches                : 1323
-#      FD                          : 139
-#      FDE                         : 105
-#      FDR                         : 55
+#      INV                         : 4
+#      LUT2                        : 50
+#      LUT3                        : 100
+#      LUT4                        : 50
+#      LUT5                        : 1202
+#      LUT6                        : 1127
+#      MUXCY                       : 93
+#      MUXF7                       : 95
+#      VCC                         : 3
+#      XORCY                       : 96
+# FlipFlops/Latches                : 1380
+#      FD                          : 144
+#      FDE                         : 42
+#      FDR                         : 163
 #      FDRE_1                      : 1024
+#      FDS                         : 7
 # RAMS                             : 19
 #      RAMB16BWER                  : 18
 #      RAMB8BWER                   : 1
-# Shift Registers                  : 63
-#      SRLC16E                     : 63
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 1
-#      IBUF                        : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 43
+#      IBUF                        : 9
+#      OBUF                        : 34
 
 Device utilization summary:
 ---------------------------
@@ -638,27 +502,25 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1323  out of  18224     7%  
- Number of Slice LUTs:                 2325  out of   9112    25%  
-    Number used as Logic:              2262  out of   9112    24%  
-    Number used as Memory:               63  out of   2176     2%  
-       Number used as SRL:               63
+ Number of Slice Registers:            1380  out of  18224     7%  
+ Number of Slice LUTs:                 2533  out of   9112    27%  
+    Number used as Logic:              2533  out of   9112    27%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2478
-   Number with an unused Flip Flop:    1155  out of   2478    46%  
-   Number with an unused LUT:           153  out of   2478     6%  
-   Number of fully used LUT-FF pairs:  1170  out of   2478    47%  
-   Number of unique control sets:         7
+ Number of LUT Flip Flop pairs used:   2667
+   Number with an unused Flip Flop:    1287  out of   2667    48%  
+   Number with an unused LUT:           134  out of   2667     5%  
+   Number of fully used LUT-FF pairs:  1246  out of   2667    46%  
+   Number of unique control sets:         6
 
 IO Utilization: 
- Number of IOs:                           2
- Number of bonded IOBs:                   2  out of    232     0%  
+ Number of IOs:                          43
+ Number of bonded IOBs:                  43  out of    232    18%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               19  out of     32    59%  
     Number using Block RAM only:         19
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -681,10 +543,14 @@ Clock Information:
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                                        | Load  |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------+
-clk                                | BUFGP                                                                                                                                        | 1405  |
+clk_inv(clk_inv1:O)                | BUFG(*)(instr_fetch/pc_reg/pc_0)                                                                                                             | 32    |
+clk(clk<5>1:O)                     | BUFG(*)(ins_decoder/aluOp_3)                                                                                                                 | 1367  |
 instr_fetch/pmemory/N1             | NONE(instr_fetch/pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
 stage_mem/memory/N1                | NONE(stage_mem/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)   | 15    |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -695,49 +561,122 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.722ns (Maximum Frequency: 114.647MHz)
-   Minimum input arrival time before clock: 5.384ns
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Minimum period: 8.850ns (Maximum Frequency: 112.999MHz)
+   Minimum input arrival time before clock: 5.412ns
+   Maximum output required time after clock: 9.538ns
+   Maximum combinational path delay: 11.652ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 8.722ns (frequency: 114.647MHz)
-  Total number of paths / destination ports: 59826 / 2808
+Timing constraint: Default period analysis for Clock 'clk_inv'
+  Clock period: 2.450ns (frequency: 408.221MHz)
+  Total number of paths / destination ports: 528 / 32
 -------------------------------------------------------------------------
-Delay:               8.722ns (Levels of Logic = 8)
-  Source:            ins_decoder/reg1_31 (FF)
+Delay:               2.450ns (Levels of Logic = 33)
+  Source:            instr_fetch/pc_reg/pc_0 (FF)
+  Destination:       instr_fetch/pc_reg/pc_31 (FF)
+  Source Clock:      clk_inv rising
+  Destination Clock: clk_inv rising
+
+  Data Path: instr_fetch/pc_reg/pc_0 to instr_fetch/pc_reg/pc_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.447   0.774  instr_fetch/pc_reg/pc_0 (instr_fetch/pc_reg/pc_0)
+     LUT6:I5->O            1   0.205   0.000  instr_fetch/pc_reg/Mcount_pc_lut<0> (instr_fetch/pc_reg/Mcount_pc_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  instr_fetch/pc_reg/Mcount_pc_cy<0> (instr_fetch/pc_reg/Mcount_pc_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<1> (instr_fetch/pc_reg/Mcount_pc_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<2> (instr_fetch/pc_reg/Mcount_pc_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<3> (instr_fetch/pc_reg/Mcount_pc_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<4> (instr_fetch/pc_reg/Mcount_pc_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<5> (instr_fetch/pc_reg/Mcount_pc_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<6> (instr_fetch/pc_reg/Mcount_pc_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<7> (instr_fetch/pc_reg/Mcount_pc_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<8> (instr_fetch/pc_reg/Mcount_pc_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<9> (instr_fetch/pc_reg/Mcount_pc_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<10> (instr_fetch/pc_reg/Mcount_pc_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<11> (instr_fetch/pc_reg/Mcount_pc_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<12> (instr_fetch/pc_reg/Mcount_pc_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<13> (instr_fetch/pc_reg/Mcount_pc_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<14> (instr_fetch/pc_reg/Mcount_pc_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<15> (instr_fetch/pc_reg/Mcount_pc_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<16> (instr_fetch/pc_reg/Mcount_pc_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<17> (instr_fetch/pc_reg/Mcount_pc_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<18> (instr_fetch/pc_reg/Mcount_pc_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<19> (instr_fetch/pc_reg/Mcount_pc_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<20> (instr_fetch/pc_reg/Mcount_pc_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<21> (instr_fetch/pc_reg/Mcount_pc_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<22> (instr_fetch/pc_reg/Mcount_pc_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<23> (instr_fetch/pc_reg/Mcount_pc_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<24> (instr_fetch/pc_reg/Mcount_pc_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<25> (instr_fetch/pc_reg/Mcount_pc_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<26> (instr_fetch/pc_reg/Mcount_pc_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<27> (instr_fetch/pc_reg/Mcount_pc_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<28> (instr_fetch/pc_reg/Mcount_pc_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<29> (instr_fetch/pc_reg/Mcount_pc_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  instr_fetch/pc_reg/Mcount_pc_cy<30> (instr_fetch/pc_reg/Mcount_pc_cy<30>)
+     XORCY:CI->O           1   0.180   0.000  instr_fetch/pc_reg/Mcount_pc_xor<31> (instr_fetch/pc_reg/Mcount_pc31)
+     FDR:D                     0.102          instr_fetch/pc_reg/pc_31
+    ----------------------------------------
+    Total                      2.450ns (1.676ns logic, 0.774ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.850ns (frequency: 112.999MHz)
+  Total number of paths / destination ports: 59291 / 2694
+-------------------------------------------------------------------------
+Delay:               8.850ns (Levels of Logic = 8)
+  Source:            ins_decoder/registerBank/registro1_31 (FF)
   Destination:       exe/zero (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: ins_decoder/reg1_31 to exe/zero
+  Data Path: ins_decoder/registerBank/registro1_31 to exe/zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.447   1.048  ins_decoder/reg1_31 (ins_decoder/reg1_31)
+     FD:C->Q               5   0.447   1.079  ins_decoder/registerBank/registro1_31 (ins_decoder/registerBank/registro1_31)
      LUT6:I0->O            2   0.203   0.864  exe/arith_log_unit/out2 (exe/arith_log_unit/out1)
-     LUT6:I2->O           18   0.203   1.050  exe/arith_log_unit/out7 (exe/arith_log_unit/_n0028)
-     LUT6:I5->O           10   0.205   0.857  exe/arith_log_unit/Mmux_out102431_1 (exe/arith_log_unit/Mmux_out102431)
-     LUT6:I5->O            1   0.205   0.580  exe/arith_log_unit/Mmux_out10841 (exe/arith_log_unit/Mmux_out1084)
-     LUT5:I4->O            2   0.205   0.981  exe/arith_log_unit/Mmux_out10846 (exe/t_out<5>)
-     LUT6:I0->O            1   0.203   0.580  exe/arith_log_unit/zero1 (exe/arith_log_unit/zero)
-     LUT6:I5->O            1   0.205   0.580  exe/arith_log_unit/zero3 (exe/arith_log_unit/zero2)
+     LUT6:I2->O           19   0.203   1.072  exe/arith_log_unit/out7 (exe/arith_log_unit/_n0028)
+     LUT6:I5->O            8   0.205   0.803  exe/arith_log_unit/Mmux_out102431_1 (exe/arith_log_unit/Mmux_out102431)
+     LUT6:I5->O            2   0.205   0.617  exe/arith_log_unit/Mmux_out10212 (exe/arith_log_unit/Mmux_out10211)
+     LUT6:I5->O            1   0.205   0.827  exe/arith_log_unit/zero2_SW0 (N26)
+     LUT6:I2->O            1   0.203   0.827  exe/arith_log_unit/zero2 (exe/arith_log_unit/zero1)
+     LUT6:I2->O            1   0.203   0.580  exe/arith_log_unit/zero3 (exe/arith_log_unit/zero2)
      LUT6:I5->O            1   0.205   0.000  exe/arith_log_unit/zero7 (exe/t_zero)
      FD:D                      0.102          exe/zero
     ----------------------------------------
-    Total                      8.722ns (2.183ns logic, 6.539ns route)
-                                       (25.0% logic, 75.0% route)
+    Total                      8.850ns (2.181ns logic, 6.669ns route)
+                                       (24.6% logic, 75.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_inv'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.909ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       instr_fetch/pc_reg/pc_0 (FF)
+  Destination Clock: clk_inv rising
+
+  Data Path: reset to instr_fetch/pc_reg/pc_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1210   1.222   2.257  reset_IBUF (reset_IBUF)
+     FDR:R                     0.430          instr_fetch/pc_reg/pc_0
+    ----------------------------------------
+    Total                      3.909ns (1.652ns logic, 2.257ns route)
+                                       (42.3% logic, 57.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1134 / 1134
+  Total number of paths / destination ports: 1217 / 1217
 -------------------------------------------------------------------------
-Offset:              5.384ns (Levels of Logic = 2)
+Offset:              5.412ns (Levels of Logic = 2)
   Source:            reset (PAD)
   Destination:       exe/regaddr_o_4 (FF)
   Destination Clock: clk rising
@@ -746,12 +685,81 @@ Offset:              5.384ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1095   1.222   2.229  reset_IBUF (reset_IBUF)
+     IBUF:I->O          1210   1.222   2.257  reset_IBUF (reset_IBUF)
      INV:I->O             40   0.206   1.405  exe/reset_inv1_INV_0 (exe/reset_inv)
      FDE:CE                    0.322          exe/data_b_o_0
     ----------------------------------------
-    Total                      5.384ns (1.750ns logic, 3.634ns route)
-                                       (32.5% logic, 67.5% route)
+    Total                      5.412ns (1.750ns logic, 3.662ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 426 / 32
+-------------------------------------------------------------------------
+Offset:              9.538ns (Levels of Logic = 5)
+  Source:            stage_mem/wbo_0 (FF)
+  Destination:       result<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: stage_mem/wbo_0 to result<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q            1057   0.447   2.449  stage_mem/wbo_0 (stage_mem/wbo_0)
+     LUT3:I0->O            1   0.205   0.808  write_back/multix/Mmux_out11 (writeData<0>)
+     LUT5:I2->O            1   0.205   0.924  _n0377<0>10 (_n0377<0>10)
+     LUT6:I1->O            1   0.203   0.944  _n0377<0>11 (_n0377<0>11)
+     LUT6:I0->O            1   0.203   0.579  _n0377<0>20 (result_0_OBUF)
+     OBUF:I->O                 2.571          result_0_OBUF (result<0>)
+    ----------------------------------------
+    Total                      9.538ns (3.834ns logic, 5.704ns route)
+                                       (40.2% logic, 59.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_inv'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              7.765ns (Levels of Logic = 5)
+  Source:            instr_fetch/pc_reg/pc_3 (FF)
+  Destination:       result<3> (PAD)
+  Source Clock:      clk_inv rising
+
+  Data Path: instr_fetch/pc_reg/pc_3 to result<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.447   0.774  instr_fetch/pc_reg/pc_3 (instr_fetch/pc_reg/pc_3)
+     LUT5:I4->O            1   0.205   0.808  _n0377<3>3 (_n0377<3>2)
+     LUT6:I3->O            1   0.205   0.944  _n0377<3>4 (_n0377<3>3)
+     LUT6:I0->O            1   0.203   0.827  _n0377<3>5 (_n0377<3>4)
+     LUT4:I0->O            1   0.203   0.579  _n0377<3>9 (result_3_OBUF)
+     OBUF:I->O                 2.571          result_3_OBUF (result<3>)
+    ----------------------------------------
+    Total                      7.765ns (3.834ns logic, 3.931ns route)
+                                       (49.4% logic, 50.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1860 / 34
+-------------------------------------------------------------------------
+Delay:               11.652ns (Levels of Logic = 7)
+  Source:            code<1> (PAD)
+  Destination:       result<0> (PAD)
+
+  Data Path: code<1> to result<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   1.222   1.577  code_1_IBUF (code_1_IBUF)
+     LUT3:I0->O           62   0.205   1.971  code[5]_GND_1_o_equal_27_o<5>11 (code[5]_GND_1_o_equal_27_o<5>1)
+     LUT5:I0->O            1   0.203   0.827  _n0377<0>7 (_n0377<0>7)
+     LUT4:I0->O            1   0.203   0.944  _n0377<0>9 (_n0377<0>9)
+     LUT6:I0->O            1   0.203   0.944  _n0377<0>11 (_n0377<0>11)
+     LUT6:I0->O            1   0.203   0.579  _n0377<0>20 (result_0_OBUF)
+     OBUF:I->O                 2.571          result_0_OBUF (result<0>)
+    ----------------------------------------
+    Total                     11.652ns (4.810ns logic, 6.842ns route)
+                                       (41.3% logic, 58.7% route)
 
 =========================================================================
 
@@ -763,20 +771,30 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    8.722|    2.820|    3.885|         |
+clk            |    8.850|    2.820|    3.900|         |
+clk_inv        |    1.570|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_inv
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.667|         |         |         |
+clk_inv        |    2.450|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 25.15 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 31.90 secs
  
 --> 
 
-Total memory usage is 268340 kilobytes
+Total memory usage is 299644 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   70 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 

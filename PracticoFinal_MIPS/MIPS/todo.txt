@@ -1,1 +1,5 @@
 Hacer lo del instr_index
+
+Forwarding y cosas
+
+load y store byte, half word, word
