@@ -115,9 +115,9 @@ public:
          << QApplication::translate("MainWindow", "ID: aluSrc", 0)
          << QApplication::translate("MainWindow", "ID: reg1", 0)
          << QApplication::translate("MainWindow", "ID: reg2", 0)
+         << QApplication::translate("MainWindow", "ID: extededInstr", 0)
          << QApplication::translate("MainWindow", "ID: regAddr1", 0)
          << QApplication::translate("MainWindow", "ID: regAddr2", 0)
-         << QApplication::translate("MainWindow", "ID: extededInstr", 0)
          << QApplication::translate("MainWindow", "ID: regDst", 0)
          << QApplication::translate("MainWindow", "EXE: is_jump_o", 0)
          << QApplication::translate("MainWindow", "EXE: branch_eq_o", 0)
@@ -134,6 +134,7 @@ public:
          << QApplication::translate("MainWindow", "MEM: regaddrout", 0)
          << QApplication::translate("MainWindow", "WB: dataToRegFile", 0)
          << QApplication::translate("MainWindow", "WB: weRegFile", 0)
+         << QApplication::translate("MainWindow", "IF: IAdd", 0)
         );
     } // retranslateUi
 
