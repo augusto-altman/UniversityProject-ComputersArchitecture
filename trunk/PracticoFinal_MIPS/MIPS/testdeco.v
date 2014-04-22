@@ -36,12 +36,13 @@ module testdeco;
 
 	initial begin
 		// Initialize Inputs
-		clk = 0;
+		clk = 1;
 		reset = 1;
 
 		// Wait 100 ns for global reset to finish
 		#9;
 		reset = 0;
+		clk = 0;
         
 		// Add stimulus here
 
@@ -49,7 +50,7 @@ module testdeco;
 	
 	always
 	begin
-		clk = ~clk;
+		clk = clk;
 		#1;
 	end
       

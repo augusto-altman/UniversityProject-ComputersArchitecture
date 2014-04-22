@@ -19,10 +19,11 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module debuger_decoder(
-    input [7:0] code,
-	 input reset,
-    output reg [31:0] result,
-	 output reg [1:0] size
+		input [7:0] code,
+		input reset,
+		//input clk,
+		output reg [31:0] result,
+		output reg [1:0] size
     );
 reg clk;
 /*IF*/
@@ -147,8 +148,8 @@ wb write_back (
 always @ (*)
 begin
 	case (code[5:0])
-		6'b100000: clk = 1;
-		6'b100001: clk = 0;
+		6'b111000: clk = 0;
+		6'b111111: clk = 1;
 		default: clk = 0;
 	endcase
 
@@ -190,6 +191,8 @@ begin
 		/*WB*/
 		6'b011110: result = writeData; //datatoregfile
 		6'b011111: result = regWrite; //weregfile
+      6'b111000: result = 8'b01010101;
+		6'b111111: result = 8'b11111111;
 		default: result = 0;
 	endcase
 	
