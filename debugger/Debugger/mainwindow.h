@@ -23,12 +23,16 @@ private slots:
     void on_requestButton_clicked();
 
     void on_sendClockButton_clicked();
-    void onReadyRead();
 
 private:
     Ui::MainWindow *ui;
     QextSerialPort *port;
     void displayReceived(QByteArray bytes, int size);
+    char getBytesQuantityFromCode(int code);
+    int getCodeBasedIndex(int index);
+    void receive();
+    void receive(int signal);
+    void clocking();
 };
 
 #endif // MAINWINDOW_H
