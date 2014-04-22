@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.00 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.00 secs
  
 --> Reading design: uarthandler.prj
 
@@ -315,7 +315,7 @@ Unit <uart_tx> synthesized.
 
 Synthesizing Unit <debuger_decoder>.
     Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v".
-INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 68: Output port <memRead> of the instance <ins_decoder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 69: Output port <memRead> of the instance <ins_decoder> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <debuger_decoder> synthesized.
@@ -702,17 +702,17 @@ Top Level Output File Name         : uarthandler.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2975
+# BELS                             : 2956
 #      GND                         : 5
 #      INV                         : 9
 #      LUT1                        : 8
 #      LUT2                        : 78
-#      LUT3                        : 124
-#      LUT4                        : 37
-#      LUT5                        : 1239
-#      LUT6                        : 1166
+#      LUT3                        : 101
+#      LUT4                        : 32
+#      LUT5                        : 1221
+#      LUT6                        : 1189
 #      MUXCY                       : 101
-#      MUXF7                       : 99
+#      MUXF7                       : 103
 #      VCC                         : 4
 #      XORCY                       : 105
 # FlipFlops/Latches                : 1523
@@ -741,16 +741,16 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1523  out of  18224     8%  
- Number of Slice LUTs:                 2677  out of   9112    29%  
-    Number used as Logic:              2661  out of   9112    29%  
+ Number of Slice LUTs:                 2654  out of   9112    29%  
+    Number used as Logic:              2638  out of   9112    28%  
     Number used as Memory:               16  out of   2176     0%  
        Number used as RAM:               16
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2854
-   Number with an unused Flip Flop:    1331  out of   2854    46%  
-   Number with an unused LUT:           177  out of   2854     6%  
-   Number of fully used LUT-FF pairs:  1346  out of   2854    47%  
+ Number of LUT Flip Flop pairs used:   2843
+   Number with an unused Flip Flop:    1320  out of   2843    46%  
+   Number with an unused LUT:           189  out of   2843     6%  
+   Number of fully used LUT-FF pairs:  1334  out of   2843    46%  
    Number of unique control sets:        19
 
 IO Utilization: 
@@ -785,7 +785,7 @@ Clock Signal                                                   | Clock buffer(FF
 ---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 clk                                                            | BUFGP                                                                                                                                                | 117   |
 decoder/instr_fetch/clock_inv(decoder/instr_fetch/clock_inv1:O)| BUFG(*)(decoder/instr_fetch/pc_reg/pc_31)                                                                                                            | 32    |
-decoder/clk(decoder/clk<5>2:O)                                 | BUFG(*)(decoder/instr_fetch/iadd_31)                                                                                                                 | 1399  |
+decoder/_n0206(decoder/_n0206<5>1:O)                           | BUFG(*)(decoder/instr_fetch/iadd_31)                                                                                                                 | 1399  |
 decoder/instr_fetch/pmemory/N1                                 | NONE(decoder/instr_fetch/pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
 decoder/stage_mem/memory/N1                                    | NONE(decoder/stage_mem/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)   | 15    |
 ---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
@@ -813,10 +813,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.178ns (frequency: 139.316MHz)
-  Total number of paths / destination ports: 3106 / 262
+  Clock period: 7.095ns (frequency: 140.937MHz)
+  Total number of paths / destination ports: 3077 / 262
 -------------------------------------------------------------------------
-Delay:               7.178ns (Levels of Logic = 5)
+Delay:               7.095ns (Levels of Logic = 5)
   Source:            uartt/buffarini/Mram_array_reg1 (RAM)
   Destination:       state_machine/datatosend_0_4 (FF)
   Source Clock:      clk rising
@@ -826,16 +826,16 @@ Delay:               7.178ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAM32M:WCLK->DOB0    90   0.920   2.040  uartt/buffarini/Mram_array_reg1 (r_data<2>)
-     LUT6:I3->O           29   0.205   1.354  decoder/code[5]_PWR_7_o_equal_5_o<5>1 (decoder/code[5]_PWR_7_o_equal_5_o)
-     LUT6:I4->O            1   0.203   0.580  decoder/_n0380<4>3 (decoder/_n0380<4>2)
-     LUT5:I4->O            1   0.205   0.580  decoder/_n0380<4>6_SW0 (N241)
-     LUT6:I5->O            1   0.205   0.580  decoder/_n0380<4>6 (decoder/_n0380<4>5)
-     LUT6:I5->O            1   0.205   0.000  decoder/_n0380<4>9 (result<4>)
+     RAM32M:WCLK->DOA1    88   0.910   2.027  uartt/buffarini/Mram_array_reg1 (r_data<1>)
+     LUT6:I3->O           32   0.205   1.292  decoder/_n0049<5>1 (decoder/_n0049)
+     LUT4:I3->O            1   0.205   0.580  decoder/_n0443<4>3_SW0 (N239)
+     LUT6:I5->O            1   0.205   0.580  decoder/_n0443<4>3 (decoder/_n0443<4>2)
+     LUT6:I5->O            1   0.205   0.580  decoder/_n0443<4>9_SW0 (N231)
+     LUT6:I5->O            1   0.205   0.000  decoder/_n0443<4>9 (result<4>)
      FDE:D                     0.102          state_machine/datatosend_0_4
     ----------------------------------------
-    Total                      7.178ns (2.045ns logic, 5.133ns route)
-                                       (28.5% logic, 71.5% route)
+    Total                      7.095ns (2.037ns logic, 5.058ns route)
+                                       (28.7% logic, 71.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'decoder/instr_fetch/clock_inv'
@@ -892,15 +892,15 @@ Delay:               2.421ns (Levels of Logic = 33)
                                        (69.2% logic, 30.8% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'decoder/clk'
+Timing constraint: Default period analysis for Clock 'decoder/_n0206'
   Clock period: 8.850ns (frequency: 112.999MHz)
   Total number of paths / destination ports: 59328 / 2726
 -------------------------------------------------------------------------
 Delay:               8.850ns (Levels of Logic = 8)
   Source:            decoder/ins_decoder/registerBank/registro1_31 (FF)
   Destination:       decoder/exe/zero (FF)
-  Source Clock:      decoder/clk rising
-  Destination Clock: decoder/clk rising
+  Source Clock:      decoder/_n0206 rising
+  Destination Clock: decoder/_n0206 rising
 
   Data Path: decoder/ins_decoder/registerBank/registro1_31 to decoder/exe/zero
                                 Gate     Net
@@ -961,13 +961,13 @@ Offset:              3.908ns (Levels of Logic = 1)
                                        (42.3% logic, 57.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'decoder/clk'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'decoder/_n0206'
   Total number of paths / destination ports: 1217 / 1217
 -------------------------------------------------------------------------
 Offset:              5.411ns (Levels of Logic = 2)
   Source:            reset (PAD)
   Destination:       decoder/exe/regaddr_o_4 (FF)
-  Destination Clock: decoder/clk rising
+  Destination Clock: decoder/_n0206 rising
 
   Data Path: reset to decoder/exe/regaddr_o_4
                                 Gate     Net
@@ -1009,16 +1009,16 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    7.178|         |         |         |
-decoder/clk    |    6.588|         |         |         |
+clk            |    7.095|         |         |         |
+decoder/_n0206 |    5.920|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock decoder/clk
+Clock to Setup on destination clock decoder/_n0206
 -----------------------------+---------+---------+---------+---------+
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-decoder/clk                  |    8.850|    2.820|    3.900|         |
+decoder/_n0206               |    8.850|    2.820|    3.900|         |
 decoder/instr_fetch/clock_inv|    1.541|         |         |         |
 -----------------------------+---------+---------+---------+---------+
 
@@ -1027,19 +1027,19 @@ Clock to Setup on destination clock decoder/instr_fetch/clock_inv
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-decoder/clk                  |    3.667|         |         |         |
+decoder/_n0206               |    3.667|         |         |         |
 decoder/instr_fetch/clock_inv|    2.421|         |         |         |
 -----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 36.00 secs
-Total CPU time to Xst completion: 36.32 secs
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 39.27 secs
  
 --> 
 
-Total memory usage is 302144 kilobytes
+Total memory usage is 301824 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    8 (   0 filtered)
