@@ -21,7 +21,7 @@
 module debuger_decoder(
 		input [7:0] code,
 		input reset,
-		//input clk,
+		//input clk
 		output reg [31:0] result,
 		output reg [1:0] size
     );

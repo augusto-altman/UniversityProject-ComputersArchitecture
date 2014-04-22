@@ -50,7 +50,7 @@ module testdeco;
 	
 	always
 	begin
-		clk = clk;
+		clk = ~clk;
 		#1;
 	end
       
