@@ -2,28 +2,28 @@ Command line:
    testdeco_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  20743
+     -socket  50213
 
-Mon Apr 21 22:37:42 2014
+Tue Apr 22 20:20:37 2014
 
 
- Elaboration Time: 0.0624 sec
+ Elaboration Time: 0.0312 sec
 
- Current Memory Usage: 509.551 Meg
+ Current Memory Usage: 509.583 Meg
 
- Total Signals          : 438
- Total Nets             : 2045
- Total Signal Drivers   : 177
+ Total Signals          : 437
+ Total Nets             : 2003
+ Total Signal Drivers   : 175
  Total Blocks           : 52
  Total Primitive Blocks : 39
- Total Processes        : 216
- Total Traceable Variables  : 703
- Total Scalar Nets and Variables : 408539
+ Total Processes        : 214
+ Total Traceable Variables  : 701
+ Total Scalar Nets and Variables : 408463
 Total Line Count : 1021
 
- Total Simulation Time: 0.1092 sec
+ Total Simulation Time: 0.0624 sec
 
- Current Memory Usage: 509.551 Meg
+ Current Memory Usage: 509.583 Meg
 
-Mon Apr 21 22:56:56 2014
+Tue Apr 22 20:21:12 2014
 

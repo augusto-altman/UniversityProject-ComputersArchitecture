@@ -244,7 +244,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1398130637" xil_pn:in_ck="-7414782852580735322" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1398130637">
+    <transform xil_pn:end_ts="1398208818" xil_pn:in_ck="-7414782852580735322" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1398208818">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -305,15 +305,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1398130563" xil_pn:in_ck="6634908895362694326" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4551523352884691298" xil_pn:start_ts="1398130563">
+    <transform xil_pn:end_ts="1398208637" xil_pn:in_ck="-2408575386238367229" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4551523352884691298" xil_pn:start_ts="1398208637">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/pmem.ngc"/>
       <outfile xil_pn:name="ipcore_dir/pmem.v"/>
-      <outfile xil_pn:name="ipcore_dir/rammemory.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/rammemory.v"/>
+      <outfile xil_pn:name="ipcore_dir/rammmemory.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/rammmemory.v"/>
     </transform>
-    <transform xil_pn:end_ts="1398130637" xil_pn:in_ck="8679597895907094836" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1398130637">
+    <transform xil_pn:end_ts="1398208818" xil_pn:in_ck="3770969534954115585" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1398208818">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -336,7 +336,7 @@
       <outfile xil_pn:name="debugersm_test.v"/>
       <outfile xil_pn:name="fifo.v"/>
       <outfile xil_pn:name="ipcore_dir/pmem.v"/>
-      <outfile xil_pn:name="ipcore_dir/rammemory.v"/>
+      <outfile xil_pn:name="ipcore_dir/rammmemory.v"/>
       <outfile xil_pn:name="mem.v"/>
       <outfile xil_pn:name="mod_m_counter.v"/>
       <outfile xil_pn:name="mod_m_counter_test.v"/>
@@ -369,7 +369,7 @@
       <outfile xil_pn:name="uarthandler.v"/>
       <outfile xil_pn:name="wb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1398130644" xil_pn:in_ck="8679597895907094836" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6525537764120729539" xil_pn:start_ts="1398130637">
+    <transform xil_pn:end_ts="1398208822" xil_pn:in_ck="3770969534954115585" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6525537764120729539" xil_pn:start_ts="1398208818">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -384,7 +384,7 @@
       <outfile xil_pn:name="testdeco_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1398130644" xil_pn:in_ck="7737639429141352622" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4376913999536598694" xil_pn:start_ts="1398130644">
+    <transform xil_pn:end_ts="1398208822" xil_pn:in_ck="7737639429141352622" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4376913999536598694" xil_pn:start_ts="1398208822">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -402,13 +402,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1398122755" xil_pn:in_ck="6634908895362694326" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4551523352884691298" xil_pn:start_ts="1398122755">
+    <transform xil_pn:end_ts="1398208446" xil_pn:in_ck="-2408575386238367229" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4551523352884691298" xil_pn:start_ts="1398208445">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/pmem.ngc"/>
       <outfile xil_pn:name="ipcore_dir/pmem.v"/>
-      <outfile xil_pn:name="ipcore_dir/rammemory.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/rammemory.v"/>
+      <outfile xil_pn:name="ipcore_dir/rammmemory.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/rammmemory.v"/>
     </transform>
     <transform xil_pn:end_ts="1398122755" xil_pn:in_ck="-543802106132993548" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1398122755">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -426,7 +426,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1398206780" xil_pn:in_ck="-5206391768330254295" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="662307763674302893" xil_pn:start_ts="1398206716">
+    <transform xil_pn:end_ts="1398208980" xil_pn:in_ck="-2521132548047800778" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="662307763674302893" xil_pn:start_ts="1398208952">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -460,6 +460,9 @@
     <transform xil_pn:end_ts="1398206957" xil_pn:in_ck="-8542207424639054989" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7416440215799069983" xil_pn:start_ts="1398206939">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="uarthandler.bld"/>
@@ -470,6 +473,7 @@
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="uarthandler.pcf"/>
       <outfile xil_pn:name="uarthandler_map.map"/>
@@ -483,33 +487,22 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="uarthandler.ncd"/>
-      <outfile xil_pn:name="uarthandler.pad"/>
-      <outfile xil_pn:name="uarthandler.par"/>
-      <outfile xil_pn:name="uarthandler.ptwx"/>
-      <outfile xil_pn:name="uarthandler.unroutes"/>
-      <outfile xil_pn:name="uarthandler.xpi"/>
-      <outfile xil_pn:name="uarthandler_pad.csv"/>
-      <outfile xil_pn:name="uarthandler_pad.txt"/>
-      <outfile xil_pn:name="uarthandler_par.xrpt"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1398129921" xil_pn:in_ck="-1436510317036490628" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1398129887">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="uarthandler.bgn"/>
-      <outfile xil_pn:name="uarthandler.bit"/>
-      <outfile xil_pn:name="uarthandler.drc"/>
-      <outfile xil_pn:name="uarthandler.ut"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1398123039" xil_pn:in_ck="-8394099393514500400" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1398123037">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -525,10 +518,11 @@
     <transform xil_pn:end_ts="1398129881" xil_pn:in_ck="-1052199874769998467" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1398129871">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="uarthandler.twr"/>
-      <outfile xil_pn:name="uarthandler.twx"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

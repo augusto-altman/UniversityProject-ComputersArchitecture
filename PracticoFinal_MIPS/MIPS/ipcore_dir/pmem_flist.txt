@@ -1,10 +1,8 @@
 # Output products list for <pmem>
-_xmsgs\pn_parser.xmsgs
 pmem.asy
 pmem.gise
 pmem.mif
 pmem.ngc
-pmem.sym
 pmem.v
 pmem.veo
 pmem.xco
