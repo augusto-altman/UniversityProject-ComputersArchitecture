@@ -21,7 +21,7 @@
 module debuger_decoder(
 		input [7:0] code,
 		input reset,
-		//input clk
+//		input clk,
 		output reg [31:0] result,
 		output reg [1:0] size
     );
@@ -152,47 +152,46 @@ begin
 		6'b111111: clk = 1;
 		default: clk = 0;
 	endcase
-
 	case (code[5:0])
 		/*IF*/ 
-		6'b000001: result = instr; //instruction
-		6'b100010: result = pc_id; //iadd
+		6'b000001: result = 32'b0 + instr; //instruction
+		6'b100010: result = 32'b0 + pc_id; //iadd
 		/*ID*/
-		6'b000010: result = control_oper; //aluOp
-		6'b000011: result = control_is_jump; //isJump
-		6'b000100: result = control_branch_inc; //isNotConditional
-		6'b000101: result = control_branch_eq; //isEq
-		6'b000110: result = M_exe; //memWrite
-		6'b000111: result = wb_exe; //wbi
+		6'b000010: result = 32'b0 + control_oper; //aluOp
+		6'b000011: result = 32'b0 + control_is_jump; //isJump
+		6'b000100: result = 32'b0 + control_branch_inc; //isNotConditional
+		6'b000101: result = 32'b0 + control_branch_eq; //isEq
+		6'b000110: result = 32'b0 + M_exe; //memWrite
+		6'b000111: result = 32'b0 + wb_exe; //wbi
 		//6'b001000: result = //memRead
-		6'b001001: result = control_use_b; //aluSrc
-		6'b001010: result = data_a; //reg1
-		6'b001011: result = data_b; //reg2
-		6'b001100: result = data_imm; //extendedInstr
-		6'b001101: result = regaddr1; //regAddr1
-		6'b001110: result = regaddr2; //regAddr2
-		6'b001111: result = control_Reg_DST; //regDst
+		6'b001001: result = 32'b0 + control_use_b; //aluSrc
+		6'b001010: result = 32'b0 + data_a; //reg1
+		6'b001011: result = 32'b0 + data_b; //reg2
+		6'b001100: result = 32'b0 + data_imm; //extendedInstr
+		6'b001101: result = 32'b0 + regaddr1; //regAddr1
+		6'b001110: result = 32'b0 + regaddr2; //regAddr2
+		6'b001111: result = 32'b0 + control_Reg_DST; //regDst
 		/*EXE*/
-		6'b010000: result = control_is_jump_if; //is_jump_o
-		6'b010001: result = control_branch_eq_if; //branch_eq_o
-		6'b010010: result = control_branch_inc_if; //branch_inc_o
-		6'b010011: result = control_is_zero_if; //zero
-		6'b010100: result = data_jump_address; //jump_address
-		6'b010101: result = wb_mem; //wbi_o
-		6'b010110: result = M; //M_o
-		6'b010111: result = regaddr_mem; //regaddr_o
-		6'b011000: result = data;//data_b_o
-		6'b011001: result = dataaddr;//out
+		6'b010000: result = 32'b0 + control_is_jump_if; //is_jump_o
+		6'b010001: result = 32'b0 + control_branch_eq_if; //branch_eq_o
+		6'b010010: result = 32'b0 + control_branch_inc_if; //branch_inc_o
+		6'b010011: result = 32'b0 + control_is_zero_if; //zero
+		6'b010100: result = 32'b0 + data_jump_address; //jump_address
+		6'b010101: result = 32'b0 + wb_mem; //wbi_o
+		6'b010110: result = 32'b0 + M; //M_o
+		6'b010111: result = 32'b0 + regaddr_mem; //regaddr_o
+		6'b011000: result = 32'b0 + data;//data_b_o
+		6'b011001: result = 32'b0 + dataaddr;//out
 		/*MEM*/
-		6'b011010: result = datafrommem; //datafrommem
-		6'b011011: result = datafromimm; //datafromimm
-		6'b011100: result = writeAddr; //regaddrout
-		6'b011101: result = wb; //wbo
+		6'b011010: result = 32'b0 + datafrommem; //datafrommem
+		6'b011011: result = 32'b0 + datafromimm; //datafromimm
+		6'b011100: result = 32'b0 + writeAddr; //regaddrout
+		//6'b011101: result = 32'b0 + wb; //wbo
 		/*WB*/
-		6'b011110: result = writeData; //datatoregfile
-		6'b011111: result = regWrite; //weregfile
-      6'b111000: result = 8'b01010101;
-		6'b111111: result = 8'b11111111;
+		6'b011101: result = 32'b0 + writeData; //datatoregfile
+		6'b011110: result = 32'b0 + regWrite; //weregfile
+      6'b111000: result = 32'b0 + 8'b01010101;
+		6'b111111: result = 32'b0 + 8'b11111111;
 		default: result = 0;
 	endcase
 	

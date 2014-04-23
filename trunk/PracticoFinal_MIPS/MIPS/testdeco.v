@@ -27,32 +27,44 @@ module testdeco;
 	// Inputs
 	reg clk;
 	reg reset;
+	reg [7:0] code;
+	
+	wire [31:0] result;
 
 	// Instantiate the Unit Under Test (UUT)
 	debuger_decoder uut (
-		.clk(clk), 
+		//.clk(clk),
+		.code(code),
+		.result(result), 
 		.reset(reset)
 	);
 
 	initial begin
 		// Initialize Inputs
-		clk = 1;
+		code = 8'b00111111;
 		reset = 1;
 
 		// Wait 100 ns for global reset to finish
 		#9;
+		code = 8'b00111000;
+		#10;
+		code = 8'b00111111;
+		#10;
+      code = 8'b00111000;
+		#10;
 		reset = 0;
-		clk = 0;
-        
+		#10;
+		code = 8'b100010;
+		
 		// Add stimulus here
 
 	end
 	
-	always
-	begin
-		clk = ~clk;
-		#1;
-	end
+//	always
+//	begin
+//		clk = clk;
+//		#1;
+//	end
       
 endmodule
 
