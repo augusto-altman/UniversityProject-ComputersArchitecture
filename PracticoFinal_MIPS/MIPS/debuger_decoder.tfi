@@ -4,7 +4,7 @@
 // Instantiate the module
 debuger_decoder instance_name (
     .code(code), 
-    .clk(clk), 
+    .reset(reset), 
     .result(result), 
     .size(size)
     );

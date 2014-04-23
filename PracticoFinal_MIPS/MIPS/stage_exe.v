@@ -85,10 +85,13 @@ module stage_exe(
 			out = 32'b0;
 			jump_address = 32'b0;
 			is_jump_o = 0;
-			branch_eq_o = 1'bx;
-			branch_inc_o = 1'bx;
-			zero = 1'bx;
-			//Faltan señales de reset de las señales que van a stage_mem
+			branch_eq_o = 1'b0;
+			branch_inc_o = 1'b0;
+			zero = 1'b0;
+			wbi_o = 2'b0;
+			M_o = 1'b0;
+			data_b_o = 32'b0;
+			regaddr_o = 0;
 		end
 		else
 		begin

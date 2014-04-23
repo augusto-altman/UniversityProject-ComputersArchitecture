@@ -21,8 +21,10 @@
 module debugersm(
 	input clk, reset, rd_empty,
 	input [31:0] result,
+	input [7:0] r_data_from_uart,
 	input [1:0] size,
 	output wr, rd,
+	output [7:0] r_data_to_debugger,
 	output [7:0] w_data
     );
 	 
@@ -31,13 +33,14 @@ module debugersm(
 		start = 2'b01,
       data  = 2'b10,
 		waitstate  = 2'b11;
-		
+	reg [7:0] r_data_out, r_data_next;	
 	reg [7:0] w_data_out, w_data_next;
 	reg rd_out, wr_out, rd_next, wr_next;
 	reg [1:0] state_reg, state_next;
 	reg [2:0] datasize, datasize_next;
 	reg [7:0] datatosend[3:0], datatosend_next[3:0];	
-
+	
+	assign r_data_to_debugger = r_data_out;
 	assign rd = rd_out;
 	assign wr = wr_out;
 	assign w_data = w_data_out;
@@ -54,7 +57,7 @@ module debugersm(
 			datatosend[2] = 0;
 			datatosend[3] = 0;
 			datasize = 0;
-			
+			r_data_out = 0;
 		 end
     
     else
@@ -68,11 +71,11 @@ module debugersm(
 			datatosend[2] = datatosend_next[2];
 			datatosend[3] = datatosend_next[3];
 			datasize = datasize_next;
+			r_data_out = r_data_next;
 		 end
 
 	always @*
 	  begin
-	  
 		state_next = state_reg;
 		rd_next = rd_out;
 		wr_next = wr_out;
@@ -82,11 +85,13 @@ module debugersm(
 		datatosend_next[2] = datatosend[2];
 		datatosend_next[3] = datatosend[3];
 		datasize_next = datasize;
+		r_data_next = r_data_out;
 		case (state_reg)
 			idle:
 			  if(~rd_empty)
 				  begin
 					 state_next = waitstate;
+					 r_data_next = r_data_from_uart;
 				  end
 				  
 			waitstate:

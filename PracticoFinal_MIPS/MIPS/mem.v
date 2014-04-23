@@ -34,7 +34,7 @@ module mem(
 	 
 	 wire [31:0] douta;
 	 
-	rammmemory memory (
+	rammemory memory (
   .clka(clk), // input clka
   .wea(M), // input [0 : 0] wea
   .addra(dataaddr), // input [12 : 0] addra
