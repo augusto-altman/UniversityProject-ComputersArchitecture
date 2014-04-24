@@ -1,9 +1,7 @@
 # Output products list for <rammemory>
-_xmsgs\pn_parser.xmsgs
 rammemory.asy
 rammemory.gise
 rammemory.ngc
-rammemory.sym
 rammemory.v
 rammemory.veo
 rammemory.xco

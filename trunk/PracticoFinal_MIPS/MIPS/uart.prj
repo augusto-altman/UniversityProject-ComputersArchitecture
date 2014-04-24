@@ -1,5 +1,0 @@
-verilog work "uart_tx.v"
-verilog work "uart_rx.v"
-verilog work "mod_m_counter.v"
-verilog work "fifo.v"
-verilog work "uart.v"

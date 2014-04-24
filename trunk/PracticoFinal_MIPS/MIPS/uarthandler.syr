@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: uarthandler.prj
 
@@ -108,55 +108,55 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\signExtension.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\signExtension.v" into library work
 Parsing module <signExtension>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\RegisterBank.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\RegisterBank.v" into library work
 Parsing module <RegisterBank>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\pc.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\pc.v" into library work
 Parsing module <pc>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mux.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mux.v" into library work
 Parsing module <mux>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" into library work
 Parsing module <rammemory>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" into library work
 Parsing module <pmem>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\GetRegAddr.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\GetRegAddr.v" into library work
 Parsing module <GetRegAddr>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ControlModule.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ControlModule.v" into library work
 Parsing module <ControlModule>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\branch_control.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\branch_control.v" into library work
 Parsing module <branch_control>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\alu_control.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu_control.v" into library work
 Parsing module <alu_control>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\alu.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu.v" into library work
 Parsing module <alu>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\adder_32b.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\adder_32b.v" into library work
 Parsing module <adder_32b>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\wb.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\wb.v" into library work
 Parsing module <wb>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart_tx.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart_tx.v" into library work
 Parsing module <uart_tx>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart_rx.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart_rx.v" into library work
 Parsing module <uart_rx>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_if.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v" into library work
 Parsing module <stage_if>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_id.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_id.v" into library work
 Parsing module <stage_id>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_exe.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe.v" into library work
 Parsing module <stage_exe>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mod_m_counter.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mod_m_counter.v" into library work
 Parsing module <mod_m_counter>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" into library work
 Parsing module <mem>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\fifo.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\fifo.v" into library work
 Parsing module <fifo>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart.v" into library work
 Parsing module <uart>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" into library work
 Parsing module <debuger_decoder>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debugersm.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debugersm.v" into library work
 Parsing module <debugersm>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uarthandler.v" into library work
+Analyzing Verilog file "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" into library work
 Parsing module <uarthandler>.
 
 =========================================================================
@@ -164,7 +164,7 @@ Parsing module <uarthandler>.
 =========================================================================
 
 Elaborating module <uarthandler>.
-WARNING:HDLCompiler:872 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 27: Using initial value of resetuart since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 27: Using initial value of resetuart since it is never assigned
 
 Elaborating module <uart>.
 
@@ -183,8 +183,8 @@ Elaborating module <stage_if>.
 Elaborating module <pc>.
 
 Elaborating module <pmem>.
-WARNING:HDLCompiler:1499 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module <pmem> remains a black box.
-WARNING:HDLCompiler:189 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_if.v" Line 49: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1499 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module <pmem> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v" Line 49: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
 
 Elaborating module <branch_control>.
 
@@ -209,8 +209,8 @@ Elaborating module <alu_control>.
 Elaborating module <mem>.
 
 Elaborating module <rammemory>.
-WARNING:HDLCompiler:1499 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module <rammemory> remains a black box.
-WARNING:HDLCompiler:189 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v" Line 40: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1499 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module <rammemory> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v" Line 40: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
 
 Elaborating module <wb>.
 
@@ -223,26 +223,26 @@ Elaborating module <debugersm>.
 =========================================================================
 
 Synthesizing Unit <uarthandler>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uarthandler.v".
-INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uarthandler.v" line 34: Output port <wr_full> of the instance <uartt> is unconnected or connected to loadless signal.
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v".
+INFO:Xst:3210 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.v" line 34: Output port <wr_full> of the instance <uartt> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <uarthandler> synthesized.
 
 Synthesizing Unit <uart>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart.v".
         DBIT = 8
         SB_TICK = 16
         DVSR = 326
         DVSR_BIT = 9
-INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v" line 20: Output port <full> of the instance <buffarini> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.v" line 43: Output port <q> of the instance <baud_gen_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart.v" line 20: Output port <full> of the instance <buffarini> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart.v" line 43: Output port <q> of the instance <baud_gen_unit> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <uart> synthesized.
 
 Synthesizing Unit <fifo>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\fifo.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\fifo.v".
         B = 8
         W = 4
     Found 16x8-bit dual-port RAM <Mram_array_reg> for signal <array_reg>.
@@ -262,7 +262,7 @@ Synthesizing Unit <fifo>.
 Unit <fifo> synthesized.
 
 Synthesizing Unit <mod_m_counter>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mod_m_counter.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mod_m_counter.v".
         N = 9
         M = 326
     Found 9-bit register for signal <r_reg>.
@@ -273,7 +273,7 @@ Synthesizing Unit <mod_m_counter>.
 Unit <mod_m_counter> synthesized.
 
 Synthesizing Unit <uart_rx>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart_rx.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart_rx.v".
         DBIT = 8
         SB_TICK = 16
     Found 4-bit register for signal <s_reg>.
@@ -292,7 +292,7 @@ Synthesizing Unit <uart_rx>.
 Unit <uart_rx> synthesized.
 
 Synthesizing Unit <uart_tx>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart_tx.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uart_tx.v".
         DBIT = 8
         SB_TICK = 16
     Found 4-bit register for signal <s_reg>.
@@ -314,21 +314,21 @@ Synthesizing Unit <uart_tx>.
 Unit <uart_tx> synthesized.
 
 Synthesizing Unit <debuger_decoder>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v".
-INFO:Xst:3210 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 69: Output port <memRead> of the instance <ins_decoder> is unconnected or connected to loadless signal.
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v".
+INFO:Xst:3210 - "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 69: Output port <memRead> of the instance <ins_decoder> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <debuger_decoder> synthesized.
 
 Synthesizing Unit <stage_if>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_if.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_if.v".
     Found 32-bit register for signal <iadd>.
     Summary:
 	inferred  32 D-type flip-flop(s).
 Unit <stage_if> synthesized.
 
 Synthesizing Unit <pc>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\pc.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\pc.v".
     Found 32-bit register for signal <pc>.
     Found 32-bit adder for signal <pc[31]_GND_11_o_add_2_OUT> created at line 39.
     Summary:
@@ -338,13 +338,13 @@ Synthesizing Unit <pc>.
 Unit <pc> synthesized.
 
 Synthesizing Unit <branch_control>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\branch_control.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\branch_control.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <branch_control> synthesized.
 
 Synthesizing Unit <stage_id>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_id.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_id.v".
     Found 32-bit register for signal <extendedInstr>.
     Found 2-bit register for signal <wbi>.
     Found 1-bit register for signal <memWrite>.
@@ -364,13 +364,13 @@ Synthesizing Unit <stage_id>.
 Unit <stage_id> synthesized.
 
 Synthesizing Unit <ControlModule>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ControlModule.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\ControlModule.v".
     Summary:
 	inferred   3 Multiplexer(s).
 Unit <ControlModule> synthesized.
 
 Synthesizing Unit <RegisterBank>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\RegisterBank.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\RegisterBank.v".
     Found 32-bit register for signal <registro2>.
     Found 1024-bit register for signal <n0050[1023:0]>.
     Found 32-bit register for signal <registro1>.
@@ -382,13 +382,13 @@ Synthesizing Unit <RegisterBank>.
 Unit <RegisterBank> synthesized.
 
 Synthesizing Unit <signExtension>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\signExtension.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\signExtension.v".
     Summary:
 	no macro.
 Unit <signExtension> synthesized.
 
 Synthesizing Unit <GetRegAddr>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\GetRegAddr.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\GetRegAddr.v".
 WARNING:Xst:647 - Input <instr<10:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <instr<31:21>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
@@ -396,7 +396,7 @@ WARNING:Xst:647 - Input <instr<31:21>> is never used. This port will be preserve
 Unit <GetRegAddr> synthesized.
 
 Synthesizing Unit <stage_exe>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\stage_exe.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\stage_exe.v".
     Found 32-bit register for signal <jump_address>.
     Found 1-bit register for signal <is_jump_o>.
     Found 1-bit register for signal <branch_eq_o>.
@@ -413,14 +413,14 @@ Synthesizing Unit <stage_exe>.
 Unit <stage_exe> synthesized.
 
 Synthesizing Unit <adder_32b>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\adder_32b.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\adder_32b.v".
     Found 32-bit adder for signal <c> created at line 29.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <adder_32b> synthesized.
 
 Synthesizing Unit <alu>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\alu.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu.v".
     Found 32-bit subtractor for signal <a[31]_b[31]_sub_3_OUT> created at line 35.
     Found 32-bit adder for signal <a[31]_b[31]_add_1_OUT> created at line 34.
     Found 32-bit shifter logical left for signal <b[31]_a[31]_shift_left_10_OUT> created at line 41
@@ -433,13 +433,13 @@ Synthesizing Unit <alu>.
 Unit <alu> synthesized.
 
 Synthesizing Unit <alu_control>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\alu_control.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\alu_control.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <alu_control> synthesized.
 
 Synthesizing Unit <mem>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mem.v".
     Found 32-bit register for signal <datafromimm>.
     Found 32-bit register for signal <datafrommem>.
     Found 5-bit register for signal <regaddrout>.
@@ -449,19 +449,19 @@ Synthesizing Unit <mem>.
 Unit <mem> synthesized.
 
 Synthesizing Unit <wb>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\wb.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\wb.v".
     Summary:
 	no macro.
 Unit <wb> synthesized.
 
 Synthesizing Unit <mux>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mux.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\mux.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux> synthesized.
 
 Synthesizing Unit <debugersm>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\debugersm.v".
+    Related source file is "C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\debugersm.v".
     Found 1-bit register for signal <rd_out>.
     Found 1-bit register for signal <wr_out>.
     Found 8-bit register for signal <w_data_out>.
@@ -665,7 +665,7 @@ INFO:Xst:2261 - The FF/Latch <decoder/ins_decoder/extendedInstr_15> in Unit <uar
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block uarthandler, actual ratio is 37.
+Found area constraint ratio of 100 (+ 5) on block uarthandler, actual ratio is 38.
 FlipFlop decoder/ins_decoder/aluSrc has been replicated 4 time(s)
 FlipFlop decoder/ins_decoder/extendedInstr_0 has been replicated 1 time(s)
 FlipFlop decoder/ins_decoder/extendedInstr_1 has been replicated 1 time(s)
@@ -705,17 +705,17 @@ Top Level Output File Name         : uarthandler.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2981
+# BELS                             : 3032
 #      GND                         : 5
 #      INV                         : 8
 #      LUT1                        : 8
-#      LUT2                        : 78
-#      LUT3                        : 121
-#      LUT4                        : 34
-#      LUT5                        : 1277
-#      LUT6                        : 1138
+#      LUT2                        : 79
+#      LUT3                        : 152
+#      LUT4                        : 36
+#      LUT5                        : 1266
+#      LUT6                        : 1170
 #      MUXCY                       : 101
-#      MUXF7                       : 102
+#      MUXF7                       : 98
 #      VCC                         : 4
 #      XORCY                       : 105
 # FlipFlops/Latches                : 1533
@@ -744,16 +744,16 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1533  out of  18224     8%  
- Number of Slice LUTs:                 2680  out of   9112    29%  
-    Number used as Logic:              2664  out of   9112    29%  
+ Number of Slice LUTs:                 2735  out of   9112    30%  
+    Number used as Logic:              2719  out of   9112    29%  
     Number used as Memory:               16  out of   2176     0%  
        Number used as RAM:               16
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2875
-   Number with an unused Flip Flop:    1342  out of   2875    46%  
-   Number with an unused LUT:           195  out of   2875     6%  
-   Number of fully used LUT-FF pairs:  1338  out of   2875    46%  
+ Number of LUT Flip Flop pairs used:   2916
+   Number with an unused Flip Flop:    1383  out of   2916    47%  
+   Number with an unused LUT:           181  out of   2916     6%  
+   Number of fully used LUT-FF pairs:  1352  out of   2916    46%  
    Number of unique control sets:        19
 
 IO Utilization: 
@@ -816,28 +816,29 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.755ns (frequency: 148.036MHz)
-  Total number of paths / destination ports: 3467 / 278
+  Clock period: 6.894ns (frequency: 145.061MHz)
+  Total number of paths / destination ports: 3313 / 278
 -------------------------------------------------------------------------
-Delay:               6.755ns (Levels of Logic = 4)
+Delay:               6.894ns (Levels of Logic = 5)
   Source:            state_machine/r_data_out_1 (FF)
-  Destination:       state_machine/datatosend_0_0 (FF)
+  Destination:       state_machine/datatosend_0_3 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: state_machine/r_data_out_1 to state_machine/datatosend_0_0
+  Data Path: state_machine/r_data_out_1 to state_machine/datatosend_0_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             83   0.447   1.994  state_machine/r_data_out_1 (state_machine/r_data_out_1)
-     LUT6:I3->O           30   0.205   1.511  decoder/code[5]_GND_9_o_equal_23_o<5>1 (decoder/code[5]_GND_9_o_equal_23_o)
-     LUT4:I0->O            1   0.203   0.944  decoder/_n0375<0>1 (decoder/_n0375<0>)
-     LUT6:I0->O            1   0.203   0.944  decoder/_n0375<0>9 (decoder/_n0375<0>11)
-     LUT6:I0->O            1   0.203   0.000  decoder/_n0375<0>19 (result<0>)
-     FDE:D                     0.102          state_machine/datatosend_0_0
+     FDE:C->Q             84   0.447   2.000  state_machine/r_data_out_1 (state_machine/r_data_out_1)
+     LUT3:I0->O           35   0.205   1.582  decoder/code[5]_GND_9_o_equal_14_o<5>11 (decoder/code[5]_GND_9_o_equal_14_o<5>1)
+     LUT5:I1->O            1   0.203   0.580  decoder/_n0374<3>5 (decoder/_n0374<3>4)
+     LUT5:I4->O            1   0.205   0.580  decoder/_n0374<3>6 (decoder/_n0374<3>5)
+     LUT6:I5->O            1   0.205   0.580  decoder/_n0374<3>7 (decoder/_n0374<3>6)
+     LUT4:I3->O            1   0.205   0.000  decoder/_n0374<3>10 (result<3>)
+     FDE:D                     0.102          state_machine/datatosend_0_3
     ----------------------------------------
-    Total                      6.755ns (1.363ns logic, 5.392ns route)
-                                       (20.2% logic, 79.8% route)
+    Total                      6.894ns (1.572ns logic, 5.322ns route)
+                                       (22.8% logic, 77.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'decoder/instr_fetch/clock_inv'
@@ -1011,8 +1012,8 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.755|         |         |         |
-decoder/clk    |    6.022|         |         |         |
+clk            |    6.894|         |         |         |
+decoder/clk    |    6.705|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock decoder/clk
@@ -1036,12 +1037,12 @@ decoder/instr_fetch/clock_inv|    2.421|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 36.00 secs
-Total CPU time to Xst completion: 35.31 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.40 secs
  
 --> 
 
-Total memory usage is 300288 kilobytes
+Total memory usage is 271924 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    8 (   0 filtered)

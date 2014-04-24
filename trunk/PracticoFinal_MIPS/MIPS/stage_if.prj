@@ -1,4 +1,0 @@
-verilog work "pc.v"
-verilog work "ipcore_dir/pmem.v"
-verilog work "branch_control.v"
-verilog work "stage_if.v"
