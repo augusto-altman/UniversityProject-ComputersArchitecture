@@ -1,6 +1,0 @@
-MO pc NULL pc.v vlg13/pc.bin 1392681721
-MO stage_if NULL stage_if.v vlg62/stage__if.bin 1392681721
-MO program_memory NULL program_memory.v vlg68/program__memory.bin 1392675660
-MO stage_exe NULL stage_exe.v vlg45/stage__exe.bin 1392855755
-MO pmem NULL ipcore_dir/pmem.v vlg3B/pmem.bin 1392681721
-MO alu NULL alu.v vlg0A/alu.bin 1392855755

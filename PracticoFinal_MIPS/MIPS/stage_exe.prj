@@ -1,4 +1,0 @@
-verilog work "alu_control.v"
-verilog work "alu.v"
-verilog work "adder_32b.v"
-verilog work "stage_exe.v"

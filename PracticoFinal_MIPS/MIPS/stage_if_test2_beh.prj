@@ -1,5 +1,0 @@
-verilog work "pc.v"
-verilog work "ipcore_dir/pmem.v"
-verilog work "stage_if.v"
-verilog work "stage_if_test2.v"
-verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"
