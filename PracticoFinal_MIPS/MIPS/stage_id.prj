@@ -1,5 +1,0 @@
-verilog work "signExtension.v"
-verilog work "RegisterBank.v"
-verilog work "GetRegAddr.v"
-verilog work "ControlModule.v"
-verilog work "stage_id.v"

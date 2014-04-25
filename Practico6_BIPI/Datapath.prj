@@ -1,6 +1,0 @@
-verilog work "SignalExtension.v"
-verilog work "MuxB.v"
-verilog work "MuxA.v"
-verilog work "ALU.v"
-verilog work "Acc.v"
-verilog work "Datapath.v"

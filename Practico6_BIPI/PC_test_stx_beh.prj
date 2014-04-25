@@ -1,3 +1,0 @@
-verilog isim_temp "PC.v"
-verilog isim_temp "PC_test.v"
-verilog isim_temp "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

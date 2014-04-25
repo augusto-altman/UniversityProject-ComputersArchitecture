@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.ncd
-OUTFILE=C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS\uarthandler.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\Tito\Facultad\Arquitecturas de las computadoras\Tp Final\PracticoFinal_MIPS\MIPS
-LICENSE=WebPack
-USER_INFO=205836813_0_0_636

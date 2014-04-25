@@ -1,2 +1,0 @@
-vhdtdtfi -lib work {D:/facu/Arquitecturas de las computadoras/Practico/bipI/Acc.v} -lang verilog -prj bipI -o Acc.spl -module Acc -template C:/Xilinx/14.1/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e Acc.spl {D:/facu/Arquitecturas de las computadoras/Practico/bipI/Acc.sym} 

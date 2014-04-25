@@ -1,4 +1,0 @@
-verilog work "uart_rx.v"
-verilog work "mod_m_counter.v"
-verilog work "rx_test.v"
-verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPTEST1_isim_beh.exe" -prj "D:/Estudio/facu/arquitectura de computadoras/final/workspace/BIPTEST1_beh.prj" "work.BIPTEST1" "work.glbl" 

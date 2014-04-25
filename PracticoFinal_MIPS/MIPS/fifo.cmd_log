@@ -1,1 +1,0 @@
-vhdtdtfi -lang verilog -prj MIPS -o "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS/fifo.tfi" -lib work "D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/PracticoFinal_MIPS/MIPS//fifo.v" -module fifo -template C:/Xilinx/14.1/ISE_DS/ISE//data/tfi.tft -deleteonerror 

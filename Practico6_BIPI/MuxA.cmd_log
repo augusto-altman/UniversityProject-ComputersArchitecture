@@ -1,4 +1,0 @@
-vhdtdtfi -lib work {D:/facu/Arquitecturas de las computadoras/Practico/bipI/MuxA.v} -lang verilog -prj bipI -o MuxA.spl -module MuxA -template C:/Xilinx/14.1/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e MuxA.spl {D:/facu/Arquitecturas de las computadoras/Practico/bipI/MuxA.sym} 
-vhdtdtfi -lib work {D:/facu/Arquitecturas de las computadoras/Practico/bipI/MuxA.v} -lang verilog -prj bipI -o MuxA.spl -module MuxA -template C:/Xilinx/14.1/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e MuxA.spl {D:/facu/Arquitecturas de las computadoras/Practico/bipI/MuxA.sym} 
