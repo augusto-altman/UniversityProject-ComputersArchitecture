@@ -186,7 +186,7 @@ begin
 		6'b011010: result = 32'b0 + datafrommem; //datafrommem
 		6'b011011: result = 32'b0 + datafromimm; //datafromimm
 		6'b011100: result = 32'b0 + writeAddr; //regaddrout
-		//6'b011101: result = 32'b0 + wb; //wbo
+		6'b011111: result = 32'b0 + wb; //wbo
 		/*WB*/
 		6'b011101: result = 32'b0 + writeData; //datatoregfile
 		6'b011110: result = 32'b0 + regWrite; //weregfile
