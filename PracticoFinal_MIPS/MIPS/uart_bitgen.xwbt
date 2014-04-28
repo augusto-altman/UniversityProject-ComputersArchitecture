@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.ncd
-OUTFILE=D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\uart.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS
-LICENSE=WebPack
-USER_INFO=210658098_0_0_210

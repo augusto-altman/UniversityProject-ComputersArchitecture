@@ -1,7 +1,0 @@
-verilog isim_temp "SignalExtension.v"
-verilog isim_temp "MuxB.v"
-verilog isim_temp "MuxA.v"
-verilog isim_temp "ALU.v"
-verilog isim_temp "Acc.v"
-verilog isim_temp "Datapath.v"
-verilog isim_temp "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

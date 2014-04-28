@@ -1,3 +1,0 @@
-verilog work "PC.v"
-verilog work "Instruction_Decoder.v"
-verilog work "Control.v"

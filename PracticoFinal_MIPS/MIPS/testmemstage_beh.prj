@@ -1,4 +1,0 @@
-verilog work "ipcore_dir/rammemory.v"
-verilog work "mem.v"
-verilog work "testmemstage.v"
-verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

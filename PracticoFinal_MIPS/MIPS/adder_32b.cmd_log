@@ -1,1 +1,0 @@
-vhdtdtfi -lang verilog -prj MIPS -o "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS/adder_32b.tfi" -lib work "C:/Tito/Facultad/Arquitecturas de las computadoras/Tp Final/PracticoFinal_MIPS/MIPS//adder_32b.v" -module adder_32b -template C:/Xilinx/14.1/ISE_DS/ISE//data/tfi.tft -deleteonerror 

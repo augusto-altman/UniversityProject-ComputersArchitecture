@@ -1,7 +1,0 @@
-verilog isim_temp "signExtension.v"
-verilog isim_temp "RegisterBank.v"
-verilog isim_temp "GetRegAddr.v"
-verilog isim_temp "ControlModule.v"
-verilog isim_temp "stage_id.v"
-verilog isim_temp "test_stage_id.v"
-verilog isim_temp "C:/Xilinxs/14.1/ISE_DS/ISE//verilog/src/glbl.v"
