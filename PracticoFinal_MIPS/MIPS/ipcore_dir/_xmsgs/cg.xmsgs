@@ -5,7 +5,49 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="sim" num="172" delta="new" >Generating IP...
+<msg type="warning" file="sim" num="991" delta="old" >The project IP instance &apos;<arg fmt="%s" index="1">pmem</arg>&apos; for IP &apos;<arg fmt="%s" index="2">Block Memory Generator v7.1</arg>&apos; was generated with a different version of the IP than is currently in the IP Catalog. It was originally generated using IP with the packaged timestamp &apos;<arg fmt="%s" index="3">2012-03-28+15:19</arg>&apos;; the IP in the current catalog has a different packaged timestamp &apos;<arg fmt="%s" index="4">2012-05-01+17:17</arg>&apos;. This mismatch is due to changes made to the IP in the user repositories. It may affect some functionality of the IP, if there are differences between these two versions of the IP.
+</msg>
+
+<msg type="info" file="sim" num="172" delta="old" >Generating IP...
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find C:\Tito\Facultad\Arquitecturas de las computadoras\Tp</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Final\PracticoFinal_MIPS\programa.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for C:\Tito\Facultad\Arquitecturas de las computadoras\Tp</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Final\PracticoFinal_MIPS\programa.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find C:\Tito\Facultad\Arquitecturas de las computadoras\Tp</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Final\PracticoFinal_MIPS\programa.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for C:\Tito\Facultad\Arquitecturas de las computadoras\Tp</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Final\PracticoFinal_MIPS\programa.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">An invalid core configuration has been detected during</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Customization. Core parameters will be reset to their default values.</arg>
+</msg>
+
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;blk_mem_gen_v7_1&apos;...</arg>
+</msg>
+
+<msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
+</msg>
+
+<msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.
 </msg>
 
 </messages>

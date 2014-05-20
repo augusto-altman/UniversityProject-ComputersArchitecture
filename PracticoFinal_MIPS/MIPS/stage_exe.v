@@ -28,6 +28,11 @@ module stage_exe(
     input control_use_b,
 	 input control_Reg_DST,
 	 input [31:0] npc,
+	 //Signals from forwarding_exe unit
+	 input [1:0] for_a,
+	 input [1:0] for_b,
+	 input [31:0] result_from_exe,
+	 input [31:0] result_from_mem,
 	 //Signals for stage_if
     input control_is_jump,
 	 input control_branch_eq,
@@ -54,8 +59,27 @@ module stage_exe(
 	wire [31:0] t_out, b_entry, t_jump_address;
 	wire [3:0] alu_op;
 	wire t_zero;
+	reg [31:0] a_processed_entry, b_processed_entry;
 	
-	assign b_entry = (!control_use_b) ? data_b : data_imm;
+	assign b_entry = (!control_use_b) ? b_processed_entry : data_imm;
+	
+	always @ (*)
+	begin
+		if(for_a == 2'b01)
+			a_processed_entry = result_from_exe;
+		else if(for_a == 2'b10)
+			a_processed_entry = result_from_mem;
+		else
+			a_processed_entry = data_a;
+			
+		if(for_b == 2'b01)
+			b_processed_entry = result_from_exe;
+		else if(for_b == 2'b10)
+			b_processed_entry = result_from_mem;
+		else
+			b_processed_entry = data_b;
+	end
+	
 	//assign t_jump_address = npc + data_imm;
 	
 	adder_32b instance_name (
@@ -65,7 +89,7 @@ module stage_exe(
     );
 	
 	alu arith_log_unit (
-		 .a(data_a),
+		 .a(a_processed_entry),
 		 .b(b_entry),
 		 .aluop(alu_op),
 		 .out(t_out),

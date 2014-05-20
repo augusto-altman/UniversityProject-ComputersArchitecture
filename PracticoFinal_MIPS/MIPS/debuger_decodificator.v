@@ -43,6 +43,7 @@ wire [4:0] regaddr1, regaddr2;
 
 wire [1:0] wb_exe;
 wire M_exe;
+wire [4:0] rs;
 
 /*MEM*/
 wire M;
@@ -53,6 +54,20 @@ wire [4:0] regaddr_mem;
 /*WB*/
 wire [31:0] datafrommem, datafromimm;
 wire [1:0] wb;
+
+/*Forwarding*/
+wire [1:0] forw_exe_a, forw_exe_b;
+
+forwarding_exe fe (
+    .rs_id(rs), 
+    .rd_id(regaddr1), 
+    .rt_id(regaddr2), 
+    .regDst(control_Reg_DST), 
+    .outReg_exe(regaddr_mem), 
+    .outReg_mem(writeAddr), 
+    .selector_salida_a(forw_exe_a), 
+    .selector_salida_b(forw_exe_b)
+    );
 
 stage_if instr_fetch (
     .clock(clk), 
@@ -87,7 +102,8 @@ stage_id ins_decoder (
     .reg2(data_b), 
     .extendedInstr(data_imm), 
     .regAddr1(regaddr1), 
-    .regAddr2(regaddr2), 
+    .regAddr2(regaddr2),
+	 .rs(rs),
     .regDst(control_Reg_DST)
     );
 
@@ -113,12 +129,16 @@ stage_exe exe(
     .wbi(wb_exe), 
     .M(M_exe), 
     .regaddr1(regaddr1), 
-    .regaddr2(regaddr2), 
+    .regaddr2(regaddr2),
     .wbi_o(wb_mem), 
     .M_o(M), 
     .regaddr_o(regaddr_mem), 
     .data_b_o(data), 
-    .out(dataaddr)
+    .out(dataaddr),
+	 .for_a(forw_exe_a),
+	 .for_b(forw_exe_b),
+	 .result_from_exe(dataaddr),
+	 .result_from_mem(writeData)
     );
 
 mem stage_mem (

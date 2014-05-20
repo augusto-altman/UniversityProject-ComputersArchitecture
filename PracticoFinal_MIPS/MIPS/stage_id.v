@@ -37,11 +37,12 @@ module stage_id(
 	output reg [1:0] 	wbi,
 	output reg			memRead, 
 	output reg			aluSrc, 
-	output [31:0]	reg1, //rs
+	output [31:0]	reg1,
 	output [31:0]	reg2,
 	output reg [31:0]	extendedInstr,
 	output reg [4:0] 	regAddr1,
 	output reg [4:0] 	regAddr2,
+	output reg [4:0] 	rs,
 	output reg 			regDst
     );
 
@@ -59,6 +60,7 @@ wire [31:0]	_extendedInstr;
 wire [4:0] 	_regAddr1;
 wire [4:0] 	_regAddr2 ;
 wire 			_regDst;
+wire [4:0]  _rs;
 
 
 ControlModule control (
@@ -101,7 +103,8 @@ signExtension signExtension (
 GetRegAddr getRegAddr (
     .instr(instr), 
     .regAddr1(_regAddr1), 
-    .regAddr2(_regAddr2)
+    .regAddr2(_regAddr2),
+	 .rs(_rs)
     );
 
 
@@ -118,6 +121,7 @@ begin
 			regDst				= 1'b0;
 			regAddr1 			= 5'b0;
 			regAddr2 			= 5'b0;
+			rs						= 5'b0;
 			pc_ex 				= 32'b0;
 			isJump 				= 1'b0;
 			isNotConditional 	= 1'b0;
@@ -138,6 +142,7 @@ begin
 			regDst				= _regDst;
 			regAddr1 			= _regAddr1;
 			regAddr2 			= _regAddr2;
+			rs						= _rs;
 			pc_ex 				= pc_id;
 		end
 
