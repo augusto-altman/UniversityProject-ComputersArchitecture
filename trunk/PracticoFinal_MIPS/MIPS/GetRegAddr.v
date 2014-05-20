@@ -21,7 +21,8 @@
 module GetRegAddr(
     input [31:0] instr,
     output reg [4:0] regAddr1,
-    output reg [4:0] regAddr2
+    output reg [4:0] regAddr2,
+	 output reg [4:0] rs
     );
 
 
@@ -29,6 +30,7 @@ always@(*)
 begin
 	regAddr1 			= instr[15:11];
 	regAddr2 			= instr[20:16];
+	rs						= instr[25:21];
 end
 
 endmodule

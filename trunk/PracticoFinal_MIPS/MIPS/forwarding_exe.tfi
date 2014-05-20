@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+forwarding_exe instance_name (
+    .rs_id(rs_id), 
+    .rd_id(rd_id), 
+    .rt_id(rt_id), 
+    .regDst(regDst), 
+    .outReg_exe(outReg_exe), 
+    .outReg_mem(outReg_mem), 
+    .selector_salida_a(selector_salida_a), 
+    .selector_salida_b(selector_salida_b)
+    );
+
+
