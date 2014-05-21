@@ -50,6 +50,7 @@ wire M;
 wire [31:0] data, dataaddr;
 wire [1:0] wb_mem;
 wire [4:0] regaddr_mem;
+wire [4:0] rt_id;
 
 /*WB*/
 wire [31:0] datafrommem, datafromimm;
@@ -57,6 +58,8 @@ wire [1:0] wb;
 
 /*Forwarding*/
 wire [1:0] forw_exe_a, forw_exe_b;
+wire forw_mem;
+
 
 forwarding_exe fe (
     .rs_id(rs), 
@@ -67,6 +70,12 @@ forwarding_exe fe (
     .outReg_mem(writeAddr), 
     .selector_salida_a(forw_exe_a), 
     .selector_salida_b(forw_exe_b)
+    );
+	 
+forwarding_mem fm (
+    .rt_id(rt_id), 
+    .outReg_mem(writeAddr), 
+    .selector_salida(forw_mem)
     );
 
 stage_if instr_fetch (
@@ -137,6 +146,7 @@ stage_exe exe(
     .out(dataaddr),
 	 .for_a(forw_exe_a),
 	 .for_b(forw_exe_b),
+	 .rt_id(rt_id),
 	 .result_from_exe(dataaddr),
 	 .result_from_mem(writeData)
     );
@@ -152,6 +162,8 @@ mem stage_mem (
     .datafrommem(datafrommem), 
     .datafromimm(datafromimm), 
     .regaddrout(writeAddr),
+	 .forw(forw_mem),
+	 .result_from_mem(writeData),
 	 .reset(reset)
     );
 	 

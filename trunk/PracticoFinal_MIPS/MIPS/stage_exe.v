@@ -48,6 +48,7 @@ module stage_exe(
 	 input M,
 	 input [4:0] regaddr1,
 	 input [4:0] regaddr2,
+	 output reg [4:0] rt_id,
 	 output reg [1:0] wbi_o,
     output reg M_o,
 	 output reg [4:0] regaddr_o,
@@ -127,11 +128,12 @@ module stage_exe(
 			branch_inc_o = control_branch_inc;
 			wbi_o = wbi;
 			M_o = M;
-			data_b_o = data_b;
+			data_b_o = b_processed_entry;
 			if(control_Reg_DST)
 				regaddr_o = regaddr1; //1
 			else
 				regaddr_o = regaddr2; //0
+			rt_id = regaddr2;
 		end
 	end
 

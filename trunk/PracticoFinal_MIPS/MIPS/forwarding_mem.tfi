@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+forwarding_mem instance_name (
+    .rt_id(rt_id), 
+    .outReg_mem(outReg_mem), 
+    .selector_salida(selector_salida)
+    );
+
+

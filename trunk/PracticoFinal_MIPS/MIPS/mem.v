@@ -27,6 +27,8 @@ module mem(
     input M,
     input [31:0] data,
     input [31:0] dataaddr,
+	 input forw,
+	 input [31:0] result_from_mem,
 	 output reg [31:0] datafrommem,
     output reg [31:0] datafromimm,
 	 output reg [4:0] regaddrout
@@ -34,11 +36,21 @@ module mem(
 	 
 	 wire [31:0] douta;
 	 
+	 reg [31:0] processed_entry;
+	 
+	always @ (*)
+	begin
+		if(forw == 1)
+			processed_entry = result_from_mem;
+		else
+			processed_entry = data;
+	end
+	 
 	rammemory memory (
   .clka(clk), // input clka
   .wea(M), // input [0 : 0] wea
   .addra(dataaddr), // input [12 : 0] addra
-  .dina(data), // input [31 : 0] dina
+  .dina(processed_entry), // input [31 : 0] dina
   .douta(douta), // output [31 : 0] douta
   .rsta(reset)
 );
