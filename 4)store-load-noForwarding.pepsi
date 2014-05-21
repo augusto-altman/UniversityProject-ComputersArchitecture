@@ -1,30 +1,6 @@
 addi 16,16,0
 addi 0,0,2
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
 addi 1,1,3
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
 add 2,1,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
 sw 0, 0(3)
 lw 4, 0(4)
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
-addi 16,16,0
