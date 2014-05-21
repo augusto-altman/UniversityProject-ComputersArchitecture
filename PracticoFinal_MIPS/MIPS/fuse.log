@@ -20,6 +20,7 @@ Analyzing Verilog file "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Comp
 Analyzing Verilog file "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/stage_id.v" into library work
 Analyzing Verilog file "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/stage_exe.v" into library work
 Analyzing Verilog file "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/mem.v" into library work
+Analyzing Verilog file "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/forwarding_mem.v" into library work
 Analyzing Verilog file "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/forwarding_exe.v" into library work
 Analyzing Verilog file "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/debuger_decodificator.v" into library work
 Analyzing Verilog file "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/testdeco.v" into library work
@@ -27,9 +28,10 @@ Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into libr
 Starting static elaboration
 WARNING:HDLCompiler:329 - "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/testdeco.v" Line 41: Target <size> of concurrent assignment or output port connection should be a net type.
 WARNING:HDLCompiler:189 - "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/stage_if.v" Line 49: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/mem.v" Line 40: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/mem.v" Line 52: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
 Completed static elaboration
 Compiling module forwarding_exe
+Compiling module forwarding_mem
 Compiling module pc
 Compiling module BLK_MEM_GEN_V7_1_output_stage(C_...
 Compiling module BLK_MEM_GEN_V7_1_softecc_output_...
@@ -60,8 +62,8 @@ Compiling module debuger_decoder
 Compiling module testdeco
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 14 sub-compilation(s) to finish...
-Compiled 30 Verilog Units
+Waiting for 17 sub-compilation(s) to finish...
+Compiled 31 Verilog Units
 Built simulation executable C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk/PracticoFinal_MIPS/MIPS/testdeco_isim_beh.exe
-Fuse Memory Usage: 56920 KB
-Fuse CPU Usage: 2277 ms
+Fuse Memory Usage: 57148 KB
+Fuse CPU Usage: 3041 ms

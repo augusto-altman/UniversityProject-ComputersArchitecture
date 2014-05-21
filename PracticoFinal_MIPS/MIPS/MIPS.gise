@@ -31,6 +31,7 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="forwarding_exe.tfi"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="forwarding_exe_test1_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="forwarding_mem.tfi"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -91,7 +92,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1400547598" xil_pn:in_ck="-8957429066337347610" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1400547597">
+    <transform xil_pn:end_ts="1400630481" xil_pn:in_ck="8932021935149155003" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1400630479">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ControlModule.v"/>
@@ -110,6 +111,7 @@
       <outfile xil_pn:name="fifo.v"/>
       <outfile xil_pn:name="forwarding_exe.v"/>
       <outfile xil_pn:name="forwarding_exe_test1.v"/>
+      <outfile xil_pn:name="forwarding_mem.v"/>
       <outfile xil_pn:name="mem.v"/>
       <outfile xil_pn:name="mod_m_counter.v"/>
       <outfile xil_pn:name="mod_m_counter_test.v"/>
@@ -158,7 +160,7 @@
       <outfile xil_pn:name="ipcore_dir/rammemory.ngc"/>
       <outfile xil_pn:name="ipcore_dir/rammemory.v"/>
     </transform>
-    <transform xil_pn:end_ts="1400547598" xil_pn:in_ck="1030522285145053812" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1400547598">
+    <transform xil_pn:end_ts="1400630482" xil_pn:in_ck="8932021935149155003" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1400630481">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ControlModule.v"/>
@@ -177,8 +179,7 @@
       <outfile xil_pn:name="fifo.v"/>
       <outfile xil_pn:name="forwarding_exe.v"/>
       <outfile xil_pn:name="forwarding_exe_test1.v"/>
-      <outfile xil_pn:name="ipcore_dir/pmem.v"/>
-      <outfile xil_pn:name="ipcore_dir/rammemory.v"/>
+      <outfile xil_pn:name="forwarding_mem.v"/>
       <outfile xil_pn:name="mem.v"/>
       <outfile xil_pn:name="mod_m_counter.v"/>
       <outfile xil_pn:name="mod_m_counter_test.v"/>
@@ -211,7 +212,7 @@
       <outfile xil_pn:name="uarthandler.v"/>
       <outfile xil_pn:name="wb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1400547611" xil_pn:in_ck="1030522285145053812" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6525537764120729539" xil_pn:start_ts="1400547598">
+    <transform xil_pn:end_ts="1400630502" xil_pn:in_ck="7871338449443764137" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6525537764120729539" xil_pn:start_ts="1400630482">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -223,11 +224,9 @@
       <outfile xil_pn:name="testdeco_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1400547614" xil_pn:in_ck="5830220190046831325" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4376913999536598694" xil_pn:start_ts="1400547611">
+    <transform xil_pn:end_ts="1400630779" xil_pn:in_ck="5830220190046831325" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4376913999536598694" xil_pn:start_ts="1400630775">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testdeco_isim_beh.wdb"/>
@@ -264,7 +263,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1400546010" xil_pn:in_ck="-2727103867124306527" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="662307763674302893" xil_pn:start_ts="1400545786">
+    <transform xil_pn:end_ts="1400630448" xil_pn:in_ck="-2262080380804496426" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="662307763674302893" xil_pn:start_ts="1400630216">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
