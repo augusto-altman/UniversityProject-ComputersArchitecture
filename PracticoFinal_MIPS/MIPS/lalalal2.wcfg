@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/testdeco_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testdeco" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/testdeco/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">code[7:0]</obj_property>
+      <obj_property name="ObjectShortName">code[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/size" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">size[1:0]</obj_property>
+      <obj_property name="ObjectShortName">size[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/wbi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wbi[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wbi[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/regaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regaddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regaddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/M" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">M</obj_property>
+      <obj_property name="ObjectShortName">M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/dataaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/forw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">forw</obj_property>
+      <obj_property name="ObjectShortName">forw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/result_from_mem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result_from_mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_from_mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/douta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/wbo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wbo[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wbo[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/datafrommem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datafrommem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datafrommem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/datafromimm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datafromimm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datafromimm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/regaddrout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regaddrout[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regaddrout[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/processed_entry" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">processed_entry[31:0]</obj_property>
+      <obj_property name="ObjectShortName">processed_entry[31:0]</obj_property>
+   </wvobject>
+</wave_config>
