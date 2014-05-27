@@ -55,6 +55,12 @@ module mem(
   .rsta(reset)
 );
 	 
+	 always@(*)
+	 begin
+	 		datafrommem = douta;
+	 end
+	 
+	 
 	 always @ (posedge clk)
 	 begin
 	   if (reset)
@@ -66,7 +72,7 @@ module mem(
 			end
 		wbo = wbi;
 		datafromimm = dataaddr;
-		datafrommem = douta;
+
 		regaddrout = regaddr;
 	 end
 

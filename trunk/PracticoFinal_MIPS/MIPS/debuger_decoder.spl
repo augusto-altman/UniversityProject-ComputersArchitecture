@@ -1,0 +1,10 @@
+[Inputs]
+reset
+=code[7:0]=
+[Outputs]
+=result[31:0]=
+=size[1:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel debuger_decoder
+

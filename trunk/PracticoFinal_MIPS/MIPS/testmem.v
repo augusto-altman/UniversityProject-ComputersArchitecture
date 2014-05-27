@@ -27,11 +27,11 @@ module testmem;
 	// Inputs
 	reg clka;
 	reg [0:0] wea;
-	reg [10:0] addra;
-	reg [15:0] dina;
+	reg [12:0] addra;
+	reg [31:0] dina;
 
 	// Outputs
-	wire [15:0] douta;
+	wire [31:0] douta;
 
 	// Instantiate the Unit Under Test (UUT)
 	rammemory uut (
@@ -45,19 +45,41 @@ module testmem;
 	initial begin
 		// Initialize Inputs
 		clka = 0;
-		wea = 0;
-		addra = 0;
-		dina = 0;
+		wea = 0; // write enable ?
+		addra = 0; // direccion de los datos (para leer o escribir)
+		dina = 0; // entrada de datos para grabar.
 
 		// Wait 100 ns for global reset to finish
 		#100;
-		
+		wea = 1;
 		addra= 1;
 		dina = 1;
-		#2;
-		wea = 1;
+		#2
+		wea =1;
+		addra = 2;
+		dina = 2;
+		#2
+		wea =1;
+		addra = 3;
+		dina = 3;
+		#2
+		wea =1;
+		addra = 4;
+		dina = 4;
 		#2;
 		wea = 0;
+		addra = 1;
+		#2;
+		wea = 0;
+		addra = 2;
+		#2;
+		wea = 0;
+		addra = 3;
+		#2;
+		wea = 0;
+		addra = 4;
+		
+		
         
 		// Add stimulus here
 
