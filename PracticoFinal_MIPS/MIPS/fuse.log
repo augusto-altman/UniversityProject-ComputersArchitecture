@@ -27,7 +27,7 @@ Analyzing Verilog file "D:/Estudio/facu/arquitectura de computadoras/final/works
 Analyzing Verilog file "C:/Xilinxs/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 WARNING:HDLCompiler:329 - "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/testdeco.v" Line 41: Target <size> of concurrent assignment or output port connection should be a net type.
-WARNING:HDLCompiler:189 - "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/stage_if.v" Line 49: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/stage_if.v" Line 54: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
 WARNING:HDLCompiler:189 - "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/mem.v" Line 52: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
 Completed static elaboration
 Compiling module forwarding_exe
@@ -62,8 +62,8 @@ Compiling module debuger_decoder
 Compiling module testdeco
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 24 sub-compilation(s) to finish...
+Waiting for 28 sub-compilation(s) to finish...
 Compiled 31 Verilog Units
 Built simulation executable D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/testdeco_isim_beh.exe
-Fuse Memory Usage: 31944 KB
-Fuse CPU Usage: 795 ms
+Fuse Memory Usage: 31792 KB
+Fuse CPU Usage: 701 ms

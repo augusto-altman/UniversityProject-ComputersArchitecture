@@ -1,0 +1,3 @@
+verilog work "ControlHazzardHandler.v"
+verilog work "ControlHazarHandler_test1.v"
+verilog work "C:/Xilinxs/14.1/ISE_DS/ISE//verilog/src/glbl.v"

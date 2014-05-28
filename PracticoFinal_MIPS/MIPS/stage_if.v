@@ -27,12 +27,17 @@ module stage_if(
 	 input control_is_zero,
     input [31:0] data_jump_address,
     output [31:0] instruction,
-	 output reg [31:0] iadd
+	 output reg [31:0] iadd,
+	 output isJumped
+	 
     );
 
 	wire use_npc;
 	wire [31:0] iadd_out;
 
+
+	assign isJumped = ~use_npc;
+	
 	always @ (posedge clock)
 		iadd = iadd_out;
 

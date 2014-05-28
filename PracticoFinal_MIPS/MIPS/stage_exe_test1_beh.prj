@@ -1,0 +1,6 @@
+verilog work "alu_control.v"
+verilog work "alu.v"
+verilog work "adder_32b.v"
+verilog work "stage_exe.v"
+verilog work "stage_exe_test1.v"
+verilog work "C:/Xilinxs/14.1/ISE_DS/ISE//verilog/src/glbl.v"

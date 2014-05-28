@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.96 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.97 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: uarthandler.prj
 
@@ -193,7 +193,7 @@ Elaborating module <pc>.
 
 Elaborating module <pmem>.
 WARNING:HDLCompiler:1499 - "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module <pmem> remains a black box.
-WARNING:HDLCompiler:189 - "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\stage_if.v" Line 49: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\stage_if.v" Line 54: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 32-bit.
 
 Elaborating module <branch_control>.
 
@@ -324,7 +324,7 @@ Unit <uart_tx> synthesized.
 
 Synthesizing Unit <debuger_decoder>.
     Related source file is "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\debuger_decodificator.v".
-INFO:Xst:3210 - "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 93: Output port <memRead> of the instance <ins_decoder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\debuger_decodificator.v" line 97: Output port <memRead> of the instance <ins_decoder> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <debuger_decoder> synthesized.
@@ -436,8 +436,8 @@ Synthesizing Unit <stage_exe>.
     Found 5-bit register for signal <regaddr_o>.
     Found 5-bit register for signal <rt_id>.
     Found 32-bit register for signal <out>.
-    Found 32-bit 4-to-1 multiplexer for signal <a_processed_entry> created at line 63.
-    Found 32-bit 4-to-1 multiplexer for signal <b_processed_entry> created at line 63.
+    Found 32-bit 4-to-1 multiplexer for signal <a_processed_entry> created at line 65.
+    Found 32-bit 4-to-1 multiplexer for signal <b_processed_entry> created at line 65.
     Summary:
 	inferred 113 D-type flip-flop(s).
 	inferred   4 Multiplexer(s).
@@ -472,11 +472,10 @@ Unit <alu_control> synthesized.
 Synthesizing Unit <mem>.
     Related source file is "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\mem.v".
     Found 32-bit register for signal <datafromimm>.
-    Found 32-bit register for signal <datafrommem>.
     Found 5-bit register for signal <regaddrout>.
     Found 2-bit register for signal <wbo>.
     Summary:
-	inferred  71 D-type flip-flop(s).
+	inferred  39 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 Unit <mem> synthesized.
 
@@ -526,12 +525,12 @@ Macro Statistics
  32-bit addsub                                         : 1
  4-bit adder                                           : 6
  9-bit adder                                           : 1
-# Registers                                            : 59
+# Registers                                            : 58
  1-bit register                                        : 19
  1024-bit register                                     : 1
  2-bit register                                        : 6
  3-bit register                                        : 3
- 32-bit register                                       : 12
+ 32-bit register                                       : 11
  4-bit register                                        : 7
  5-bit register                                        : 6
  8-bit register                                        : 4
@@ -637,8 +636,8 @@ Macro Statistics
  32-bit up counter                                     : 1
  4-bit up counter                                      : 4
  9-bit up counter                                      : 1
-# Registers                                            : 1484
- Flip-Flops                                            : 1484
+# Registers                                            : 1452
+ Flip-Flops                                            : 1452
 # Comparators                                          : 9
  4-bit comparator not equal                            : 4
  5-bit comparator equal                                : 5
@@ -708,7 +707,7 @@ FlipFlop decoder/stage_mem/regaddrout_1 has been replicated 1 time(s)
 FlipFlop decoder/stage_mem/regaddrout_2 has been replicated 1 time(s)
 FlipFlop decoder/stage_mem/regaddrout_3 has been replicated 1 time(s)
 FlipFlop decoder/stage_mem/regaddrout_4 has been replicated 1 time(s)
-FlipFlop decoder/stage_mem/wbo_0 has been replicated 3 time(s)
+FlipFlop decoder/stage_mem/wbo_0 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -716,8 +715,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1534
- Flip-Flops                                            : 1534
+# Registers                                            : 1500
+ Flip-Flops                                            : 1500
 
 =========================================================================
 
@@ -740,21 +739,21 @@ Top Level Output File Name         : uarthandler.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3259
+# BELS                             : 3340
 #      GND                         : 5
-#      INV                         : 9
+#      INV                         : 8
 #      LUT1                        : 8
-#      LUT2                        : 74
-#      LUT3                        : 160
-#      LUT4                        : 83
-#      LUT5                        : 1359
-#      LUT6                        : 1237
+#      LUT2                        : 56
+#      LUT3                        : 148
+#      LUT4                        : 74
+#      LUT5                        : 1361
+#      LUT6                        : 1307
 #      MUXCY                       : 101
-#      MUXF7                       : 114
+#      MUXF7                       : 163
 #      VCC                         : 4
 #      XORCY                       : 105
-# FlipFlops/Latches                : 1536
-#      FD                          : 217
+# FlipFlops/Latches                : 1502
+#      FD                          : 183
 #      FDE                         : 96
 #      FDR                         : 198
 #      FDRE_1                      : 1024
@@ -778,17 +777,17 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1536  out of  18224     8%  
- Number of Slice LUTs:                 2946  out of   9112    32%  
-    Number used as Logic:              2930  out of   9112    32%  
+ Number of Slice Registers:            1502  out of  18224     8%  
+ Number of Slice LUTs:                 2978  out of   9112    32%  
+    Number used as Logic:              2962  out of   9112    32%  
     Number used as Memory:               16  out of   2176     0%  
        Number used as RAM:               16
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3116
-   Number with an unused Flip Flop:    1580  out of   3116    50%  
-   Number with an unused LUT:           170  out of   3116     5%  
-   Number of fully used LUT-FF pairs:  1366  out of   3116    43%  
+ Number of LUT Flip Flop pairs used:   3111
+   Number with an unused Flip Flop:    1609  out of   3111    51%  
+   Number with an unused LUT:           133  out of   3111     4%  
+   Number of fully used LUT-FF pairs:  1369  out of   3111    44%  
    Number of unique control sets:        20
 
 IO Utilization: 
@@ -823,7 +822,7 @@ Clock Signal                                                   | Clock buffer(FF
 ---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 clk                                                            | BUFGP                                                                                                                                                | 125   |
 decoder/instr_fetch/clock_inv(decoder/instr_fetch/clock_inv1:O)| BUFG(*)(decoder/instr_fetch/pc_reg/pc_31)                                                                                                            | 32    |
-decoder/_n0210(decoder/_n0210<5>2:O)                           | BUFG(*)(decoder/instr_fetch/iadd_31)                                                                                                                 | 1404  |
+decoder/_n0210(decoder/_n0210<5>2:O)                           | BUFG(*)(decoder/instr_fetch/iadd_31)                                                                                                                 | 1370  |
 decoder/instr_fetch/pmemory/N1                                 | NONE(decoder/instr_fetch/pmemory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
 decoder/stage_mem/memory/N1                                    | NONE(decoder/stage_mem/memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)   | 15    |
 ---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
@@ -840,8 +839,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 11.561ns (Maximum Frequency: 86.497MHz)
-   Minimum input arrival time before clock: 4.731ns
+   Minimum period: 12.157ns (Maximum Frequency: 82.254MHz)
+   Minimum input arrival time before clock: 6.325ns
    Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
@@ -851,28 +850,28 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.752ns (frequency: 128.992MHz)
-  Total number of paths / destination ports: 3437 / 278
+  Clock period: 7.753ns (frequency: 128.987MHz)
+  Total number of paths / destination ports: 3438 / 278
 -------------------------------------------------------------------------
-Delay:               7.752ns (Levels of Logic = 5)
-  Source:            state_machine/r_data_out_1 (FF)
-  Destination:       state_machine/datatosend_0_7 (FF)
+Delay:               7.753ns (Levels of Logic = 5)
+  Source:            state_machine/r_data_out_0 (FF)
+  Destination:       state_machine/datatosend_0_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: state_machine/r_data_out_1 to state_machine/datatosend_0_7
+  Data Path: state_machine/r_data_out_0 to state_machine/datatosend_0_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             74   0.447   1.934  state_machine/r_data_out_1 (state_machine/r_data_out_1)
-     LUT3:I0->O           56   0.205   1.835  decoder/_n0053<5>11 (decoder/_n0053<5>1)
-     LUT6:I2->O            1   0.203   0.808  decoder/_n0453<5>3 (decoder/_n0453<5>2)
-     LUT6:I3->O            1   0.205   0.924  decoder/_n0453<5>4 (decoder/_n0453<5>3)
-     LUT5:I0->O            1   0.203   0.684  decoder/_n0453<5>7_SW0 (N512)
-     LUT6:I4->O            1   0.203   0.000  decoder/_n0453<5>7 (result<5>)
-     FDE:D                     0.102          state_machine/datatosend_0_5
+     FDE:C->Q             98   0.447   2.112  state_machine/r_data_out_0 (state_machine/r_data_out_0)
+     LUT6:I2->O           29   0.203   1.614  decoder/_n0079<5>1 (decoder/_n0079)
+     LUT6:I0->O            1   0.203   0.808  decoder/_n0443<0>2 (decoder/_n0443<0>1)
+     LUT6:I3->O            1   0.205   0.827  decoder/_n0443<0>5 (decoder/_n0443<0>7)
+     LUT6:I2->O            1   0.203   0.827  decoder/_n0443<0>10 (decoder/_n0443<0>14)
+     LUT6:I2->O            1   0.203   0.000  decoder/_n0443<0>25 (result<0>)
+     FDE:D                     0.102          state_machine/datatosend_0_0
     ----------------------------------------
-    Total                      7.752ns (1.568ns logic, 6.184ns route)
+    Total                      7.753ns (1.566ns logic, 6.187ns route)
                                        (20.2% logic, 79.8% route)
 
 =========================================================================
@@ -931,35 +930,36 @@ Delay:               2.421ns (Levels of Logic = 33)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'decoder/_n0210'
-  Clock period: 11.561ns (frequency: 86.497MHz)
-  Total number of paths / destination ports: 734981 / 2731
+  Clock period: 12.157ns (frequency: 82.254MHz)
+  Total number of paths / destination ports: 975805 / 2860
 -------------------------------------------------------------------------
-Delay:               11.561ns (Levels of Logic = 11)
-  Source:            decoder/ins_decoder/rs_2 (FF)
+Delay:               12.157ns (Levels of Logic = 12)
+  Source:            decoder/ins_decoder/regDst (FF)
   Destination:       decoder/exe/zero (FF)
   Source Clock:      decoder/_n0210 rising
   Destination Clock: decoder/_n0210 rising
 
-  Data Path: decoder/ins_decoder/rs_2 to decoder/exe/zero
+  Data Path: decoder/ins_decoder/regDst to decoder/exe/zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.447   0.981  decoder/ins_decoder/rs_2 (decoder/ins_decoder/rs_2)
-     LUT6:I0->O            7   0.203   0.774  decoder/fe/outReg_exe[4]_rs_id[4]_equal_3_o5_SW0 (N27)
-     LUT5:I4->O           11   0.205   0.987  decoder/fe/outReg_exe[4]_rs_id[4]_equal_3_o5_2 (decoder/fe/outReg_exe[4]_rs_id[4]_equal_3_o5_1)
-     LUT5:I3->O            4   0.203   1.048  decoder/exe/Mmux_a_processed_entry251 (decoder/exe/a_processed_entry<31>)
-     LUT6:I0->O            7   0.203   1.021  decoder/exe/arith_log_unit/out2 (decoder/exe/arith_log_unit/out1)
-     LUT6:I2->O           10   0.203   1.221  decoder/exe/arith_log_unit/Mmux_out102431_1 (decoder/exe/arith_log_unit/Mmux_out102431)
-     LUT6:I0->O            1   0.203   0.000  decoder/exe/arith_log_unit/Mmux_out10932_G (N541)
-     MUXF7:I1->O           1   0.140   0.684  decoder/exe/arith_log_unit/Mmux_out10932 (decoder/exe/arith_log_unit/Mmux_out10932)
-     LUT5:I3->O            2   0.203   0.961  decoder/exe/arith_log_unit/Mmux_out10935 (decoder/exe/t_out<8>)
-     LUT5:I0->O            1   0.203   0.580  decoder/exe/arith_log_unit/zero1_SW0 (N363)
-     LUT6:I5->O            1   0.205   0.580  decoder/exe/arith_log_unit/zero2 (decoder/exe/arith_log_unit/zero1)
+     FDR:C->Q             12   0.447   0.909  decoder/ins_decoder/regDst (decoder/ins_decoder/regDst)
+     LUT3:I2->O            4   0.205   0.684  decoder/fe/Mmux_realInput51 (decoder/fe/realInput<4>)
+     LUT6:I5->O            5   0.205   0.715  decoder/fe/outReg_exe[4]_rd_id[4]_equal_7_o5_SW2 (N88)
+     LUT4:I3->O           13   0.205   1.037  decoder/fe/Mmux_selector_salida_b2_3 (decoder/fe/Mmux_selector_salida_b2_2)
+     LUT6:I4->O            1   0.203   0.684  decoder/exe/Mmux_b_entry301_SW1 (N634)
+     LUT5:I3->O            8   0.203   1.050  decoder/exe/Mmux_b_entry301 (decoder/exe/b_entry<7>)
+     LUT6:I2->O            4   0.203   0.912  decoder/exe/arith_log_unit/Sh91 (decoder/exe/arith_log_unit/Sh9)
+     LUT6:I3->O            1   0.205   0.580  decoder/exe/arith_log_unit/Mmux_out10274 (decoder/exe/arith_log_unit/Mmux_out10273)
+     LUT6:I5->O            1   0.205   0.580  decoder/exe/arith_log_unit/Mmux_out10275 (decoder/exe/arith_log_unit/Mmux_out10274)
+     LUT6:I5->O            2   0.205   0.845  decoder/exe/arith_log_unit/Mmux_out10278 (decoder/exe/t_out<17>)
+     LUT6:I3->O            1   0.205   0.580  decoder/exe/arith_log_unit/zero6_SW0_SW0 (N670)
+     LUT6:I5->O            1   0.205   0.580  decoder/exe/arith_log_unit/zero5_SW0 (N373)
      LUT6:I5->O            1   0.205   0.000  decoder/exe/arith_log_unit/zero7 (decoder/exe/t_zero)
      FDR:D                     0.102          decoder/exe/zero
     ----------------------------------------
-    Total                     11.561ns (2.725ns logic, 8.836ns route)
-                                       (23.6% logic, 76.4% route)
+    Total                     12.157ns (3.003ns logic, 9.154ns route)
+                                       (24.7% logic, 75.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -986,7 +986,7 @@ Offset:              3.401ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'decoder/instr_fetch/clock_inv'
   Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              3.919ns (Levels of Logic = 1)
+Offset:              3.880ns (Levels of Logic = 1)
   Source:            reset (PAD)
   Destination:       decoder/instr_fetch/pc_reg/pc_31 (FF)
   Destination Clock: decoder/instr_fetch/clock_inv rising
@@ -995,31 +995,32 @@ Offset:              3.919ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1250   1.222   2.267  reset_IBUF (reset_IBUF)
+     IBUF:I->O          1089   1.222   2.228  reset_IBUF (reset_IBUF)
      FDR:R                     0.430          decoder/instr_fetch/pc_reg/pc_0
     ----------------------------------------
-    Total                      3.919ns (1.652ns logic, 2.267ns route)
-                                       (42.2% logic, 57.8% route)
+    Total                      3.880ns (1.652ns logic, 2.228ns route)
+                                       (42.6% logic, 57.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'decoder/_n0210'
   Total number of paths / destination ports: 1223 / 1223
 -------------------------------------------------------------------------
-Offset:              4.731ns (Levels of Logic = 2)
+Offset:              6.325ns (Levels of Logic = 3)
   Source:            reset (PAD)
-  Destination:       decoder/exe/rt_id_4 (FF)
+  Destination:       decoder/ins_decoder/aluOp_2 (FF)
   Destination Clock: decoder/_n0210 rising
 
-  Data Path: reset to decoder/exe/rt_id_4
+  Data Path: reset to decoder/ins_decoder/aluOp_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1250   1.222   2.267  reset_IBUF (reset_IBUF)
-     INV:I->O              5   0.206   0.714  decoder/exe/reset_inv1_INV_0 (decoder/exe/reset_inv)
-     FDE:CE                    0.322          decoder/exe/rt_id_0
+     IBUF:I->O          1089   1.222   2.229  reset_IBUF (reset_IBUF)
+     LUT5:I4->O          162   0.205   2.364  decoder/ins_decoder/reset_isJumped_OR_57_o1 (decoder/ins_decoder/reset_isJumped_OR_57_o)
+     LUT6:I1->O            1   0.203   0.000  decoder/ins_decoder/Mmux_aluOp[3]_GND_16_o_mux_1_OUT31 (decoder/ins_decoder/aluOp[3]_GND_16_o_mux_1_OUT<2>)
+     FD:D                      0.102          decoder/ins_decoder/aluOp_2
     ----------------------------------------
-    Total                      4.731ns (1.750ns logic, 2.981ns route)
-                                       (37.0% logic, 63.0% route)
+    Total                      6.325ns (1.732ns logic, 4.593ns route)
+                                       (27.4% logic, 72.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -1050,8 +1051,8 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    7.752|         |         |         |
-decoder/_n0210 |    6.305|         |         |         |
+clk            |    7.753|         |         |         |
+decoder/_n0210 |    7.479|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock decoder/_n0210
@@ -1059,7 +1060,7 @@ Clock to Setup on destination clock decoder/_n0210
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-decoder/_n0210               |   11.561|    2.820|    4.256|         |
+decoder/_n0210               |   12.157|    2.820|    4.681|         |
 decoder/instr_fetch/clock_inv|    1.541|         |         |         |
 -----------------------------+---------+---------+---------+---------+
 
@@ -1068,19 +1069,19 @@ Clock to Setup on destination clock decoder/instr_fetch/clock_inv
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-decoder/_n0210               |    3.667|         |         |         |
+decoder/_n0210               |    3.908|         |         |         |
 decoder/instr_fetch/clock_inv|    2.421|         |         |         |
 -----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 85.00 secs
-Total CPU time to Xst completion: 84.17 secs
+Total REAL time to Xst completion: 54.00 secs
+Total CPU time to Xst completion: 53.53 secs
  
 --> 
 
-Total memory usage is 303956 kilobytes
+Total memory usage is 301152 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    9 (   0 filtered)

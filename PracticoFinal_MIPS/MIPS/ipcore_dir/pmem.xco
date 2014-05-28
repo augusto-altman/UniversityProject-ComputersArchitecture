@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.1
-# Date: Tue May 27 00:35:20 2014
+# Date: Wed May 28 00:58:10 2014
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file="D:\Estudio\facu\arquitectura de computadoras\final\workspace - branches\tests\6)store-load-WithForwarding.coe"
+CSET coe_file="D:\Estudio\facu\arquitectura de computadoras\final\workspace - branches\tests\8)branchs-for-WITHForwarding.coe"
 CSET collision_warnings=ALL
 CSET component_name=pmem
 CSET disable_collision_warnings=false
@@ -103,4 +103,4 @@ CSET write_width_b=32
 MISC pkg_timestamp=2012-03-28T15:19:06Z
 # END Extra information
 GENERATE
-# CRC: f49ca194
+# CRC: 8c3c9cb7

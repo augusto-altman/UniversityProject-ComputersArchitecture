@@ -27,6 +27,7 @@ module stage_id(
 	input [4:0] 	writeAddr,
 	input 			regWrite,
 	input [31:0]   pc_id,
+	input 			isJumped,
 	// outputs
 	output reg [31:0]  pc_ex,
 	output reg [3:0] 	aluOp,
@@ -111,7 +112,7 @@ GetRegAddr getRegAddr (
 
 always@(posedge clock)
 begin
-  if(reset)
+  if(reset || isJumped)
 	  begin
 			aluOp					= 4'b0010;
 			extendedInstr 		= 32'b100000;
