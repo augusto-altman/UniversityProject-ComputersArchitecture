@@ -33,6 +33,8 @@ module stage_exe(
 	 input [1:0] for_b,
 	 input [31:0] result_from_exe,
 	 input [31:0] result_from_mem,
+	 // Signal for Control hazzard
+	 input 	isJumped,
 	 //Signals for stage_if
     input control_is_jump,
 	 input control_branch_eq,
@@ -105,7 +107,7 @@ module stage_exe(
 		
 	always @ (posedge clock)
 	begin
-		if (reset)
+		if (reset || isJumped)
 		begin
 			out = 32'b0;
 			jump_address = 32'b0;

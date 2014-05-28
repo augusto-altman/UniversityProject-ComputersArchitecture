@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: mem.prj
 
@@ -108,9 +108,9 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" into library work
+Analyzing Verilog file "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" into library work
 Parsing module <rammemory>.
-Analyzing Verilog file "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v" into library work
+Analyzing Verilog file "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\mem.v" into library work
 Parsing module <mem>.
 
 =========================================================================
@@ -120,31 +120,33 @@ Parsing module <mem>.
 Elaborating module <mem>.
 
 Elaborating module <rammemory>.
-WARNING:HDLCompiler:1499 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module <rammemory> remains a black box.
-WARNING:HDLCompiler:189 - "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v" Line 39: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1499 - "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module <rammemory> remains a black box.
+WARNING:HDLCompiler:189 - "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\mem.v" Line 52: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 32-bit.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <mem>.
-    Related source file is "D:\facu\Arquitecturas de las computadoras\Practico\tpfinal\PracticoFinal_MIPS\MIPS\mem.v".
+    Related source file is "D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\mem.v".
     Found 32-bit register for signal <datafromimm>.
-    Found 32-bit register for signal <datafrommem>.
-    Found 4-bit register for signal <regaddrout>.
+    Found 5-bit register for signal <regaddrout>.
     Found 2-bit register for signal <wbo>.
     Summary:
-	inferred  70 D-type flip-flop(s).
+	inferred  39 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
 Unit <mem> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 4
+# Registers                                            : 3
  2-bit register                                        : 1
- 32-bit register                                       : 2
- 4-bit register                                        : 1
+ 32-bit register                                       : 1
+ 5-bit register                                        : 1
+# Multiplexers                                         : 1
+ 32-bit 2-to-1 multiplexer                             : 1
 
 =========================================================================
 
@@ -159,8 +161,10 @@ Loading core <rammemory> for timing and area information for instance <memory>.
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 70
- Flip-Flops                                            : 70
+# Registers                                            : 39
+ Flip-Flops                                            : 39
+# Multiplexers                                         : 1
+ 32-bit 2-to-1 multiplexer                             : 1
 
 =========================================================================
 
@@ -172,7 +176,7 @@ Optimizing unit <mem> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block mem, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block mem, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -180,8 +184,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 70
- Flip-Flops                                            : 70
+# Registers                                            : 39
+ Flip-Flops                                            : 39
 
 =========================================================================
 
@@ -204,22 +208,23 @@ Top Level Output File Name         : mem.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 35
+# BELS                             : 67
 #      GND                         : 2
 #      LUT2                        : 4
+#      LUT3                        : 32
 #      LUT6                        : 27
 #      VCC                         : 2
-# FlipFlops/Latches                : 72
-#      FD                          : 70
+# FlipFlops/Latches                : 41
+#      FD                          : 39
 #      FDE                         : 2
 # RAMS                             : 15
 #      RAMB16BWER                  : 14
 #      RAMB8BWER                   : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 141
-#      IBUF                        : 71
-#      OBUF                        : 70
+# IO Buffers                       : 177
+#      IBUF                        : 106
+#      OBUF                        : 71
 
 Device utilization summary:
 ---------------------------
@@ -228,21 +233,21 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              34  out of  18224     0%  
- Number of Slice LUTs:                   31  out of   9112     0%  
-    Number used as Logic:                31  out of   9112     0%  
+ Number of Slice Registers:               2  out of  18224     0%  
+ Number of Slice LUTs:                   63  out of   9112     0%  
+    Number used as Logic:                63  out of   9112     0%  
 
 Slice Logic Distribution: 
  Number of LUT Flip Flop pairs used:     65
-   Number with an unused Flip Flop:      31  out of     65    47%  
-   Number with an unused LUT:            34  out of     65    52%  
+   Number with an unused Flip Flop:      63  out of     65    96%  
+   Number with an unused LUT:             2  out of     65     3%  
    Number of fully used LUT-FF pairs:     0  out of     65     0%  
    Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                         142
- Number of bonded IOBs:                 142  out of    232    61%  
-    IOB Flip Flops/Latches:              38
+ Number of IOs:                         178
+ Number of bonded IOBs:                 178  out of    232    76%  
+    IOB Flip Flops/Latches:              39
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               15  out of     32    46%  
@@ -267,12 +272,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-clk                                | BUFGP                                                                                                                             | 87    |
-memory/N1                          | NONE(memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 15    |
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                           | Load  |
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                           | 56    |
+memory/N1                          | NONE(memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 15    |
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -283,9 +288,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 2.982ns (Maximum Frequency: 335.362MHz)
-   Minimum input arrival time before clock: 3.229ns
-   Maximum output required time after clock: 3.597ns
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.930ns
+   Maximum output required time after clock: 6.030ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -293,92 +298,63 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.982ns (frequency: 335.362MHz)
-  Total number of paths / destination ports: 167 / 32
--------------------------------------------------------------------------
-Delay:               2.982ns (Levels of Logic = 2)
-  Source:            memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram (RAM)
-  Destination:       datafrommem_5 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
-
-  Data Path: memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram to datafrommem_5
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     RAMB16BWER:CLKA->DOA0    1   1.850   0.827  ramloop[4].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram (ramloop[4].ram.ram_douta<0>)
-     LUT6:I2->O            1   0.203   0.000  has_mux_a.A/Mmux_dout_mux281 (DOUTA<5>)
-     end scope: 'memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr:DOUTA<5>'
-     end scope: 'memory:douta<5>'
-     FD:D                      0.102          datafrommem_5
-    ----------------------------------------
-    Total                      2.982ns (2.155ns logic, 0.827ns route)
-                                       (72.3% logic, 27.7% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 406 / 394
+  Total number of paths / destination ports: 648 / 410
 -------------------------------------------------------------------------
-Offset:              3.229ns (Levels of Logic = 3)
-  Source:            dataaddr<12> (PAD)
-  Destination:       memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram (RAM)
+Offset:              3.930ns (Levels of Logic = 3)
+  Source:            forw (PAD)
+  Destination:       memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Destination Clock: clk rising
 
-  Data Path: dataaddr<12> to memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram
+  Data Path: forw to memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             9   1.222   0.934  dataaddr_12_IBUF (dataaddr_12_IBUF)
-     begin scope: 'memory:addra<12>'
-     begin scope: 'memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr:ADDRA<12>'
-     LUT2:I0->O            3   0.203   0.650  bindec_a.bindec_inst_a/Mmux_ENOUT<3>11 (ena_array<3>)
-     RAMB16BWER:ENA            0.220          ramloop[6].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram
+     IBUF:I->O            32   1.222   1.520  forw_IBUF (forw_IBUF)
+     LUT3:I0->O            4   0.205   0.683  Mmux_processed_entry321 (processed_entry<9>)
+     begin scope: 'memory:dina<9>'
+     begin scope: 'memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr:DINA<9>'
+     RAMB16BWER:DIA4           0.300          ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
     ----------------------------------------
-    Total                      3.229ns (1.645ns logic, 1.584ns route)
-                                       (50.9% logic, 49.1% route)
+    Total                      3.930ns (1.727ns logic, 2.203ns route)
+                                       (43.9% logic, 56.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 70 / 70
+  Total number of paths / destination ports: 206 / 71
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            wbo_1 (FF)
-  Destination:       wbo<1> (PAD)
+Offset:              6.030ns (Levels of Logic = 3)
+  Source:            memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       datafrommem<31> (PAD)
   Source Clock:      clk rising
 
-  Data Path: wbo_1 to wbo<1>
+  Data Path: memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram to datafrommem<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.579  wbo_1 (wbo_1)
-     OBUF:I->O                 2.571          wbo_1_OBUF (wbo<1>)
+     RAMB16BWER:CLKA->DOPA0    1   1.850   0.827  ramloop[12].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (ramloop[12].ram.ram_douta<8>)
+     LUT6:I2->O            1   0.203   0.579  has_mux_a.A/Mmux_dout_mux251 (DOUTA<31>)
+     end scope: 'memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr:DOUTA<31>'
+     end scope: 'memory:douta<31>'
+     OBUF:I->O                 2.571          datafrommem_31_OBUF (datafrommem<31>)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      6.030ns (4.624ns logic, 1.406ns route)
+                                       (76.7% logic, 23.3% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    2.982|         |         |         |
----------------+---------+---------+---------+---------+
-
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.23 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.98 secs
  
 --> 
 
-Total memory usage is 250676 kilobytes
+Total memory usage is 252128 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

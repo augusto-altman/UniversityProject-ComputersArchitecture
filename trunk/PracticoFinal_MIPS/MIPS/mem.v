@@ -29,7 +29,7 @@ module mem(
     input [31:0] dataaddr,
 	 input forw,
 	 input [31:0] result_from_mem,
-	 output reg [31:0] datafrommem,
+	 output  [31:0] datafrommem,
     output reg [31:0] datafromimm,
 	 output reg [4:0] regaddrout
     );
@@ -51,15 +51,9 @@ module mem(
   .wea(M), // input [0 : 0] wea
   .addra(dataaddr), // input [12 : 0] addra
   .dina(processed_entry), // input [31 : 0] dina
-  .douta(douta), // output [31 : 0] douta
+  .douta(datafrommem), // output [31 : 0] douta
   .rsta(reset)
 );
-	 
-	 always@(*)
-	 begin
-	 		datafrommem = douta;
-	 end
-	 
 	 
 	 always @ (posedge clk)
 	 begin
@@ -67,12 +61,11 @@ module mem(
 			begin
 				wbo = 2'b0;
 				datafromimm = 32'b0;
-				datafrommem = 32'b0;
+				//datafrommem = 32'b0;
 				regaddrout = 5'b0;
 			end
 		wbo = wbi;
 		datafromimm = dataaddr;
-
 		regaddrout = regaddr;
 	 end
 

@@ -60,6 +60,9 @@ wire [1:0] wb;
 wire [1:0] forw_exe_a, forw_exe_b;
 wire forw_mem;
 
+// control hazzard
+wire isJumped;
+
 
 forwarding_exe fe (
     .rs_id(rs), 
@@ -87,13 +90,15 @@ stage_if instr_fetch (
     .control_is_zero(control_is_zero_if), 
     .data_jump_address(data_jump_address),
 	 .iadd(pc_id),
-    .instruction(instr)
+    .instruction(instr),
+	 .isJumped(isJumped)
     );
 	 
 stage_id ins_decoder (
     .clock(clk),
 	 .reset(reset),
     .instr(instr), 
+	 .isJumped(isJumped),
     .writeData(writeData), 
     .writeAddr(writeAddr), 
     .regWrite(regWrite), 
@@ -148,7 +153,8 @@ stage_exe exe(
 	 .for_b(forw_exe_b),
 	 .rt_id(rt_id),
 	 .result_from_exe(dataaddr),
-	 .result_from_mem(writeData)
+	 .result_from_mem(writeData),
+	 .isJumped(isJumped)
     );
 
 mem stage_mem (
