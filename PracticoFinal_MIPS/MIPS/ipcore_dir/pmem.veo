@@ -47,6 +47,10 @@
 //        AXI_SLAVE
 //    AXILite_SLAVE_S_AXI
 //        AXILite_SLAVE
+//    BRAM_PORTA
+//        BRAM_PORTA
+//    BRAM_PORTB
+//        BRAM_PORTB
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections

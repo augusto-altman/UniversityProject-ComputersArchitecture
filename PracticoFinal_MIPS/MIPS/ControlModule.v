@@ -84,7 +84,7 @@ always@(instr)
 
 /********    regDst *********/
 		
-	if(instr == 0  ) 
+	if(instr == 0 || instr == 6'b000100 || instr == 6'b000101 || instr == 6'b101000 || instr == 6'b101001 || instr == 6'b101011) 
 		regDst = 1;
 	else 
 		regDst = 0;

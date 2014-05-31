@@ -47,17 +47,9 @@ module testdeco;
 		reset = 1;
 
 		// Wait 100 ns for global reset to finish
-		#9;
-		code = 8'b00111000;
-		#10;
-		code = 8'b00111111;
-		#10;
-      code = 8'b00111000;
 		#10;
 		reset = 0;
-		#10;
-		//code = 8'b100010;
-		
+	
 		// Add stimulus here
 
 	end

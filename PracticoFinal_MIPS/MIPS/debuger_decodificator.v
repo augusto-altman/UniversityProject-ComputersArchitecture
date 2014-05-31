@@ -73,6 +73,8 @@ forwarding_exe fe (
     .rt_id(regaddr2), 
 	 .nop_exe(nop_exe),
 	 .nop_mem(nop_mem),
+	 .wb_exe(wb_mem[1]),
+	 .wb_mem(wb[1]),
     .regDst(control_Reg_DST), 
     .outReg_exe(regaddr_mem), 
     .outReg_mem(writeAddr), 
@@ -84,6 +86,7 @@ forwarding_mem fm (
     .rt_id(rt_id), 
     .outReg_mem(writeAddr), 
 	 .nop_mem(nop_mem),
+	 .wb_mem(wb[1]),
     .selector_salida(forw_mem)
     );
 

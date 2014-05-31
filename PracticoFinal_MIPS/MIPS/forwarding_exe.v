@@ -27,6 +27,8 @@ module forwarding_exe(
     input [4:0] outReg_mem,
 	 input nop_exe,
 	 input nop_mem,
+	 input wb_exe,
+	 input wb_mem,
     output reg [1:0] selector_salida_a,//00->from id ,01->from exe, 10->from mem, 11->unused ... para entrada a (entrada superior alu)
 	 output reg [1:0] selector_salida_b//00->from id ,01->from exe, 10->from mem, 11->unused ... para entrada b (entrada inferior alu)
     );
@@ -48,17 +50,17 @@ module forwarding_exe(
 		end
 		
 		//Caluclo de selector_salida_a
-		if(outReg_exe == rs_id && ~nop_exe)
+		if(outReg_exe == rs_id && ~nop_exe && wb_exe)
 			selector_salida_a = 2'b01;
-		else if(outReg_mem == rs_id && ~nop_mem)
+		else if(outReg_mem == rs_id && ~nop_mem && wb_mem)
 			selector_salida_a = 2'b10;
 		else
 			selector_salida_a = 0;
 			
 		//Caluclo de selector_salida_b
-		if(outReg_exe == realInput && ~nop_exe)
+		if(outReg_exe == realInput && ~nop_exe && wb_exe)
 			selector_salida_b= 2'b01;
-		else if(outReg_mem == realInput && ~nop_mem)
+		else if(outReg_mem == realInput && ~nop_mem && wb_mem)
 			selector_salida_b = 2'b10;
 		else
 			selector_salida_b = 0;
