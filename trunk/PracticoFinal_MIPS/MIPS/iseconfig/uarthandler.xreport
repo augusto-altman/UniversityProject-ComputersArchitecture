@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-05-30T18:57:44</DateModified>
+  <DateModified>2014-05-31T12:22:22</DateModified>
   <ModuleName>uarthandler</ModuleName>
   <SummaryTimeStamp>2014-05-27T21:17:09</SummaryTimeStamp>
-  <SavedFilePath>D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/iseconfig/uarthandler.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/iseconfig/uarthandler.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS\</ImplementationReportsDirectory>
   <DateInitialized>2014-05-27T21:17:36</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
