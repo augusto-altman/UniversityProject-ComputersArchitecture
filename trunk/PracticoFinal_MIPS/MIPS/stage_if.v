@@ -22,13 +22,15 @@ module stage_if(
     input clock,
     input reset,
     input control_is_jump,
+	 input nop_exe,
 	 input control_branch_eq,
 	 input control_branch_inc,
 	 input control_is_zero,
     input [31:0] data_jump_address,
     output [31:0] instruction,
 	 output reg [31:0] iadd,
-	 output isJumped
+	 output isJumped,
+	 output reg nop
 	 
     );
 
@@ -39,8 +41,14 @@ module stage_if(
 	assign isJumped = ~use_npc;
 	
 	always @ (posedge clock)
-		iadd = iadd_out;
-
+	begin
+	iadd = iadd_out;
+	if(reset)
+		nop = 1;
+	else
+		nop = 0;
+	end
+	
 	pc pc_reg (
 		 .clock(clock), 
 		 .reset(reset), 
@@ -56,7 +64,8 @@ module stage_if(
 	);
 	
 	branch_control bc (
-		 .control_is_jump(control_is_jump), 
+		 .control_is_jump(control_is_jump),
+		 .nop_exe(nop_exe),
 		 .control_zero(control_is_zero), 
 		 .control_branch_eq(control_branch_eq), 
 		 .control_branch_inc(control_branch_inc), 

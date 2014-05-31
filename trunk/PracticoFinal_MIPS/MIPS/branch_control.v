@@ -21,6 +21,7 @@
 module branch_control(
     input control_is_jump,
     input control_zero,
+	 input nop_exe,
     input control_branch_eq,
     input control_branch_inc,
     output reg use_npc
@@ -28,8 +29,13 @@ module branch_control(
 
 	always @ *
 	begin
-		if(control_is_jump)
-			use_npc = (control_zero ^ control_branch_eq) && ~control_branch_inc;
+		if(~nop_exe)
+		begin
+			if(control_is_jump)
+				use_npc = (control_zero ^ control_branch_eq) && ~control_branch_inc;
+			else
+				use_npc = 1;
+		end
 		else
 			use_npc = 1;
 	end

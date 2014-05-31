@@ -25,6 +25,8 @@ module forwarding_exe(
 	 input 		 regDst,//bit selector de direccion de registro de salida
     input [4:0] outReg_exe,
     input [4:0] outReg_mem,
+	 input nop_exe,
+	 input nop_mem,
     output reg [1:0] selector_salida_a,//00->from id ,01->from exe, 10->from mem, 11->unused ... para entrada a (entrada superior alu)
 	 output reg [1:0] selector_salida_b//00->from id ,01->from exe, 10->from mem, 11->unused ... para entrada b (entrada inferior alu)
     );
@@ -46,17 +48,17 @@ module forwarding_exe(
 		end
 		
 		//Caluclo de selector_salida_a
-		if(outReg_exe == rs_id)
+		if(outReg_exe == rs_id && ~nop_exe)
 			selector_salida_a = 2'b01;
-		else if(outReg_mem == rs_id)
+		else if(outReg_mem == rs_id && ~nop_mem)
 			selector_salida_a = 2'b10;
 		else
 			selector_salida_a = 0;
 			
 		//Caluclo de selector_salida_b
-		if(outReg_exe == realInput)
+		if(outReg_exe == realInput && ~nop_exe)
 			selector_salida_b= 2'b01;
-		else if(outReg_mem == realInput)
+		else if(outReg_mem == realInput && ~nop_mem)
 			selector_salida_b = 2'b10;
 		else
 			selector_salida_b = 0;

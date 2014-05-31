@@ -5,8 +5,8 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/stage_if.v" Line 36.  For instance instr_fetch/pmemory/, width 11 of formal port addra is not equal to width 32 of actual signal iadd_out.
-WARNING: File "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/mem.v" Line 29.  For instance stage_mem/memory/, width 13 of formal port addra is not equal to width 32 of actual signal dataaddr.
+WARNING: File "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/stage_if.v" Line 38.  For instance instr_fetch/pmemory/, width 11 of formal port addra is not equal to width 32 of actual signal iadd_out.
+WARNING: File "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/mem.v" Line 30.  For instance stage_mem/memory/, width 13 of formal port addra is not equal to width 32 of actual signal dataaddr.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -24,8 +24,8 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/stage_if.v" Line 36.  For instance instr_fetch/pmemory/, width 11 of formal port addra is not equal to width 32 of actual signal iadd_out.
-WARNING: File "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/mem.v" Line 29.  For instance stage_mem/memory/, width 13 of formal port addra is not equal to width 32 of actual signal dataaddr.
+WARNING: File "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/stage_if.v" Line 38.  For instance instr_fetch/pmemory/, width 11 of formal port addra is not equal to width 32 of actual signal iadd_out.
+WARNING: File "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/mem.v" Line 30.  For instance stage_mem/memory/, width 13 of formal port addra is not equal to width 32 of actual signal dataaddr.
 # run 1000 ns
 Simulator is doing circuit initialization process.
  Block Memory Generator CORE Generator module loading initial data...

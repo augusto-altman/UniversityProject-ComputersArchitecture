@@ -25,18 +25,21 @@ module mem(
 	 input [4:0] regaddr,
     output reg [1:0] wbo,
     input M,
+	 input nop_exe,
     input [31:0] data,
     input [31:0] dataaddr,
 	 input forw,
 	 input [31:0] result_from_mem,
 	 output  [31:0] datafrommem,
     output reg [31:0] datafromimm,
-	 output reg [4:0] regaddrout
+	 output reg [4:0] regaddrout,
+	 output reg nop
     );
 	 
 	 wire [31:0] douta;
 	 
 	 reg [31:0] processed_entry;
+	 wire processed_M = (nop_exe)? 1'b0 : M; 
 	 
 	always @ (*)
 	begin
@@ -46,9 +49,11 @@ module mem(
 			processed_entry = data;
 	end
 	 
+	 
+	 
 	rammemory memory (
   .clka(clk), // input clka
-  .wea(M), // input [0 : 0] wea
+  .wea(processed_M), // input [0 : 0] wea
   .addra(dataaddr), // input [12 : 0] addra
   .dina(processed_entry), // input [31 : 0] dina
   .douta(datafrommem), // output [31 : 0] douta
@@ -63,10 +68,12 @@ module mem(
 				datafromimm = 32'b0;
 				//datafrommem = 32'b0;
 				regaddrout = 5'b0;
+				nop = 1;
 			end
 		wbo = wbi;
 		datafromimm = dataaddr;
 		regaddrout = regaddr;
+		nop = nop_exe;
 	 end
 
 

@@ -21,16 +21,22 @@
 module forwarding_mem(
     input [4:0] rt_id,//direccion del dato que usaria sin el forwarding 
     input [4:0] outReg_mem,
+	 input 		nop_mem,
     output reg selector_salida//0->from id ,1->from mem
     );
 
 	always @ (*)
 	begin
-		//Caluclo de selector_salida
-		if(outReg_mem == rt_id)
-			selector_salida = 1;
-		else
+		if(nop_mem)
 			selector_salida = 0;
+		else
+		begin
+			//Caluclo de selector_salida
+			if(outReg_mem == rt_id)
+				selector_salida = 1;
+			else
+				selector_salida = 0;
+		end
 	end
 
 endmodule

@@ -8,22 +8,19 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;pmem&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">The actual entries:</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">A core named &apos;pmem&apos; already exists in the project. Output products for this core may be overwritten.</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   00010100001000001111111111111111111111111111111111111111111111111111111111111</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Component blk_mem_gen_v7_1 does not have a valid model name for Verilog synthesis</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   111 , for Memory Initialization vector should not be larger than (2^Write</arg>
 </msg>
 
-<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;pmem&apos;...</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Width A)-1.ERROR:sim:781 - An invalid core configuration has been detected during</arg>
 </msg>
 
-<msg type="info" file="sim" num="949" delta="old" >Finished generation of ASY schematic symbol.
-</msg>
-
-<msg type="info" file="sim" num="948" delta="old" >Finished FLIST file generation.
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Customization. Core parameters will be reset to their default values.</arg>
 </msg>
 
 </messages>
