@@ -28,6 +28,7 @@ module stage_id(
 	input 			regWrite,
 	input [31:0]   pc_id,
 	input 			isJumped,
+	input 			nop_if,
 	// outputs
 	output reg [31:0]  pc_ex,
 	output reg [3:0] 	aluOp,
@@ -44,7 +45,8 @@ module stage_id(
 	output reg [4:0] 	regAddr1,
 	output reg [4:0] 	regAddr2,
 	output reg [4:0] 	rs,
-	output reg 			regDst
+	output reg 			regDst,
+	output reg 			nop
     );
 
 wire [3:0] 	_aluOp;
@@ -115,7 +117,7 @@ begin
   if(reset || isJumped)
 	  begin
 			aluOp					= 4'b0010;
-			extendedInstr 		= 32'b100000;
+			extendedInstr 		= 32'b000000;
 			wbi 					= 2'b0;
 			memWrite 			= 1'b0;
 			aluSrc 				= 1'b1;
@@ -128,6 +130,7 @@ begin
 			isNotConditional 	= 1'b0;
 			isEq 					= 1'b0;
 			memRead 				= 1'b0;
+			nop 					= 1;
 	  end
 	else
 		begin
@@ -145,6 +148,7 @@ begin
 			regAddr2 			= _regAddr2;
 			rs						= _rs;
 			pc_ex 				= pc_id;
+			nop 					= nop_if;
 		end
 
 end	

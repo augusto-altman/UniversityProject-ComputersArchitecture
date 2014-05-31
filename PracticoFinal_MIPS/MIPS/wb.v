@@ -22,17 +22,21 @@ module wb(
     input [31:0] datafrommem,
     input [31:0] datafromimm,
     input [1:0] wb,
+	 input nop_mem,
     output [31:0] datatoregfile,
     output weregfile
     );
-	 
-	 assign weregfile = wb[1];
+	
+	
+	 assign weregfile = (nop_mem) ?  1'b0 : wb[1];
 	 mux multix (
     .mem(datafrommem), 
     .imm(datafromimm), 
     .sel(wb[0]), 
     .toWriteData(datatoregfile)
     );
+	 
+	 
 
 
 endmodule

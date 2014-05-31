@@ -4,7 +4,6 @@ pmem.asy
 pmem.gise
 pmem.mif
 pmem.ngc
-pmem.sym
 pmem.v
 pmem.veo
 pmem.xco

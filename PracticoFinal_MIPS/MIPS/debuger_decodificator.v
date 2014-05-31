@@ -63,11 +63,16 @@ wire forw_mem;
 // control hazzard
 wire isJumped;
 
+// wire NOP
+wire nop_if, nop_id, nop_exe, nop_mem;
+
 
 forwarding_exe fe (
     .rs_id(rs), 
     .rd_id(regaddr1), 
     .rt_id(regaddr2), 
+	 .nop_exe(nop_exe),
+	 .nop_mem(nop_mem),
     .regDst(control_Reg_DST), 
     .outReg_exe(regaddr_mem), 
     .outReg_mem(writeAddr), 
@@ -78,6 +83,7 @@ forwarding_exe fe (
 forwarding_mem fm (
     .rt_id(rt_id), 
     .outReg_mem(writeAddr), 
+	 .nop_mem(nop_mem),
     .selector_salida(forw_mem)
     );
 
@@ -85,18 +91,21 @@ stage_if instr_fetch (
     .clock(clk), 
     .reset(reset), 
     .control_is_jump(control_is_jump_if), 
+	 .nop_exe(nop_exe),
     .control_branch_eq(control_branch_eq_if), 
     .control_branch_inc(control_branch_inc_if), 
     .control_is_zero(control_is_zero_if), 
     .data_jump_address(data_jump_address),
 	 .iadd(pc_id),
     .instruction(instr),
-	 .isJumped(isJumped)
+	 .isJumped(isJumped),
+	 .nop(nop_if)
     );
 	 
 stage_id ins_decoder (
     .clock(clk),
 	 .reset(reset),
+	 .nop_if(nop_if),
     .instr(instr), 
 	 .isJumped(isJumped),
     .writeData(writeData), 
@@ -118,13 +127,15 @@ stage_id ins_decoder (
     .regAddr1(regaddr1), 
     .regAddr2(regaddr2),
 	 .rs(rs),
-    .regDst(control_Reg_DST)
+    .regDst(control_Reg_DST),
+	 .nop(nop_id)
     );
 
 
 stage_exe exe(
     .clock(clk), 
     .reset(reset), 
+	 .nop_id(nop_id),
     .data_a(data_a), 
     .data_b(data_b), 
     .data_imm(data_imm), 
@@ -154,11 +165,13 @@ stage_exe exe(
 	 .rt_id(rt_id),
 	 .result_from_exe(dataaddr),
 	 .result_from_mem(writeData),
-	 .isJumped(isJumped)
+	 .isJumped(isJumped),
+	 .nop(nop_exe)
     );
 
 mem stage_mem (
     .clk(clk),
+	 .nop_exe(nop_exe),
     .wbi(wb_mem), 
     .regaddr(regaddr_mem), 
     .wbo(wb), 
@@ -170,10 +183,12 @@ mem stage_mem (
     .regaddrout(writeAddr),
 	 .forw(forw_mem),
 	 .result_from_mem(writeData),
-	 .reset(reset)
+	 .reset(reset),
+	 .nop(nop_mem)
     );
 	 
 wb write_back (
+	 .nop_mem(nop_mem),
     .datafrommem(datafrommem), 
     .datafromimm(datafromimm), 
     .wb(wb), 

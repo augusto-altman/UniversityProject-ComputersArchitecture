@@ -21,6 +21,7 @@
 module stage_exe(
 	 input clock,
 	 input reset,
+	 input nop_id,
     input [31:0] data_a,
     input [31:0] data_b,
     input [31:0] data_imm, //data_imm[5:0] -> function
@@ -55,8 +56,10 @@ module stage_exe(
     output reg M_o,
 	 output reg [4:0] regaddr_o,
 	 output reg [31:0] data_b_o,
-    output reg [31:0] out
+    output reg [31:0] out,
 	 //end -- Signals for stage_mem
+	 // multiple exits
+	 output reg nop
     );
 
 	wire [31:0] t_out, b_entry, t_jump_address;
@@ -119,6 +122,8 @@ module stage_exe(
 			M_o = 1'b0;
 			data_b_o = 32'b0;
 			regaddr_o = 0;
+			rt_id = 0;
+			nop = 1;
 		end
 		else
 		begin
@@ -136,6 +141,7 @@ module stage_exe(
 			else
 				regaddr_o = regaddr2; //0
 			rt_id = regaddr2;
+			nop = nop_id;
 		end
 	end
 
