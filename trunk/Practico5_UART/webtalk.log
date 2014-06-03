@@ -3,14 +3,14 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Project Information
 --------------------
-ProjectID=66A099DD3F72417D950ABDF3FA32EA1A
-ProjectIteration=9
+ProjectID=42d9e5c97d2e4d879901dd6de59a3730
+ProjectIteration=1
 
 WebTalk Summary
 ----------------
-INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+INFO:WebTalk:2 - WebTalk is enabled.
 
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:4 - D:/facu/Arquitecturas de las computadoras/Practico/tpfinal/Practico5_UART/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2014-04-14T21:09:24.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.1/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:4 - D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/Practico5_UART/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2014-06-02T22:18:15.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinxs/14.1/ISE_DS/ISE/data/reports/webtalk_introduction.html

@@ -5,34 +5,31 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 27: Using initial value of <arg fmt="%s" index="1">resetuart</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\uarthandler.v" Line 27: Using initial value of <arg fmt="%s" index="1">resetuart</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\forwarding_exe.v" Line 39: Assignment to <arg fmt="%s" index="1">realOutput</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">pmem</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\ipcore_dir\pmem.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">pmem</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\stage_if.v" Line 62: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\stage_if.v" Line 62: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">rammemory</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\ipcore_dir\rammemory.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">rammemory</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\mem.v" Line 57: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">13</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\mem.v" Line 57: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">13</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\uarthandler.v</arg>&quot; line <arg fmt="%s" index="2">34</arg>: Output port &lt;<arg fmt="%s" index="3">wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uartt</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\uarthandler.v</arg>&quot; line <arg fmt="%s" index="2">34</arg>: Output port &lt;<arg fmt="%s" index="3">wr_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uartt</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\uart.v</arg>&quot; line <arg fmt="%s" index="2">20</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">buffarini</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\uart.v</arg>&quot; line <arg fmt="%s" index="2">20</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">buffarini</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\uart.v</arg>&quot; line <arg fmt="%s" index="2">43</arg>: Output port &lt;<arg fmt="%s" index="3">q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">baud_gen_unit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\uart.v</arg>&quot; line <arg fmt="%s" index="2">43</arg>: Output port &lt;<arg fmt="%s" index="3">q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">baud_gen_unit</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Trunk2\PracticoFinal_MIPS\MIPS\debuger_decodificator.v</arg>&quot; line <arg fmt="%s" index="2">108</arg>: Output port &lt;<arg fmt="%s" index="3">memRead</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ins_decoder</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Estudio\facu\arquitectura de computadoras\final\workspace - trunk\PracticoFinal_MIPS\MIPS\debuger_decodificator.v</arg>&quot; line <arg fmt="%s" index="2">126</arg>: Output port &lt;<arg fmt="%s" index="3">memRead</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ins_decoder</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">instr&lt;10:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.

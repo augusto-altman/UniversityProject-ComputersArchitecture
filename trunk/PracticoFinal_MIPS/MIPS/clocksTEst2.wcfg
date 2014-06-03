@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/testdeco_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testdeco" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/testdeco/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/instr_fetch/iadd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">iadd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iadd[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/instr_fetch/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">code[7:0]</obj_property>
+      <obj_property name="ObjectShortName">code[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/staller/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/staller/stall" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/instr_fetch/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/ins_decoder/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/exe/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/stage_mem/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/staller/regAddrParam" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regAddrParam[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regAddrParam[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/staller/regAddrOutAlu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regAddrOutAlu[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regAddrOutAlu[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/staller/regAddrInRs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regAddrInRs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regAddrInRs[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/staller/regAddrInRt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regAddrInRt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regAddrInRt[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/staller/regAddrInRd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regAddrInRd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regAddrInRd[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/ins_decoder/regDst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">regDst</obj_property>
+      <obj_property name="ObjectShortName">regDst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/staller/nop_exe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nop_exe</obj_property>
+      <obj_property name="ObjectShortName">nop_exe</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/staller/isFromAlu" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isFromAlu</obj_property>
+      <obj_property name="ObjectShortName">isFromAlu</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testdeco/uut/ins_decoder/wbi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wbi[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wbi[1:0]</obj_property>
+   </wvobject>
+</wave_config>

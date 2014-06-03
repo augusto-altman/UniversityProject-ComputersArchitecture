@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x7708f090 */
+/* This file is designed for use with ISim build 0xc3576ebc */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,14 +21,14 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/forwarding_exe.v";
+static const char *ng0 = "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/forwarding_exe.v";
 static unsigned int ng1[] = {1U, 0U};
 static unsigned int ng2[] = {2U, 0U};
 static int ng3[] = {0, 0};
 
 
 
-static void Always_39_0(char *t0)
+static void Always_38_0(char *t0)
 {
     char t13[8];
     char t21[8];
@@ -184,24 +184,24 @@ static void Always_39_0(char *t0)
     char *t152;
     char *t153;
 
-LAB0:    t1 = (t0 + 4288U);
+LAB0:    t1 = (t0 + 4128U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(39, ng0);
-    t2 = (t0 + 4608);
+LAB2:    xsi_set_current_line(38, ng0);
+    t2 = (t0 + 4448);
     *((int *)t2) = 1;
-    t3 = (t0 + 4320);
+    t3 = (t0 + 4160);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(40, ng0);
+LAB4:    xsi_set_current_line(39, ng0);
 
-LAB5:    xsi_set_current_line(41, ng0);
+LAB5:    xsi_set_current_line(40, ng0);
     t4 = (t0 + 1528U);
     t5 = *((char **)t4);
     t4 = (t5 + 4);
@@ -213,20 +213,15 @@ LAB5:    xsi_set_current_line(41, ng0);
     if (t10 > 0)
         goto LAB6;
 
-LAB7:    xsi_set_current_line(47, ng0);
+LAB7:    xsi_set_current_line(45, ng0);
 
-LAB10:    xsi_set_current_line(48, ng0);
-    t2 = (t0 + 1368U);
+LAB10:    xsi_set_current_line(46, ng0);
+    t2 = (t0 + 1208U);
     t3 = *((char **)t2);
     t2 = (t0 + 3208);
     xsi_vlogvar_assign_value(t2, t3, 0, 0, 5);
-    xsi_set_current_line(49, ng0);
-    t2 = (t0 + 1208U);
-    t3 = *((char **)t2);
-    t2 = (t0 + 3368);
-    xsi_vlogvar_assign_value(t2, t3, 0, 0, 5);
 
-LAB8:    xsi_set_current_line(53, ng0);
+LAB8:    xsi_set_current_line(50, ng0);
     t2 = (t0 + 1688U);
     t3 = *((char **)t2);
     t2 = (t0 + 1048U);
@@ -307,7 +302,7 @@ LAB41:    t144 = (t112 + 4);
     if (t149 > 0)
         goto LAB49;
 
-LAB50:    xsi_set_current_line(55, ng0);
+LAB50:    xsi_set_current_line(52, ng0);
     t2 = (t0 + 1848U);
     t3 = *((char **)t2);
     t2 = (t0 + 1048U);
@@ -388,16 +383,16 @@ LAB82:    t144 = (t112 + 4);
     if (t149 > 0)
         goto LAB90;
 
-LAB91:    xsi_set_current_line(58, ng0);
+LAB91:    xsi_set_current_line(55, ng0);
     t2 = ((char*)((ng3)));
     t3 = (t0 + 2888);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 2);
 
 LAB92:
-LAB51:    xsi_set_current_line(61, ng0);
+LAB51:    xsi_set_current_line(58, ng0);
     t2 = (t0 + 1688U);
     t3 = *((char **)t2);
-    t2 = (t0 + 3368);
+    t2 = (t0 + 3208);
     t4 = (t2 + 56U);
     t5 = *((char **)t4);
     memset(t13, 0, 8);
@@ -476,10 +471,10 @@ LAB123:    t151 = (t112 + 4);
     if (t149 > 0)
         goto LAB131;
 
-LAB132:    xsi_set_current_line(63, ng0);
+LAB132:    xsi_set_current_line(60, ng0);
     t2 = (t0 + 1848U);
     t3 = *((char **)t2);
-    t2 = (t0 + 3368);
+    t2 = (t0 + 3208);
     t4 = (t2 + 56U);
     t5 = *((char **)t4);
     memset(t13, 0, 8);
@@ -558,7 +553,7 @@ LAB164:    t151 = (t112 + 4);
     if (t149 > 0)
         goto LAB172;
 
-LAB173:    xsi_set_current_line(66, ng0);
+LAB173:    xsi_set_current_line(63, ng0);
     t2 = ((char*)((ng3)));
     t3 = (t0 + 3048);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 2);
@@ -566,18 +561,13 @@ LAB173:    xsi_set_current_line(66, ng0);
 LAB174:
 LAB133:    goto LAB2;
 
-LAB6:    xsi_set_current_line(42, ng0);
+LAB6:    xsi_set_current_line(41, ng0);
 
-LAB9:    xsi_set_current_line(43, ng0);
-    t11 = (t0 + 1208U);
+LAB9:    xsi_set_current_line(42, ng0);
+    t11 = (t0 + 1368U);
     t12 = *((char **)t11);
     t11 = (t0 + 3208);
     xsi_vlogvar_assign_value(t11, t12, 0, 0, 5);
-    xsi_set_current_line(44, ng0);
-    t2 = (t0 + 1368U);
-    t3 = *((char **)t2);
-    t2 = (t0 + 3368);
-    xsi_vlogvar_assign_value(t2, t3, 0, 0, 5);
     goto LAB8;
 
 LAB13:    t11 = (t13 + 4);
@@ -780,7 +770,7 @@ LAB46:    t124 = *((unsigned int *)t112);
     *((unsigned int *)t112) = (t143 & t139);
     goto LAB48;
 
-LAB49:    xsi_set_current_line(54, ng0);
+LAB49:    xsi_set_current_line(51, ng0);
     t150 = ((char*)((ng1)));
     t151 = (t0 + 2888);
     xsi_vlogvar_assign_value(t151, t150, 0, 0, 2);
@@ -986,7 +976,7 @@ LAB87:    t124 = *((unsigned int *)t112);
     *((unsigned int *)t112) = (t143 & t139);
     goto LAB89;
 
-LAB90:    xsi_set_current_line(56, ng0);
+LAB90:    xsi_set_current_line(53, ng0);
     t150 = ((char*)((ng2)));
     t151 = (t0 + 2888);
     xsi_vlogvar_assign_value(t151, t150, 0, 0, 2);
@@ -1192,7 +1182,7 @@ LAB128:    t124 = *((unsigned int *)t112);
     *((unsigned int *)t112) = (t143 & t139);
     goto LAB130;
 
-LAB131:    xsi_set_current_line(62, ng0);
+LAB131:    xsi_set_current_line(59, ng0);
     t152 = ((char*)((ng1)));
     t153 = (t0 + 3048);
     xsi_vlogvar_assign_value(t153, t152, 0, 0, 2);
@@ -1398,7 +1388,7 @@ LAB169:    t124 = *((unsigned int *)t112);
     *((unsigned int *)t112) = (t143 & t139);
     goto LAB171;
 
-LAB172:    xsi_set_current_line(64, ng0);
+LAB172:    xsi_set_current_line(61, ng0);
     t152 = ((char*)((ng2)));
     t153 = (t0 + 3048);
     xsi_vlogvar_assign_value(t153, t152, 0, 0, 2);
@@ -1407,9 +1397,9 @@ LAB172:    xsi_set_current_line(64, ng0);
 }
 
 
-extern void work_m_00000000004057507699_1026576484_init()
+extern void work_m_00000000002522438234_1026576484_init()
 {
-	static char *pe[] = {(void *)Always_39_0};
-	xsi_register_didat("work_m_00000000004057507699_1026576484", "isim/testdeco_isim_beh.exe.sim/work/m_00000000004057507699_1026576484.didat");
+	static char *pe[] = {(void *)Always_38_0};
+	xsi_register_didat("work_m_00000000002522438234_1026576484", "isim/testdeco_isim_beh.exe.sim/work/m_00000000002522438234_1026576484.didat");
 	xsi_register_executes(pe);
 }

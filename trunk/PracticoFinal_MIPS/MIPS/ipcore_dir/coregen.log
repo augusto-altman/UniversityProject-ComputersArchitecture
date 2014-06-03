@@ -1,14 +1,5 @@
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
-ERROR:sim - The actual entries:
-ERROR:sim -   
-   00010100001000001111111111111111111111111111111111111111111111111111111111111
-ERROR:sim -    111 , for Memory Initialization vector should not be larger than
-   (2^Write
-ERROR:sim -    Width A)-1.ERROR:sim:781 - An invalid core configuration has been
-   detected during
-ERROR:sim -    Customization. Core parameters will be reset to their default
-   values.
 Cancelled executing Tcl generator.
 Wrote CGP file for project 'pmem'.

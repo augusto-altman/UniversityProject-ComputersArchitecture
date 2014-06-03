@@ -2,7 +2,7 @@
 Release 14.1 Trace  (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+C:\Xilinxs\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
 -n 3 -fastpaths -xml uarthandler.twx uarthandler.ncd -o uarthandler.twr
 uarthandler.pcf -ucf Nexys3_Master.ucf
 
@@ -37,7 +37,7 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-rx          |    2.073(R)|      SLOW  |    0.222(R)|      SLOW  |clk_BUFGP         |   0.000|
+rx          |    3.477(R)|      SLOW  |   -1.158(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -45,7 +45,7 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-tx          |         7.947(R)|      SLOW  |         4.432(R)|      FAST  |clk_BUFGP         |   0.000|
+tx          |         8.728(R)|      SLOW  |         4.918(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -53,18 +53,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.888|         |         |         |
+clk            |    5.021|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Apr 24 19:17:15 2014 
+Analysis completed Mon Jun 02 21:39:03 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 272 MB
+Peak Memory Usage: 275 MB
 
 
 

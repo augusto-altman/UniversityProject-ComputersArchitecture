@@ -8,20 +8,5 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">The actual entries:</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   00010100001000001111111111111111111111111111111111111111111111111111111111111</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   111 , for Memory Initialization vector should not be larger than (2^Write</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Width A)-1.ERROR:sim:781 - An invalid core configuration has been detected during</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Customization. Core parameters will be reset to their default values.</arg>
-</msg>
-
 </messages>
 

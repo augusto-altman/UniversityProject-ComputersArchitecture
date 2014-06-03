@@ -92,7 +92,7 @@ always@(instr)
 /********    Wbi *********/
 
 	// [o] src de writeback ( 0 para directo de memoria, 1 para Alu )
-	if( instr[5] == 1)
+	if( instr ==  6'b100000 || instr == 6'b100001 || instr == 6'b100011 || instr == 6'b100111 || instr == 6'b100100 || instr == 6'b100101 || instr == 6'b001111 )
 		wbi[0] = 0; // Memoria
 	else
 		wbi[0] = 1; // Alu
