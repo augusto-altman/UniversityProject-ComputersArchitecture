@@ -28,8 +28,8 @@ module GetRegAddr(
 
 always@(*)
 begin
-	regAddr1 			= instr[15:11];
-	regAddr2 			= instr[20:16];
+	regAddr1 			= instr[15:11]; // rd
+	regAddr2 			= instr[20:16]; // rt
 	rs						= instr[25:21];
 end
 

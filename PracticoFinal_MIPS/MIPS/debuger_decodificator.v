@@ -65,8 +65,26 @@ wire isJumped;
 
 // wire NOP
 wire nop_if, nop_id, nop_exe, nop_mem;
+//wire stall
+wire stall;
+
+assign processed_clock = clk && ~stall;
 
 
+StallHandler staller (
+    .clock(clk), 
+	 .reset(reset),
+    .isFromAlu(wb_mem[0]), 
+    .nop_exe(nop_exe), 
+    .reg_Dst(control_Reg_DST), 
+    .regAddrOutAlu(regaddr_mem), 
+    .regAddrInRs(rs), 
+    .regAddrInRt(regaddr2), 
+    .regAddrInRd(regaddr1), 
+    .stall(stall)
+    );
+
+	 
 forwarding_exe fe (
     .rs_id(rs), 
     .rd_id(regaddr1), 
@@ -91,7 +109,7 @@ forwarding_mem fm (
     );
 
 stage_if instr_fetch (
-    .clock(clk), 
+    .clock(processed_clock), 
     .reset(reset), 
     .control_is_jump(control_is_jump_if), 
 	 .nop_exe(nop_exe),
@@ -106,7 +124,7 @@ stage_if instr_fetch (
     );
 	 
 stage_id ins_decoder (
-    .clock(clk),
+    .clock(processed_clock),
 	 .reset(reset),
 	 .nop_if(nop_if),
     .instr(instr), 
@@ -136,7 +154,7 @@ stage_id ins_decoder (
 
 
 stage_exe exe(
-    .clock(clk), 
+    .clock(processed_clock), 
     .reset(reset), 
 	 .nop_id(nop_id),
     .data_a(data_a), 

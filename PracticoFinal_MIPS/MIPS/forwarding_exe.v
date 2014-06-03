@@ -33,19 +33,16 @@ module forwarding_exe(
 	 output reg [1:0] selector_salida_b//00->from id ,01->from exe, 10->from mem, 11->unused ... para entrada b (entrada inferior alu)
     );
 
-	reg [4:0] realOutput;
 	reg [4:0] realInput; //registro que se utiliza como variable para la alu
 
 	always @ (*)
 	begin
 		if(regDst)
 		begin
-			realOutput = rd_id; //1
 			realInput = rt_id;
 		end
 		else
 		begin
-			realOutput = rt_id; //0
 			realInput = rd_id;
 		end
 		

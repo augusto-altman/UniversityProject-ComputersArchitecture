@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+StallHandler instance_name (
+    .clock(clock), 
+    .isFromAlu(isFromAlu), 
+    .nop_exe(nop_exe), 
+    .reg_Dst(reg_Dst), 
+    .regAddrOutAlu(regAddrOutAlu), 
+    .regAddrInRs(regAddrInRs), 
+    .regAddrInRt(regAddrInRt), 
+    .regAddrInRd(regAddrInRd), 
+    .stall(stall)
+    );
+
+

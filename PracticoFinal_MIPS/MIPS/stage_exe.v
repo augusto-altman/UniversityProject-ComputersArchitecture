@@ -141,7 +141,7 @@ module stage_exe(
 			else
 				regaddr_o = regaddr2; //0
 			rt_id = regaddr2;
-			nop = nop_id;
+			nop = nop_id ; 
 		end
 	end
 
