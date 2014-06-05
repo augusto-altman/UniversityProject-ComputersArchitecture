@@ -39,30 +39,30 @@ void MainWindow::on_connectButton_clicked()
     }
 }
 
-void MainWindow::receive(){
-    int i =0;
-    QByteArray buff;
-    int bytesQuantity = signalManagement::getBytesQuantityFromCode(ui->signalSelector->currentIndex()) + 1;
+//void MainWindow::receive(){
+//    int i =0;
+//    QByteArray buff;
+//    int bytesQuantity = signalManagement::getBytesQuantityFromCode(ui->signalSelector->currentIndex()) + 1;
 
-    for(i = 0 ; i < 1024 ; i++){
-        buff[i] = 0;
-    }
-    // esperar que los bytes esten disponibles
-    while( port->bytesAvailable() != bytesQuantity);
+//    for(i = 0 ; i < 1024 ; i++){
+//        buff[i] = 0;
+//    }
+//    // esperar que los bytes esten disponibles
+//    while( port->bytesAvailable() != bytesQuantity);
 
-    buff = port->readAll();
-    displayReceived(buff, bytesQuantity);
-    if(port->bytesAvailable()){
-        ui->conectionState->setText("<FONT COLOR='#ff0000' > state: bytes in Queue not received");
-    }
-}
+//    buff = port->readAll();
+//    displayReceived(buff, bytesQuantity);
+//    if(port->bytesAvailable()){
+//        ui->conectionState->setText("<FONT COLOR='#ff0000' > state: bytes in Queue not received");
+//    }
+//}
 
 void MainWindow::receive(int code){
     qDebug() << "receive(int)";
     int i =0;
     QByteArray buff;
     int bytesQuantity = signalManagement::getBytesQuantityFromCode(code) + 1;
-//    char buff[1024];
+    //    char buff[1024];
     for(i = 0 ; i < 1024 ; i++){
         buff[i] = 0;
     }
@@ -106,39 +106,49 @@ void MainWindow::send(int codeReceived){
 }
 
 
-void MainWindow::displayReceived(QByteArray bytes, int size){
-    qDebug() << "displayReceived()" ;
-    ui->receiveBrowser->append(QString(ui->signalSelector->currentText()).
-                               append(" (").
-                               append(QString::number(ui->signalSelector->currentIndex())).
-                               append(") :"));
+//void MainWindow::displayReceived(QByteArray bytes, int size){
+//    qDebug() << "displayReceived()" ;
+//    ui->receiveBrowser->append(QString(ui->signalSelector->currentText()).
+//                               append(" (").
+//                               append(QString::number(ui->signalSelector->currentIndex())).
+//                               append(") :"));
 
-    ui->receiveBrowser->append(QString("bytes read:").append(QString::number(bytes.length())));
-    int i;
-    for(i=0;i<size;i++){
-        int j=0;
-        QString output = QString::number(((unsigned char)bytes.at(i)),2);
-        for(j = output.length() ; j < 8 ; j++ ){
-            output.prepend('0');
-        }
-        ui->receiveBrowser->append(QString("").append(output));
-        qDebug() << QString("received:").append(output);
-    }
-}
+//    ui->receiveBrowser->append(QString("bytes read:").append(QString::number(bytes.length())));
+//    int i;
+//    for(i=0;i<size;i++){
+//        int j=0;
+//        QString output = QString::number(((unsigned char)bytes.at(i)),2);
+//        for(j = output.length() ; j < 8 ; j++ ){
+//            output.prepend('0');
+//        }
+//        ui->receiveBrowser->append(QString("").append(output));
+//        qDebug() << QString("received:").append(output);
+//    }
+//}
 
 void MainWindow::displayReceived(QByteArray bytes, int size, int code){
     qDebug() << "displayReceived()" ;
-    if(code == 1 || code == 34){
-        ui->receiveBrowser->append(signalManagement::getStringFromCode(code));
-    }\
-    else{
-        ui->receiveBrowser->append(QString(ui->signalSelector->currentText()).
-                                   append(" (").
-                                   append(QString::number(ui->signalSelector->currentIndex())).
-                                   append(") :"));
+    if(code != 1 && code != 34 && code != 0){
+        ui->receiveBrowser->append(QString("<B>").append(QString(ui->signalSelector->currentText())).
+                                   append(":").append("</B>"));
     }
-    ui->receiveBrowser->append(QString("bytes read:").append(QString::number(bytes.length())));
+    else if(code == 0){
+        if(contador == 0){
+            ui->receiveBrowser->append("------------------------------------------");
+            ui->receiveBrowser->append("Clock:");
+            contador++;
+        }
+    }
+
     int i;
+    if(code == 1){
+        ui->InstructionLabel->setText("");
+    }else if(code == 34){
+        ui->IaddLabel->setText("");
+    }else if(code == 0){
+        ui->InstructionLabel->text().append('\n');
+    }
+
     for(i=0;i<size;i++){
         int j=0;
         QString output = QString::number(((unsigned char)bytes.at(i)),2);
@@ -146,9 +156,9 @@ void MainWindow::displayReceived(QByteArray bytes, int size, int code){
             output.prepend('0');
         }
         if(code == 1){
-            ui->InstructionLabel->setText(output);
+            ui->InstructionLabel->setText(ui->InstructionLabel->text().append('\n').append(output));
         }else if(code == 34){
-            ui->IaddLabel->setText(output);
+            ui->IaddLabel->setText(ui->IaddLabel->text().append('\n').append(output));
         }
         else{
             ui->receiveBrowser->append(QString("").append(output));
@@ -164,6 +174,7 @@ void MainWindow::on_sendClockButton_clicked()
 
 void MainWindow::clocking(){
     qDebug() << "clocking()";
+    contador =0;
     // send ascendent and descendent clocks;
     qDebug() << 63;
     port->write(QString(QChar(63)).toLatin1());

@@ -1,0 +1,21 @@
+addi 0,0,49 ; fowarding to 2 y 3 ; data[0] = 49
+sw 0,0(0) ;  mem[49] = 49
+subi 1,0,9  ; data[1] = 40
+addi 31,31,40
+beq 0,31,-3 ; no salta porq comparo data[0] = 49 y data[31]= 40...y como son iguales no salto
+add 5,31,0 ; data[5] = 40 + 49 = 89
+addi 31, 31, 9 ; data[31] = 49 // data[31] = 58
+lw 4, 0(31) ; data[4] = mem[49] = 49; // data[4] = mem[58] = 0
+beq 4,0,-2 ; salta 1 vez
+addi 30,0,1 ; data[30] = 50 
+addi 30,0,1 ; data[30] = 51
+beq 30,30,3 ; siempre salta
+addi 5,5,100
+addi 5,5,100
+addi 5,5,100
+addi 10,5, 7081
+addi 15,15,8
+sw 10,0(15)
+sw 15, 2(15)
+lw 4,2(15)
+lw 19,0(4)
