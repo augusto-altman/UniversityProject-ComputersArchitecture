@@ -26,15 +26,16 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QextSerialPort *port;
-    void displayReceived(QByteArray bytes, int size);
+//    void displayReceived(QByteArray bytes, int size);
 //    char getBytesQuantityFromCode(int code);
 //    int getCodeBasedIndex(int index);
-    void receive();
+//    void receive();
     void receive(int signal);
     void clocking();
     void send();
     void send(int code);
     void displayReceived(QByteArray bytes, int size, int code);
+    int contador;
 };
 
 #endif // MAINWINDOW_H
