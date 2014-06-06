@@ -46,8 +46,24 @@ module stage_id(
 	output reg [4:0] 	regAddr2,
 	output reg [4:0] 	rs,
 	output reg 			regDst,
-	output reg 			nop
+	output reg 			nop,
+	//OUTPUTS FOR REGISTERBANK
+	output [4:0] addr1_frb,
+	output [4:0] addr2_frb,
+	output [4:0] writeAddr_frb,
+	output [31:0] writeData_frb,
+	output regWrite_frb,
+	input [31:0] reg1_frb,
+	input [31:0] reg2_frb
     );
+ 
+	assign addr1_frb = instr[25:21];
+	assign addr2_frb = instr[20:16];
+	assign writeAddr_frb = writeAddr;
+	assign writeData_frb = writeData;
+	assign regWrite_frb = regWrite;
+	assign reg1 = reg1_frb;
+	assign reg2 = reg2_frb;
 
 wire [3:0] 	_aluOp;
 wire			_isJump;
@@ -78,19 +94,7 @@ ControlModule control (
     .aluSrc(_aluSrc), 
     .regDst(_regDst)
     );
-	 
-RegisterBank registerBank (
-    .clock(clock),
-	 .reset(reset),
-    .addr1(instr[25:21]), 
-    .addr2(instr[20:16]), 
-    .writeAddr(writeAddr), // mux de esta etapa con instr[20:16] y instr[16:11] -> no es seguro, consultar tito
-    .writeData(writeData), // input de etapa ex
-    .regWrite(regWrite), // De control
-    .reg1(reg1), 
-    .reg2(reg2)
-    );
-	 
+	 	 
 signExtension signExtension (
     .instr(instr[15:0]), 
     .extendedInstr(_extendedInstr)

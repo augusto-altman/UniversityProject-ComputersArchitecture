@@ -36,8 +36,7 @@ module stage_if(
 
 	wire use_npc;
 	wire [31:0] iadd_out;
-
-
+	
 	assign isJumped = ~use_npc;
 	
 	always @ (posedge clock)

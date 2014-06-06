@@ -33,7 +33,15 @@ wire [31:0] data_jump_address;
 /*ID*/
 wire [31:0] instr, writeData, pc_id;
 wire [4:0] 	writeAddr;
-wire 			regWrite;
+wire 			regWrite;	
+//FOR REGBANK
+wire [4:0] addr1_frb;
+wire [4:0] addr2_frb;
+wire [4:0] writeAddr_frb;
+wire [31:0] writeData_frb;
+wire regWrite_frb;
+wire [31:0] reg1_frb;
+wire [31:0] reg2_frb;
 
 /*EX*/
 wire [31:0] data_a, data_b, data_imm, npc;
@@ -74,7 +82,8 @@ assign processed_clock = clk && ~stall;
 StallHandler staller (
     .clock(clk), 
 	 .reset(reset),
-    .isFromAlu(wb_mem[0]), 
+    .isFromAlu(wb_mem[0]),
+	 //.isFromAlu(wb_exe[0]), 
     .nop_exe(nop_exe), 
     .reg_Dst(control_Reg_DST), 
     .regAddrOutAlu(regaddr_mem), 
@@ -149,12 +158,32 @@ stage_id ins_decoder (
     .regAddr2(regaddr2),
 	 .rs(rs),
     .regDst(control_Reg_DST),
-	 .nop(nop_id)
+	 .nop(nop_id),
+    //FOR REGBANK
+    .addr1_frb(addr1_frb), 
+    .addr2_frb(addr2_frb), 
+    .writeAddr_frb(writeAddr_frb), // mux de esta etapa con instr[20:16] y instr[16:11] -> no es seguro, consultar tito
+    .writeData_frb(writeData_frb), // input de etapa ex
+    .regWrite_frb(regWrite_frb), // De control
+    .reg1_frb(reg1_frb), 
+    .reg2_frb(reg2_frb)
+    );
+	 
+RegisterBank registerBank (
+    .clock(clk),
+	 .reset(reset),
+    .addr1(addr1_frb), 
+    .addr2(addr2_frb), 
+    .writeAddr(writeAddr_frb), // mux de esta etapa con instr[20:16] y instr[16:11] -> no es seguro, consultar tito
+    .writeData(writeData_frb), // input de etapa ex
+    .regWrite(regWrite_frb), // De control
+    .reg1(reg1_frb), 
+    .reg2(reg2_frb)
     );
 
-
 stage_exe exe(
-    .clock(processed_clock), 
+    //.clock(processed_clock),
+	 .clock(clk), 
     .reset(reset), 
 	 .nop_id(nop_id),
     .data_a(data_a), 
@@ -187,6 +216,7 @@ stage_exe exe(
 	 .result_from_exe(dataaddr),
 	 .result_from_mem(writeData),
 	 .isJumped(isJumped),
+	 .stall(stall),
 	 .nop(nop_exe)
     );
 

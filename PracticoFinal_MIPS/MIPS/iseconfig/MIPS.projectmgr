@@ -9,6 +9,12 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/mem D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|mem.v</ClosedNode>
          <ClosedNode>/uarthandler C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|PracticoFinal_MIPS|MIPS|uarthandler.v/uartt - uart</ClosedNode>
+         <ClosedNode>/uarthandler C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|uarthandler.v/decoder - debuger_decoder/exe - stage_exe</ClosedNode>
+         <ClosedNode>/uarthandler C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|uarthandler.v/decoder - debuger_decoder/ins_decoder - stage_id</ClosedNode>
+         <ClosedNode>/uarthandler C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|uarthandler.v/decoder - debuger_decoder/instr_fetch - stage_if</ClosedNode>
+         <ClosedNode>/uarthandler C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|uarthandler.v/decoder - debuger_decoder/stage_mem - mem</ClosedNode>
+         <ClosedNode>/uarthandler C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|uarthandler.v/decoder - debuger_decoder/write_back - wb</ClosedNode>
+         <ClosedNode>/uarthandler C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|uarthandler.v/uartt - uart</ClosedNode>
          <ClosedNode>/uarthandler D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|uarthandler.v/decoder - debuger_decoder/exe - stage_exe</ClosedNode>
          <ClosedNode>/uarthandler D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|uarthandler.v/decoder - debuger_decoder/ins_decoder - stage_id</ClosedNode>
          <ClosedNode>/uarthandler D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|uarthandler.v/decoder - debuger_decoder/instr_fetch - stage_if</ClosedNode>
@@ -19,13 +25,13 @@
          <ClosedNode>/uarthandler D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|uarthandler.v/uartt - uart</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uarthandler (D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/uarthandler.v)</SelectedItem>
+         <SelectedItem>uarthandler (C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000174000000020000000000000000000000000200000064ffffffff000000810000000300000002000001740000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uarthandler (D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/uarthandler.v)</CurrentItem>
+      <CurrentItem>uarthandler (C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -75,70 +81,92 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Configure Target Device</SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >12</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015d0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000112000000010000000100000000000000000000000064ffffffff000000810000000000000001000001120000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Configure Target Device</CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Test_stage_if C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|Test_stage_if.v</ClosedNode>
          <ClosedNode>/Test_stage_if C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|Test_stage_if.v</ClosedNode>
          <ClosedNode>/alu_test1 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|PracticoFinal_MIPS|MIPS|alu_test1.v</ClosedNode>
+         <ClosedNode>/alu_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|alu_test1.v</ClosedNode>
          <ClosedNode>/alu_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|alu_test1.v</ClosedNode>
          <ClosedNode>/alu_test1 D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|alu_test1.v</ClosedNode>
          <ClosedNode>/alu_test1 D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|alu_test1.v</ClosedNode>
          <ClosedNode>/branch_control_test1 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|PracticoFinal_MIPS|MIPS|branch_control_test1.v</ClosedNode>
+         <ClosedNode>/branch_control_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|branch_control_test1.v</ClosedNode>
          <ClosedNode>/branch_control_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|branch_control_test1.v</ClosedNode>
          <ClosedNode>/branch_control_test1 D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|branch_control_test1.v</ClosedNode>
          <ClosedNode>/branch_control_test1 D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|branch_control_test1.v</ClosedNode>
+         <ClosedNode>/debugersm_test C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|debugersm_test.v</ClosedNode>
          <ClosedNode>/debugersm_test C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|debugersm_test.v</ClosedNode>
          <ClosedNode>/debugersm_test D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|debugersm_test.v</ClosedNode>
          <ClosedNode>/debugersm_test D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|debugersm_test.v</ClosedNode>
+         <ClosedNode>/forwarding_exe_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|forwarding_exe_test1.v</ClosedNode>
          <ClosedNode>/forwarding_exe_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|forwarding_exe_test1.v</ClosedNode>
          <ClosedNode>/forwarding_exe_test1 D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|forwarding_exe_test1.v</ClosedNode>
+         <ClosedNode>/mod_m_counter_test C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|mod_m_counter_test.v</ClosedNode>
          <ClosedNode>/mod_m_counter_test C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|mod_m_counter_test.v</ClosedNode>
          <ClosedNode>/mod_m_counter_test D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|mod_m_counter_test.v</ClosedNode>
          <ClosedNode>/mod_m_counter_test D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|mod_m_counter_test.v</ClosedNode>
          <ClosedNode>/pc_test1 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|PracticoFinal_MIPS|MIPS|pc_test1.v</ClosedNode>
+         <ClosedNode>/pc_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|pc_test1.v</ClosedNode>
          <ClosedNode>/pc_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|pc_test1.v</ClosedNode>
          <ClosedNode>/pc_test1 D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|pc_test1.v</ClosedNode>
          <ClosedNode>/pc_test1 D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|pc_test1.v</ClosedNode>
          <ClosedNode>/pmem_test1 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|PracticoFinal_MIPS|MIPS|pmem_test1.v</ClosedNode>
+         <ClosedNode>/pmem_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|pmem_test1.v</ClosedNode>
          <ClosedNode>/pmem_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|pmem_test1.v</ClosedNode>
          <ClosedNode>/pmem_test1 D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|pmem_test1.v</ClosedNode>
          <ClosedNode>/pmem_test1 D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|pmem_test1.v</ClosedNode>
+         <ClosedNode>/rx_test C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|rx_test.v</ClosedNode>
          <ClosedNode>/rx_test C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|rx_test.v</ClosedNode>
          <ClosedNode>/rx_test D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|rx_test.v</ClosedNode>
          <ClosedNode>/rx_test D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|rx_test.v</ClosedNode>
          <ClosedNode>/stage_exe_test1 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|PracticoFinal_MIPS|MIPS|stage_exe_test1.v</ClosedNode>
+         <ClosedNode>/stage_exe_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|stage_exe_test1.v</ClosedNode>
          <ClosedNode>/stage_exe_test1 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|stage_exe_test1.v</ClosedNode>
          <ClosedNode>/stage_exe_test1 D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|stage_exe_test1.v</ClosedNode>
          <ClosedNode>/stage_exe_test1 D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|stage_exe_test1.v</ClosedNode>
+         <ClosedNode>/stage_exe_test2 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|stage_exe_test2.v</ClosedNode>
          <ClosedNode>/stage_exe_test2 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|stage_exe_test2.v</ClosedNode>
          <ClosedNode>/stage_exe_test2 D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|stage_exe_test2.v</ClosedNode>
          <ClosedNode>/stage_exe_test2 D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|stage_exe_test2.v</ClosedNode>
          <ClosedNode>/stage_if_test2 C:|Tito|Facultad|Arquitecturas de las computadoras|Tp Final|PracticoFinal_MIPS|MIPS|stage_if_test2.v</ClosedNode>
+         <ClosedNode>/stage_if_test2 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|stage_if_test2.v</ClosedNode>
          <ClosedNode>/stage_if_test2 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|stage_if_test2.v</ClosedNode>
          <ClosedNode>/stage_if_test2 D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|stage_if_test2.v</ClosedNode>
          <ClosedNode>/stage_if_test2 D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|stage_if_test2.v</ClosedNode>
+         <ClosedNode>/stage_if_test3 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|stage_if_test3.v</ClosedNode>
          <ClosedNode>/stage_if_test3 C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|stage_if_test3.v</ClosedNode>
          <ClosedNode>/stage_if_test3 D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|stage_if_test3.v</ClosedNode>
          <ClosedNode>/stage_if_test3 D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|stage_if_test3.v</ClosedNode>
+         <ClosedNode>/testBankRegister C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|testBankRegister.v</ClosedNode>
          <ClosedNode>/testBankRegister C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|testBankRegister.v</ClosedNode>
          <ClosedNode>/testBankRegister D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|testBankRegister.v</ClosedNode>
          <ClosedNode>/testBankRegister D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|testBankRegister.v</ClosedNode>
+         <ClosedNode>/testControl C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|testControl.v</ClosedNode>
          <ClosedNode>/testControl C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|testControl.v</ClosedNode>
          <ClosedNode>/testControl D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|testControl.v</ClosedNode>
          <ClosedNode>/testControl D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|testControl.v</ClosedNode>
+         <ClosedNode>/testSignExtension C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|testSignExtension.v</ClosedNode>
          <ClosedNode>/testSignExtension C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|testSignExtension.v</ClosedNode>
          <ClosedNode>/testSignExtension D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|testSignExtension.v</ClosedNode>
          <ClosedNode>/testSignExtension D:|facu|Arquitecturas de las computadoras|Practico|tpfinal|PracticoFinal_MIPS|MIPS|testSignExtension.v</ClosedNode>
+         <ClosedNode>/test_stage_id C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|test_stage_id.v</ClosedNode>
          <ClosedNode>/test_stage_id C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|test_stage_id.v</ClosedNode>
          <ClosedNode>/test_stage_id D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|test_stage_id.v</ClosedNode>
+         <ClosedNode>/testdeco C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|testdeco.v/uut - debuger_decoder/exe - stage_exe</ClosedNode>
+         <ClosedNode>/testdeco C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|testdeco.v/uut - debuger_decoder/ins_decoder - stage_id</ClosedNode>
+         <ClosedNode>/testdeco C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|testdeco.v/uut - debuger_decoder/instr_fetch - stage_if</ClosedNode>
+         <ClosedNode>/testdeco C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|testdeco.v/uut - debuger_decoder/stage_mem - mem</ClosedNode>
+         <ClosedNode>/testdeco C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk2|PracticoFinal_MIPS|MIPS|testdeco.v/uut - debuger_decoder/write_back - wb</ClosedNode>
          <ClosedNode>/testdeco C:|Users|aaquaran|Desktop|tito|Facu|Arquitectura de Computadoras|Tp Final|Trunk|PracticoFinal_MIPS|MIPS|testdeco.v</ClosedNode>
          <ClosedNode>/testdeco D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|testdeco.v/uut - debuger_decoder/exe - stage_exe</ClosedNode>
          <ClosedNode>/testdeco D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|testdeco.v/uut - debuger_decoder/instr_fetch - stage_if</ClosedNode>
@@ -165,13 +193,13 @@
          <ClosedNode>/uarthandler D:|Estudio|facu|arquitectura de computadoras|final|workspace - trunk|PracticoFinal_MIPS|MIPS|uarthandler.v/uartt - uart</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>testdeco (D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/testdeco.v)</SelectedItem>
+         <SelectedItem>fe - forwarding_exe (C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/forwarding_exe.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >19</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000177000000020000000000000000000000000200000064ffffffff000000810000000300000002000001770000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000186000000020000000000000000000000000200000064ffffffff000000810000000300000002000001860000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>testdeco (D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/testdeco.v)</CurrentItem>
+      <CurrentItem>fe - forwarding_exe (C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/forwarding_exe.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -183,7 +211,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e20000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000123000000010000000100000000000000000000000064ffffffff000000810000000000000001000001230000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -196,12 +224,12 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000123000000010000000100000000000000000000000064ffffffff000000810000000000000001000001230000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000000f6000000c901000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
