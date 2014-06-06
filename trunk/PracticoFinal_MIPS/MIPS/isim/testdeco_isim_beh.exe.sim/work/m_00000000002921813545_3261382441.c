@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0xc3576ebc */
+/* This file is designed for use with ISim build 0x7708f090 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/StallHandler.v";
+static const char *ng0 = "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/StallHandler.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
 
@@ -495,8 +495,14 @@ LAB14:    t20 = *((unsigned int *)t13);
         goto LAB16;
 
 LAB17:    xsi_set_current_line(59, ng0);
+
+LAB87:    xsi_set_current_line(60, ng0);
     t2 = ((char*)((ng1)));
     t3 = (t0 + 2888);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
+    xsi_set_current_line(61, ng0);
+    t2 = ((char*)((ng1)));
+    t3 = (t0 + 3048);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
 
 LAB18:

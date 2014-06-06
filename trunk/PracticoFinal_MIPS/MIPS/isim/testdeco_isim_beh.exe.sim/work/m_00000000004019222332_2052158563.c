@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0xc3576ebc */
+/* This file is designed for use with ISim build 0x7708f090 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,13 +21,13 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Estudio/facu/arquitectura de computadoras/final/workspace - trunk/PracticoFinal_MIPS/MIPS/stage_if.v";
+static const char *ng0 = "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/stage_if.v";
 static int ng1[] = {1, 0};
 static int ng2[] = {0, 0};
 
 
 
-static void Cont_41_0(char *t0)
+static void Cont_40_0(char *t0)
 {
     char t3[8];
     char *t1;
@@ -71,7 +71,7 @@ LAB0:    t1 = (t0 + 4288U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(41, ng0);
+LAB2:    xsi_set_current_line(40, ng0);
     t2 = (t0 + 2648U);
     t4 = *((char **)t2);
     memset(t3, 0, 8);
@@ -140,7 +140,7 @@ LAB9:    t15 = *((unsigned int *)t3);
 
 }
 
-static void Always_43_1(char *t0)
+static void Always_42_1(char *t0)
 {
     char *t1;
     char *t2;
@@ -160,7 +160,7 @@ LAB0:    t1 = (t0 + 4536U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(43, ng0);
+LAB2:    xsi_set_current_line(42, ng0);
     t2 = (t0 + 4872);
     *((int *)t2) = 1;
     t3 = (t0 + 4568);
@@ -168,14 +168,14 @@ LAB2:    xsi_set_current_line(43, ng0);
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(44, ng0);
+LAB4:    xsi_set_current_line(43, ng0);
 
-LAB5:    xsi_set_current_line(45, ng0);
+LAB5:    xsi_set_current_line(44, ng0);
     t4 = (t0 + 2808U);
     t5 = *((char **)t4);
     t4 = (t0 + 3208);
     xsi_vlogvar_assign_value(t4, t5, 0, 0, 32);
-    xsi_set_current_line(46, ng0);
+    xsi_set_current_line(45, ng0);
     t2 = (t0 + 1208U);
     t3 = *((char **)t2);
     t2 = (t3 + 4);
@@ -187,14 +187,14 @@ LAB5:    xsi_set_current_line(45, ng0);
     if (t10 > 0)
         goto LAB6;
 
-LAB7:    xsi_set_current_line(49, ng0);
+LAB7:    xsi_set_current_line(48, ng0);
     t2 = ((char*)((ng2)));
     t3 = (t0 + 3368);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
 
 LAB8:    goto LAB2;
 
-LAB6:    xsi_set_current_line(47, ng0);
+LAB6:    xsi_set_current_line(46, ng0);
     t4 = ((char*)((ng1)));
     t5 = (t0 + 3368);
     xsi_vlogvar_assign_value(t5, t4, 0, 0, 1);
@@ -205,7 +205,7 @@ LAB6:    xsi_set_current_line(47, ng0);
 
 extern void work_m_00000000004019222332_2052158563_init()
 {
-	static char *pe[] = {(void *)Cont_41_0,(void *)Always_43_1};
+	static char *pe[] = {(void *)Cont_40_0,(void *)Always_42_1};
 	xsi_register_didat("work_m_00000000004019222332_2052158563", "isim/testdeco_isim_beh.exe.sim/work/m_00000000004019222332_2052158563.didat");
 	xsi_register_executes(pe);
 }

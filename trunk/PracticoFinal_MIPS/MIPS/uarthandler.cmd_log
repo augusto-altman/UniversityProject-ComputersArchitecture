@@ -36,3 +36,12 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off uarthandler_map.ncd uarthandler.ncd uarthandler.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uarthandler.twx uarthandler.ncd -o uarthandler.twr uarthandler.pcf -ucf Nexys3_Master.ucf 
 bitgen -intstyle ise -f uarthandler.ut uarthandler.ncd 
+xst -intstyle ise -ifn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.xst" -ofn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.syr" 
+xst -intstyle ise -ifn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.xst" -ofn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.syr" 
+xst -intstyle ise -ifn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.xst" -ofn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.syr" 
+xst -intstyle ise -ifn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.xst" -ofn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.syr" 
+xst -intstyle ise -ifn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.xst" -ofn "C:/Users/aaquaran/Desktop/tito/Facu/Arquitectura de Computadoras/Tp Final/Trunk2/PracticoFinal_MIPS/MIPS/uarthandler.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 "uarthandler.ngc" uarthandler.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uarthandler_map.ncd uarthandler.ngd uarthandler.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 "uarthandler.ngc" uarthandler.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uarthandler_map.ncd uarthandler.ngd uarthandler.pcf 

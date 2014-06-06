@@ -1,7 +1,7 @@
 ##############################################################
 #
-# Xilinx Core Generator version 14.1
-# Date: Tue Jun 03 00:27:22 2014
+# Xilinx Core Generator version 14.7
+# Date: Thu Jun 05 22:50:39 2014
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file="D:\Estudio\facu\arquitectura de computadoras\final\workspace - branches\tests\11) EndToEnd.coe"
+CSET coe_file="C:\Users\aaquaran\Desktop\tito\Facu\Arquitectura de Computadoras\Tp Final\Branches\tests\11) EndToEnd.coe"
 CSET collision_warnings=ALL
 CSET component_name=pmem
 CSET disable_collision_warnings=false
@@ -57,7 +57,7 @@ CSET enable_32bit_address=false
 CSET enable_a=Always_Enabled
 CSET enable_b=Always_Enabled
 CSET error_injection_type=Single_Bit_Error_Injection
-CSET fill_remaining_memory_locations=false
+CSET fill_remaining_memory_locations=true
 CSET interface_type=Native
 CSET load_init_file=true
 CSET memory_type=Single_Port_ROM
@@ -100,7 +100,7 @@ CSET write_width_a=32
 CSET write_width_b=32
 # END Parameters
 # BEGIN Extra information
-MISC pkg_timestamp=2012-03-28T15:19:06Z
+MISC pkg_timestamp=2012-05-01T17:17:26Z
 # END Extra information
 GENERATE
-# CRC: 8ecc1d99
+# CRC: 6e42f5c3

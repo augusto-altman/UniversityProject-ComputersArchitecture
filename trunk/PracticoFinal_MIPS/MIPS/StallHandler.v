@@ -56,7 +56,10 @@ module StallHandler(
 			end
 		end
 		else
+		begin
 			stall = 0;
+			counter = 0;
+		end
 	end
 
 endmodule

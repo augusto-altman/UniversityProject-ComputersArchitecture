@@ -59,7 +59,8 @@ module stage_exe(
     output reg [31:0] out,
 	 //end -- Signals for stage_mem
 	 // multiple exits
-	 output reg nop
+	 output reg nop,
+	 input stall
     );
 
 	wire [31:0] t_out, b_entry, t_jump_address;
@@ -110,7 +111,7 @@ module stage_exe(
 		
 	always @ (posedge clock)
 	begin
-		if (reset || isJumped)
+		if (reset || isJumped || stall)
 		begin
 			out = 32'b0;
 			jump_address = 32'b0;

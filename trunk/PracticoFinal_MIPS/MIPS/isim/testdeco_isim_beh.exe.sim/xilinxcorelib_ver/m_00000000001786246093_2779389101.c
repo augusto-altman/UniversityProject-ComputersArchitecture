@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0xc3576ebc */
+/* This file is designed for use with ISim build 0x7708f090 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -614,11 +614,11 @@ LAB1:    return;
 }
 
 
-extern void xilinxcorelib_ver_m_00000000001786246093_4236472315_init()
+extern void xilinxcorelib_ver_m_00000000001786246093_2779389101_init()
 {
 	static char *pe[] = {(void *)Always_3889_0,(void *)Cont_4115_1,(void *)Cont_4116_2,(void *)Cont_4117_3,(void *)Cont_4118_4,(void *)Cont_4119_5,(void *)Cont_4120_6,(void *)Cont_4130_7};
 	static char *se[] = {(void *)sp_log2roundup,(void *)sp_divroundup};
-	xsi_register_didat("xilinxcorelib_ver_m_00000000001786246093_4236472315", "isim/testdeco_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000001786246093_4236472315.didat");
+	xsi_register_didat("xilinxcorelib_ver_m_00000000001786246093_2779389101", "isim/testdeco_isim_beh.exe.sim/xilinxcorelib_ver/m_00000000001786246093_2779389101.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
