@@ -25,6 +25,9 @@ char signalManagement::getBytesQuantityFromCode(int code){
         case 34: //IAdd
             return (char)3;
         default:
+            if(code > 63){
+                return 3;
+            }
             return (char) 0;
     }
 }
@@ -97,6 +100,8 @@ int signalManagement::getCodeBasedIndex(int index){
             return 29;
         case 32: // WeRegFile
             return 30;
+         case 33: //reg 0
+            return 83;
         default:
             return index;
     }

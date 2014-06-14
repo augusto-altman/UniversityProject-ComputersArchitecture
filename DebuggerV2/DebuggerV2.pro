@@ -15,9 +15,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    signalmanagement.cpp
+    signalmanagement.cpp \
+    continueexethread.cpp
 
 HEADERS  += mainwindow.h \
-    signalmanagement.h
+    signalmanagement.h \
+    continueexethread.h
 
 FORMS    += mainwindow.ui
